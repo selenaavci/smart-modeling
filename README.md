@@ -1,5 +1,48 @@
 # 🤖 Smart Modeling Agent
 
+## ⚡ Hızlı Başlangıç (Local)
+
+Proje Windows ve Linux/macOS üzerinde doğrudan localden çalışacak şekilde hazırlanmıştır. Tek gereksinim **Python 3.10+**.
+
+### 🐧 Linux / 🍎 macOS
+```bash
+./run.sh
+```
+
+### 🪟 Windows
+```bat
+run.bat
+```
+
+Her iki script de ilk çalıştırmada:
+1. `.venv` adında bir sanal ortam oluşturur
+2. `requirements.txt` içindeki bağımlılıkları yükler
+3. Streamlit uygulamasını (`app.py`) başlatır
+
+Tarayıcınız otomatik olarak `http://localhost:8501` adresinde açılacaktır.
+
+### 📦 Dosya Yükleme Limiti
+`.streamlit/config.toml` dosyasında `maxUploadSize = 5120` (MB) olarak ayarlanmıştır — yani **5 GB**'a kadar CSV / XLSX / XLS / XML dosyası yükleyebilirsiniz.
+
+### 🗂️ Klasör Yapısı
+```
+smart-modeling/
+├── app.py                    # Streamlit ana arayüz (sihirbaz)
+├── requirements.txt          # Python bağımlılıkları
+├── run.sh / run.bat          # Linux-macOS / Windows başlatıcılar
+├── .streamlit/config.toml    # 5 GB upload + tema ayarları
+└── src/
+    ├── data_loader.py        # CSV / Excel / XML okuma
+    ├── problem_detector.py   # Problem tipi önerisi
+    ├── preprocessing.py      # Otomatik temizlik + encoding
+    ├── model_engine.py       # Model eğitim & karşılaştırma
+    ├── visualizations.py     # Grafikler
+    ├── exporter.py           # Excel çıktı
+    └── model_info.py         # Kullanıcı dostu model açıklamaları
+```
+
+---
+
 ## 🚀 Projenin Amacı
 
 Smart Modeling Agent, kullanıcıların kendi veri setleri üzerinde makine öğrenmesi modellerini teknik bilgiye ihtiyaç duymadan çalıştırabilmesini sağlayan bir self-service AI aracıdır.

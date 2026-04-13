@@ -1,0 +1,2001 @@
+musteri_id,yas,musteri_suresi_ay,aylik_ucret,toplam_ucret,sozlesme_tipi,internet_servisi,odeme_yontemi,bakmakla_yukumlu,churn
+1,23,64,104.27,6621.25,Aylik,Fiber,Elektronik Cek,Hayir,1
+2,65,5,64.64,248.37,2 Yillik,Yok,Kredi Karti,Hayir,0
+3,58,29,115.3,3411.33,Aylik,Fiber,Havale,Hayir,1
+4,45,33,85.08,2928.76,Aylik,Yok,Elektronik Cek,Hayir,1
+5,44,58,31.59,1808.43,Aylik,Fiber,Otomatik Odeme,Hayir,0
+6,71,10,108.51,1019.08,Aylik,Fiber,Havale,Evet,0
+7,23,32,68.93,2093.91,1 Yillik,DSL,Otomatik Odeme,Evet,1
+8,61,11,34.16,363.55,2 Yillik,Fiber,Otomatik Odeme,Hayir,1
+9,30,57,35.27,1994.57,2 Yillik,Yok,Havale,Evet,0
+10,23,46,88.75,4049.94,1 Yillik,Fiber,Kredi Karti,Hayir,0
+11,50,36,24.74,901.71,Aylik,DSL,Elektronik Cek,Hayir,0
+12,78,29,48.66,1430.9,Aylik,Fiber,Kredi Karti,Evet,1
+13,63,12,33.98,423.91,Aylik,Fiber,Otomatik Odeme,Evet,0
+14,65,67,64.11,4279.56,Aylik,Yok,Havale,Evet,0
+15,62,47,61.44,2832.6,2 Yillik,DSL,Otomatik Odeme,Hayir,1
+16,66,23,72.19,1693.66,Aylik,DSL,Elektronik Cek,Hayir,0
+17,49,30,47.96,1439.43,Aylik,Fiber,Havale,Hayir,0
+18,25,53,23.2,1274.02,Aylik,DSL,Otomatik Odeme,Hayir,0
+19,70,52,81.44,4274.38,Aylik,Yok,Otomatik Odeme,Hayir,0
+20,45,34,57.37,1879.49,2 Yillik,Fiber,Otomatik Odeme,Hayir,0
+21,49,22,85.13,1801.15,Aylik,Fiber,Kredi Karti,Evet,1
+22,40,48,30.87,1443.98,Aylik,DSL,Havale,Hayir,0
+23,29,48,21.38,973.43,Aylik,Fiber,Otomatik Odeme,Hayir,0
+24,75,44,44.83,2010.28,2 Yillik,Yok,Otomatik Odeme,Hayir,1
+25,66,6,65.65,411.47,Aylik,Fiber,Havale,Hayir,0
+26,57,35,59.41,2134.31,1 Yillik,DSL,Kredi Karti,Evet,0
+27,42,45,101.03,4566.17,Aylik,DSL,Havale,Hayir,0
+28,69,69,57.78,3997.25,Aylik,Yok,Elektronik Cek,Evet,0
+29,51,38,73.04,2835.51,2 Yillik,Yok,Elektronik Cek,Hayir,1
+30,45,25,79.35,2007.24,Aylik,DSL,Otomatik Odeme,Hayir,1
+31,45,41,22.18,912.79,Aylik,Fiber,Kredi Karti,Hayir,0
+32,32,13,71.51,1003.65,1 Yillik,DSL,Havale,Evet,0
+33,23,7,54.48,387.12,Aylik,Fiber,Havale,Hayir,1
+34,52,49,62.13,3029.15,Aylik,DSL,Otomatik Odeme,Hayir,0
+35,73,72,30.03,2120.27,2 Yillik,Yok,Kredi Karti,Hayir,1
+36,21,61,98.28,6030.23,Aylik,Yok,Kredi Karti,Hayir,1
+37,71,43,114.24,4974.17,Aylik,DSL,Havale,Hayir,1
+38,69,3,22.23,64.16,Aylik,Fiber,Kredi Karti,Hayir,1
+39,35,72,80.14,5835.48,1 Yillik,DSL,Elektronik Cek,Hayir,0
+40,57,33,96.38,3082.04,Aylik,DSL,Elektronik Cek,Hayir,0
+41,28,21,48.48,1015.31,Aylik,DSL,Elektronik Cek,Evet,0
+42,65,65,98.76,6417.4,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+43,61,54,83.24,4458.61,1 Yillik,Yok,Havale,Hayir,1
+44,39,54,112.92,6216.87,2 Yillik,DSL,Havale,Evet,0
+45,22,20,118.1,2358.69,Aylik,Yok,Havale,Hayir,0
+46,78,72,24.23,1724.17,Aylik,DSL,Otomatik Odeme,Evet,0
+47,45,33,64.49,2129.47,Aylik,Fiber,Elektronik Cek,Hayir,0
+48,73,39,74.7,2813.16,1 Yillik,Fiber,Kredi Karti,Evet,0
+49,60,55,34.67,1868.86,Aylik,Yok,Elektronik Cek,Hayir,1
+50,66,48,53.63,2623.4,1 Yillik,DSL,Elektronik Cek,Hayir,0
+51,65,13,118.76,1512.43,Aylik,DSL,Kredi Karti,Evet,0
+52,30,22,21.62,434.2,2 Yillik,Fiber,Elektronik Cek,Hayir,1
+53,40,27,65.25,1827.23,2 Yillik,Fiber,Elektronik Cek,Hayir,1
+54,46,69,104.27,7261.64,Aylik,Fiber,Kredi Karti,Hayir,1
+55,48,52,52.39,2750.13,2 Yillik,DSL,Kredi Karti,Evet,0
+56,20,27,67.98,1812.7,2 Yillik,DSL,Elektronik Cek,Hayir,0
+57,51,53,117.8,6231.43,Aylik,Yok,Elektronik Cek,Hayir,1
+58,27,54,67.49,3604.25,Aylik,Fiber,Elektronik Cek,Hayir,1
+59,64,29,33.09,909.87,1 Yillik,Fiber,Havale,Hayir,1
+60,60,30,25.17,702.88,Aylik,DSL,Elektronik Cek,Hayir,0
+61,75,65,114.54,7414.2,Aylik,DSL,Otomatik Odeme,Hayir,1
+62,64,41,46.58,1858.04,Aylik,Yok,Kredi Karti,Evet,0
+63,40,11,70.41,696.32,2 Yillik,Fiber,Elektronik Cek,Hayir,1
+64,77,52,29.07,1522.61,Aylik,DSL,Kredi Karti,Hayir,0
+65,43,43,62.37,2693.64,1 Yillik,Yok,Kredi Karti,Hayir,0
+66,38,37,113.01,4266.41,Aylik,Fiber,Otomatik Odeme,Evet,0
+67,74,53,70.24,3689.3,Aylik,DSL,Kredi Karti,Hayir,1
+68,40,66,117.11,7744.07,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+69,22,24,45.88,1116.76,Aylik,Fiber,Elektronik Cek,Hayir,1
+70,47,31,70.45,2171.26,Aylik,Fiber,Otomatik Odeme,Hayir,1
+71,67,14,105.95,1520.52,Aylik,Fiber,Elektronik Cek,Hayir,1
+72,29,47,64.83,3085.77,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+73,46,29,47.95,1406.92,Aylik,DSL,Otomatik Odeme,Evet,0
+74,26,25,105.55,2625.97,Aylik,Yok,Otomatik Odeme,Hayir,0
+75,60,51,58.99,2990.61,Aylik,Fiber,Elektronik Cek,Hayir,0
+76,47,30,73.07,2123.71,Aylik,Fiber,Kredi Karti,Hayir,0
+77,38,34,117.65,3959.8,Aylik,Fiber,Kredi Karti,Evet,0
+78,32,32,38.65,1205.7,Aylik,Fiber,Havale,Evet,0
+79,52,19,50.14,896.46,Aylik,Fiber,Elektronik Cek,Hayir,1
+80,59,10,23.11,253.1,Aylik,Fiber,Elektronik Cek,Evet,0
+81,76,60,59.18,3610.63,1 Yillik,Yok,Otomatik Odeme,Evet,0
+82,45,7,40.02,234.74,1 Yillik,Yok,Kredi Karti,Evet,0
+83,27,24,88.0,2126.17,Aylik,Yok,Kredi Karti,Hayir,1
+84,69,49,38.13,1816.66,Aylik,DSL,Kredi Karti,Hayir,1
+85,57,10,87.48,859.55,Aylik,Fiber,Elektronik Cek,Hayir,1
+86,61,48,46.35,2190.28,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+87,24,53,55.52,2972.65,Aylik,DSL,Kredi Karti,Hayir,0
+88,37,48,54.89,2600.78,Aylik,Fiber,Otomatik Odeme,Hayir,0
+89,65,22,91.68,2067.54,Aylik,DSL,Havale,Evet,0
+90,69,2,66.65,121.01,Aylik,DSL,Elektronik Cek,Hayir,1
+91,44,64,56.13,3559.84,Aylik,DSL,Otomatik Odeme,Evet,1
+92,67,24,105.26,2463.57,Aylik,DSL,Kredi Karti,Hayir,0
+93,70,58,77.2,4490.26,1 Yillik,DSL,Otomatik Odeme,Evet,0
+94,42,15,41.38,665.46,1 Yillik,Fiber,Otomatik Odeme,Evet,0
+95,73,12,110.01,1333.79,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+96,35,57,54.27,3205.33,1 Yillik,DSL,Kredi Karti,Evet,0
+97,32,68,23.9,1696.69,Aylik,DSL,Havale,Evet,0
+98,60,62,69.46,4291.14,2 Yillik,Yok,Kredi Karti,Evet,0
+99,57,55,32.39,1765.55,1 Yillik,DSL,Havale,Hayir,0
+100,26,18,43.85,812.78,2 Yillik,Fiber,Otomatik Odeme,Evet,0
+101,69,66,94.71,6208.96,1 Yillik,Fiber,Otomatik Odeme,Evet,0
+102,30,49,33.08,1679.23,Aylik,Fiber,Otomatik Odeme,Evet,0
+103,67,13,100.69,1327.05,Aylik,Yok,Havale,Hayir,0
+104,18,10,113.69,1149.72,Aylik,Fiber,Otomatik Odeme,Evet,1
+105,67,63,80.65,5115.3,Aylik,Yok,Otomatik Odeme,Evet,0
+106,66,20,91.04,1906.94,Aylik,Yok,Otomatik Odeme,Hayir,0
+107,66,56,91.36,5124.71,Aylik,DSL,Otomatik Odeme,Hayir,1
+108,59,10,119.28,1187.15,Aylik,DSL,Elektronik Cek,Evet,1
+109,47,21,54.15,1212.59,2 Yillik,DSL,Kredi Karti,Evet,0
+110,61,21,36.29,810.47,1 Yillik,Fiber,Havale,Evet,0
+111,35,21,71.92,1494.27,1 Yillik,Fiber,Otomatik Odeme,Hayir,1
+112,66,49,73.32,3592.94,Aylik,DSL,Havale,Evet,0
+113,52,66,37.79,2503.91,1 Yillik,DSL,Kredi Karti,Hayir,0
+114,46,66,81.31,5384.55,2 Yillik,Fiber,Otomatik Odeme,Hayir,0
+115,49,54,21.41,1088.31,1 Yillik,Fiber,Havale,Hayir,0
+116,53,15,112.77,1614.43,1 Yillik,Fiber,Otomatik Odeme,Evet,0
+117,20,70,46.46,3207.83,Aylik,Yok,Havale,Hayir,0
+118,26,40,23.96,910.16,Aylik,DSL,Havale,Hayir,0
+119,33,40,30.82,1200.61,1 Yillik,Fiber,Havale,Hayir,0
+120,25,51,44.02,2276.76,2 Yillik,Yok,Havale,Evet,0
+121,45,56,47.39,2645.39,Aylik,Fiber,Havale,Hayir,1
+122,59,69,23.28,1616.14,Aylik,Fiber,Havale,Hayir,0
+123,58,42,47.94,1952.26,Aylik,Fiber,Otomatik Odeme,Hayir,0
+124,47,44,39.29,1705.68,Aylik,DSL,Havale,Hayir,0
+125,71,54,57.86,3153.8,2 Yillik,Yok,Havale,Hayir,0
+126,53,19,58.52,1141.63,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+127,22,23,53.9,1203.47,Aylik,Fiber,Havale,Hayir,1
+128,65,46,52.79,2436.42,Aylik,Fiber,Kredi Karti,Hayir,0
+129,53,5,28.97,254.79,Aylik,Fiber,Kredi Karti,Hayir,1
+130,57,24,22.52,539.6,Aylik,DSL,Havale,Evet,0
+131,53,52,40.21,2056.26,Aylik,Fiber,Elektronik Cek,Evet,0
+132,52,71,95.66,6783.17,2 Yillik,Fiber,Otomatik Odeme,Hayir,1
+133,23,38,119.08,4529.65,1 Yillik,DSL,Kredi Karti,Hayir,0
+134,52,29,112.85,3265.09,Aylik,Fiber,Elektronik Cek,Evet,0
+135,67,32,70.42,2251.87,1 Yillik,Yok,Havale,Hayir,1
+136,36,50,73.18,3586.83,1 Yillik,Fiber,Havale,Hayir,0
+137,55,40,51.46,2010.27,Aylik,Fiber,Havale,Hayir,0
+138,19,2,97.39,187.31,1 Yillik,Fiber,Havale,Evet,0
+139,39,39,96.48,3754.46,1 Yillik,Yok,Kredi Karti,Hayir,0
+140,45,29,104.43,3000.16,2 Yillik,Fiber,Kredi Karti,Hayir,1
+141,78,51,109.55,5578.2,Aylik,Yok,Elektronik Cek,Evet,0
+142,31,64,63.43,4062.57,Aylik,DSL,Kredi Karti,Hayir,1
+143,35,70,96.69,6812.77,Aylik,Yok,Havale,Hayir,0
+144,43,44,100.64,4423.2,Aylik,Yok,Kredi Karti,Hayir,1
+145,79,27,50.85,1392.91,Aylik,Fiber,Kredi Karti,Hayir,0
+146,70,32,112.92,3586.36,1 Yillik,Fiber,Kredi Karti,Evet,1
+147,20,13,29.43,411.19,Aylik,DSL,Havale,Evet,0
+148,32,68,119.43,8140.03,Aylik,Fiber,Kredi Karti,Evet,1
+149,68,62,97.01,6057.91,2 Yillik,DSL,Kredi Karti,Evet,0
+150,21,62,29.33,1854.13,Aylik,DSL,Havale,Hayir,1
+151,71,24,85.62,2084.32,Aylik,Yok,Havale,Evet,1
+152,35,24,23.42,557.16,1 Yillik,DSL,Kredi Karti,Hayir,0
+153,74,62,97.02,6027.49,Aylik,Fiber,Kredi Karti,Evet,1
+154,36,40,99.92,4049.98,Aylik,DSL,Otomatik Odeme,Evet,0
+155,44,51,80.24,4059.64,1 Yillik,Fiber,Elektronik Cek,Evet,0
+156,59,36,105.69,3773.42,Aylik,Fiber,Kredi Karti,Hayir,1
+157,25,32,29.79,962.35,Aylik,DSL,Havale,Hayir,1
+158,52,46,47.59,2209.9,Aylik,Fiber,Havale,Hayir,1
+159,49,59,61.42,3582.57,2 Yillik,Yok,Otomatik Odeme,Evet,0
+160,66,25,24.25,602.51,Aylik,Fiber,Otomatik Odeme,Hayir,1
+161,79,59,64.82,3819.68,1 Yillik,Yok,Otomatik Odeme,Hayir,1
+162,59,18,46.52,726.6,Aylik,Fiber,Kredi Karti,Hayir,1
+163,43,30,59.27,1767.12,1 Yillik,Fiber,Havale,Evet,0
+164,43,66,62.51,4117.79,Aylik,DSL,Havale,Evet,0
+165,43,69,107.94,7439.85,Aylik,DSL,Elektronik Cek,Evet,1
+166,68,67,47.03,3221.81,Aylik,Yok,Otomatik Odeme,Hayir,0
+167,37,23,109.37,2454.72,1 Yillik,Fiber,Havale,Hayir,0
+168,28,61,62.6,3777.37,Aylik,Fiber,Elektronik Cek,Hayir,0
+169,38,68,52.78,3458.43,Aylik,Yok,Havale,Hayir,1
+170,19,71,70.25,4963.7,Aylik,DSL,Kredi Karti,Hayir,0
+171,24,2,61.77,103.76,Aylik,Fiber,Havale,Hayir,0
+172,23,54,45.74,2444.46,1 Yillik,DSL,Elektronik Cek,Evet,0
+173,65,72,70.27,5114.82,Aylik,Yok,Havale,Hayir,0
+174,62,56,35.18,2013.11,Aylik,DSL,Elektronik Cek,Evet,1
+175,61,17,55.19,942.12,Aylik,DSL,Elektronik Cek,Evet,0
+176,46,55,76.58,4193.37,Aylik,Fiber,Havale,Evet,0
+177,62,8,61.34,542.03,Aylik,DSL,Otomatik Odeme,Hayir,1
+178,27,35,102.39,3582.66,Aylik,Yok,Kredi Karti,Hayir,1
+179,73,46,45.67,2059.91,Aylik,Fiber,Otomatik Odeme,Hayir,0
+180,49,33,116.98,3774.53,2 Yillik,DSL,Kredi Karti,Evet,0
+181,76,51,98.47,4999.9,Aylik,DSL,Havale,Hayir,0
+182,27,18,116.76,2139.41,2 Yillik,Yok,Otomatik Odeme,Evet,0
+183,48,44,103.81,4681.47,Aylik,Fiber,Elektronik Cek,Hayir,0
+184,61,47,34.21,1610.95,Aylik,Yok,Havale,Hayir,1
+185,48,46,72.65,3303.63,Aylik,DSL,Otomatik Odeme,Hayir,0
+186,45,21,37.0,717.75,Aylik,Yok,Kredi Karti,Hayir,0
+187,28,22,101.82,2267.64,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+188,41,19,78.42,1401.75,2 Yillik,Fiber,Elektronik Cek,Hayir,1
+189,32,34,46.34,1603.08,1 Yillik,Fiber,Kredi Karti,Evet,0
+190,36,43,112.96,4898.17,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+191,60,27,31.52,872.85,Aylik,Yok,Otomatik Odeme,Evet,1
+192,57,30,76.39,2280.72,Aylik,Yok,Kredi Karti,Hayir,0
+193,55,21,92.1,1962.35,1 Yillik,Fiber,Kredi Karti,Hayir,1
+194,40,16,25.88,422.63,Aylik,Yok,Kredi Karti,Hayir,1
+195,77,48,79.79,3791.01,Aylik,DSL,Havale,Hayir,0
+196,23,59,101.59,6086.33,2 Yillik,DSL,Havale,Evet,0
+197,39,21,26.75,544.17,2 Yillik,DSL,Elektronik Cek,Hayir,0
+198,25,62,71.22,4454.43,1 Yillik,Fiber,Elektronik Cek,Evet,0
+199,39,42,45.86,1805.19,Aylik,DSL,Kredi Karti,Hayir,0
+200,77,13,86.29,1185.59,2 Yillik,Fiber,Havale,Hayir,0
+201,40,27,31.87,933.93,Aylik,DSL,Otomatik Odeme,Hayir,0
+202,74,1,113.71,115.2,Aylik,Fiber,Otomatik Odeme,Evet,1
+203,48,3,109.47,356.35,Aylik,Yok,Havale,Evet,1
+204,61,25,38.6,992.93,2 Yillik,Fiber,Kredi Karti,Hayir,0
+205,46,33,52.33,1694.75,2 Yillik,DSL,Kredi Karti,Evet,0
+206,34,58,78.76,4595.44,1 Yillik,Fiber,Havale,Evet,0
+207,65,10,91.81,877.67,Aylik,DSL,Havale,Hayir,1
+208,78,61,64.27,3890.03,Aylik,Fiber,Havale,Hayir,0
+209,34,17,35.63,662.06,Aylik,Fiber,Kredi Karti,Evet,0
+210,66,10,30.42,352.93,2 Yillik,Fiber,Havale,Hayir,1
+211,34,51,119.98,6083.66,Aylik,DSL,Havale,Hayir,0
+212,62,56,65.54,3633.56,Aylik,Yok,Havale,Hayir,1
+213,66,44,107.25,4686.72,1 Yillik,Yok,Kredi Karti,Evet,0
+214,45,9,68.24,650.79,Aylik,Fiber,Otomatik Odeme,Evet,1
+215,63,9,112.24,960.16,2 Yillik,Yok,Havale,Evet,1
+216,34,29,28.78,852.46,Aylik,Yok,Havale,Hayir,1
+217,22,33,31.4,1073.54,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+218,23,72,112.96,8128.71,Aylik,Fiber,Elektronik Cek,Evet,1
+219,45,21,114.75,2460.25,Aylik,DSL,Kredi Karti,Evet,0
+220,73,14,51.47,705.36,Aylik,Fiber,Kredi Karti,Hayir,1
+221,25,69,55.52,3820.19,Aylik,DSL,Kredi Karti,Hayir,0
+222,46,12,65.25,734.14,1 Yillik,Yok,Elektronik Cek,Hayir,0
+223,61,2,61.62,174.1,Aylik,Fiber,Havale,Evet,0
+224,30,31,39.0,1170.67,Aylik,DSL,Havale,Evet,0
+225,62,29,109.84,3202.85,1 Yillik,Fiber,Elektronik Cek,Hayir,1
+226,36,45,45.33,2036.28,Aylik,Fiber,Elektronik Cek,Evet,0
+227,68,64,90.53,5741.28,1 Yillik,Fiber,Kredi Karti,Evet,0
+228,53,68,26.72,1786.5,1 Yillik,Yok,Kredi Karti,Hayir,1
+229,51,21,23.88,570.62,Aylik,DSL,Otomatik Odeme,Hayir,0
+230,28,71,85.37,6071.35,1 Yillik,Fiber,Otomatik Odeme,Evet,0
+231,46,46,53.9,2428.94,Aylik,Fiber,Otomatik Odeme,Hayir,0
+232,71,6,85.55,528.57,Aylik,Fiber,Otomatik Odeme,Hayir,1
+233,19,68,29.4,1991.89,Aylik,Fiber,Havale,Evet,1
+234,65,10,114.99,1322.6,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+235,48,43,94.85,4092.81,1 Yillik,DSL,Otomatik Odeme,Evet,0
+236,62,57,107.63,6115.88,Aylik,Fiber,Otomatik Odeme,Hayir,1
+237,59,18,33.65,676.7,2 Yillik,Yok,Kredi Karti,Hayir,0
+238,44,20,52.02,948.35,Aylik,DSL,Kredi Karti,Hayir,0
+239,37,35,56.83,1993.77,2 Yillik,DSL,Havale,Evet,0
+240,56,64,73.72,4817.8,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+241,26,17,49.69,838.92,2 Yillik,Yok,Otomatik Odeme,Hayir,0
+242,54,48,26.06,1164.21,2 Yillik,Fiber,Havale,Evet,0
+243,23,33,56.89,1857.57,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+244,58,9,45.45,481.78,Aylik,Fiber,Otomatik Odeme,Hayir,1
+245,56,52,58.59,3065.48,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+246,23,60,39.7,2340.06,2 Yillik,Fiber,Kredi Karti,Hayir,0
+247,64,42,46.19,1905.72,1 Yillik,DSL,Kredi Karti,Hayir,1
+248,43,13,82.7,1047.11,Aylik,DSL,Kredi Karti,Hayir,1
+249,66,12,58.82,723.9,2 Yillik,DSL,Elektronik Cek,Hayir,1
+250,20,31,54.54,1757.65,Aylik,Fiber,Elektronik Cek,Hayir,1
+251,29,37,73.39,2768.05,Aylik,Fiber,Havale,Hayir,0
+252,48,40,97.19,3910.4,Aylik,DSL,Kredi Karti,Hayir,1
+253,29,18,57.89,975.44,Aylik,Fiber,Elektronik Cek,Hayir,0
+254,38,37,78.75,2847.35,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+255,58,22,116.62,2592.3,Aylik,DSL,Havale,Hayir,0
+256,26,50,72.2,3542.73,1 Yillik,Fiber,Havale,Evet,0
+257,60,58,110.98,6425.56,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+258,24,47,99.37,4685.6,Aylik,Fiber,Elektronik Cek,Evet,0
+259,28,1,25.87,0.0,1 Yillik,Yok,Elektronik Cek,Evet,0
+260,54,72,62.91,4478.31,Aylik,Yok,Otomatik Odeme,Hayir,0
+261,67,2,89.83,174.95,2 Yillik,DSL,Havale,Hayir,1
+262,28,72,118.67,8569.42,2 Yillik,DSL,Elektronik Cek,Hayir,1
+263,36,3,65.84,250.6,Aylik,DSL,Otomatik Odeme,Evet,0
+264,75,38,29.28,1142.99,1 Yillik,DSL,Kredi Karti,Evet,1
+265,79,8,76.2,613.28,Aylik,Fiber,Havale,Evet,0
+266,54,7,32.66,191.31,Aylik,Yok,Kredi Karti,Hayir,1
+267,45,50,95.15,4703.95,1 Yillik,Yok,Havale,Evet,0
+268,39,53,70.77,3725.27,Aylik,DSL,Kredi Karti,Hayir,0
+269,55,9,92.34,851.56,1 Yillik,Fiber,Elektronik Cek,Evet,0
+270,54,71,106.94,7609.57,Aylik,DSL,Kredi Karti,Hayir,1
+271,36,24,82.89,1884.36,Aylik,Fiber,Elektronik Cek,Hayir,1
+272,19,23,81.24,1829.24,2 Yillik,DSL,Elektronik Cek,Hayir,0
+273,27,22,95.46,2160.35,Aylik,Yok,Otomatik Odeme,Hayir,1
+274,77,34,104.25,3548.46,1 Yillik,Yok,Havale,Evet,0
+275,43,13,106.91,1318.98,Aylik,DSL,Havale,Hayir,0
+276,47,31,23.64,850.63,2 Yillik,Fiber,Kredi Karti,Hayir,0
+277,46,16,75.62,1208.47,1 Yillik,Fiber,Elektronik Cek,Evet,1
+278,66,4,41.63,185.74,Aylik,Yok,Kredi Karti,Hayir,1
+279,22,27,106.03,2882.79,Aylik,Fiber,Kredi Karti,Hayir,1
+280,23,49,84.84,4138.78,Aylik,DSL,Otomatik Odeme,Hayir,1
+281,35,55,62.02,3374.72,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+282,48,26,38.81,1115.14,Aylik,DSL,Kredi Karti,Hayir,1
+283,59,24,53.9,1343.76,Aylik,Fiber,Elektronik Cek,Hayir,1
+284,48,57,90.38,5192.76,1 Yillik,DSL,Havale,Evet,0
+285,45,50,40.44,2050.81,Aylik,Fiber,Kredi Karti,Evet,0
+286,76,60,29.36,1711.43,Aylik,Yok,Havale,Evet,0
+287,27,66,108.8,7244.68,Aylik,DSL,Otomatik Odeme,Hayir,1
+288,53,60,96.42,5743.04,Aylik,Fiber,Kredi Karti,Hayir,0
+289,51,68,39.98,2732.8,1 Yillik,Fiber,Havale,Evet,0
+290,47,30,49.23,1394.93,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+291,68,29,117.21,3297.05,2 Yillik,Fiber,Havale,Evet,0
+292,34,24,90.82,2195.59,2 Yillik,Fiber,Kredi Karti,Hayir,0
+293,77,17,81.05,1337.4,Aylik,Fiber,Havale,Evet,1
+294,38,54,50.76,2641.58,Aylik,Yok,Elektronik Cek,Hayir,0
+295,51,52,49.91,2622.35,1 Yillik,Fiber,Otomatik Odeme,Hayir,1
+296,50,58,23.95,1495.1,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+297,70,13,92.85,1276.53,1 Yillik,DSL,Kredi Karti,Evet,0
+298,45,36,24.32,862.65,Aylik,DSL,Otomatik Odeme,Hayir,0
+299,35,16,20.49,328.28,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+300,19,65,92.95,6086.14,1 Yillik,Yok,Elektronik Cek,Evet,0
+301,40,20,114.89,2353.91,2 Yillik,Yok,Otomatik Odeme,Hayir,0
+302,69,11,95.65,1034.97,1 Yillik,Yok,Otomatik Odeme,Evet,1
+303,18,42,67.16,2822.43,Aylik,DSL,Kredi Karti,Evet,0
+304,73,64,68.6,4405.43,Aylik,Fiber,Havale,Hayir,0
+305,51,66,63.61,4225.95,Aylik,Fiber,Elektronik Cek,Evet,0
+306,26,7,52.46,360.57,Aylik,Fiber,Havale,Hayir,0
+307,36,24,72.17,1726.08,2 Yillik,DSL,Elektronik Cek,Hayir,0
+308,52,12,63.12,826.43,Aylik,Yok,Elektronik Cek,Evet,0
+309,37,23,79.82,1896.34,Aylik,DSL,Kredi Karti,Evet,0
+310,24,39,109.81,4306.46,Aylik,DSL,Elektronik Cek,Hayir,0
+311,59,21,119.5,2595.46,1 Yillik,Yok,Kredi Karti,Hayir,0
+312,59,5,27.87,120.03,Aylik,Fiber,Elektronik Cek,Hayir,1
+313,25,37,58.47,2244.54,Aylik,Fiber,Havale,Hayir,0
+314,35,4,38.07,179.41,2 Yillik,Fiber,Kredi Karti,Hayir,1
+315,33,17,55.21,1102.12,Aylik,Yok,Otomatik Odeme,Hayir,0
+316,58,1,48.75,0.0,Aylik,DSL,Havale,Evet,1
+317,63,7,37.45,227.68,Aylik,Fiber,Kredi Karti,Hayir,1
+318,63,32,96.41,3106.06,1 Yillik,DSL,Havale,Hayir,0
+319,76,62,69.63,4336.92,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+320,65,56,111.92,6365.03,2 Yillik,Fiber,Kredi Karti,Evet,0
+321,37,8,23.26,152.66,Aylik,Fiber,Havale,Hayir,1
+322,24,3,26.7,125.35,2 Yillik,DSL,Havale,Evet,0
+323,56,25,60.33,1566.37,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+324,74,47,28.03,1352.64,Aylik,Fiber,Kredi Karti,Evet,0
+325,78,54,46.27,2450.53,Aylik,Fiber,Kredi Karti,Evet,0
+326,32,60,118.6,7186.39,Aylik,Fiber,Elektronik Cek,Hayir,0
+327,32,25,40.9,1083.97,2 Yillik,Yok,Kredi Karti,Hayir,0
+328,20,13,39.81,547.51,Aylik,Fiber,Elektronik Cek,Hayir,1
+329,26,2,77.36,164.94,Aylik,Fiber,Havale,Evet,1
+330,52,11,69.8,779.11,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+331,51,5,78.04,386.26,2 Yillik,Fiber,Kredi Karti,Evet,0
+332,40,62,57.67,3607.58,1 Yillik,DSL,Elektronik Cek,Hayir,0
+333,37,20,102.68,2055.16,1 Yillik,DSL,Elektronik Cek,Hayir,0
+334,69,60,33.86,1989.17,Aylik,DSL,Kredi Karti,Hayir,0
+335,46,40,62.84,2461.17,2 Yillik,Fiber,Havale,Evet,0
+336,68,39,88.98,3432.62,Aylik,Yok,Kredi Karti,Evet,1
+337,77,33,106.82,3536.17,Aylik,Fiber,Kredi Karti,Hayir,0
+338,37,59,56.96,3359.29,2 Yillik,Fiber,Elektronik Cek,Evet,0
+339,30,4,76.77,317.85,Aylik,Fiber,Havale,Evet,1
+340,77,7,26.91,213.41,Aylik,Fiber,Otomatik Odeme,Hayir,1
+341,57,31,37.03,1116.56,1 Yillik,Fiber,Havale,Hayir,0
+342,36,29,26.91,853.67,Aylik,Fiber,Elektronik Cek,Hayir,1
+343,56,40,92.79,3698.21,Aylik,Fiber,Elektronik Cek,Hayir,1
+344,49,54,48.81,2614.07,1 Yillik,DSL,Elektronik Cek,Hayir,0
+345,74,43,92.37,3996.03,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+346,33,19,26.64,414.33,1 Yillik,Fiber,Elektronik Cek,Hayir,1
+347,79,24,106.25,2510.47,Aylik,Fiber,Elektronik Cek,Hayir,1
+348,76,55,103.55,5744.3,1 Yillik,Yok,Elektronik Cek,Evet,0
+349,29,15,28.89,346.48,2 Yillik,Fiber,Havale,Hayir,0
+350,28,37,22.38,883.94,Aylik,Fiber,Elektronik Cek,Hayir,1
+351,51,39,25.63,1075.13,Aylik,DSL,Otomatik Odeme,Hayir,1
+352,20,55,105.36,5776.33,Aylik,Fiber,Elektronik Cek,Evet,0
+353,36,52,43.47,2275.03,Aylik,Yok,Elektronik Cek,Evet,0
+354,44,34,74.83,2600.17,Aylik,Yok,Kredi Karti,Hayir,0
+355,78,23,62.62,1416.92,1 Yillik,Yok,Havale,Hayir,0
+356,79,27,99.55,2731.24,2 Yillik,DSL,Kredi Karti,Hayir,1
+357,27,30,68.89,2033.14,Aylik,Fiber,Kredi Karti,Hayir,0
+358,73,16,70.07,1097.24,1 Yillik,Yok,Havale,Hayir,1
+359,23,46,118.91,5429.89,Aylik,Fiber,Havale,Evet,0
+360,64,16,35.01,577.29,Aylik,Fiber,Elektronik Cek,Evet,1
+361,70,47,103.07,4902.19,1 Yillik,Fiber,Otomatik Odeme,Evet,1
+362,73,55,25.17,1375.14,Aylik,Fiber,Otomatik Odeme,Hayir,1
+363,31,70,67.76,4679.64,2 Yillik,DSL,Havale,Hayir,0
+364,73,9,108.63,923.53,Aylik,DSL,Havale,Hayir,1
+365,25,55,86.52,4778.33,Aylik,Yok,Elektronik Cek,Hayir,0
+366,50,7,88.52,711.85,Aylik,Yok,Havale,Hayir,0
+367,47,25,46.33,1177.94,Aylik,Yok,Otomatik Odeme,Hayir,0
+368,37,13,61.86,784.84,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+369,19,12,56.66,718.23,1 Yillik,DSL,Elektronik Cek,Hayir,0
+370,65,13,72.14,925.85,Aylik,DSL,Kredi Karti,Hayir,0
+371,38,4,66.22,245.97,Aylik,Yok,Elektronik Cek,Evet,1
+372,59,60,52.69,3113.48,1 Yillik,Fiber,Otomatik Odeme,Hayir,1
+373,43,5,50.55,323.17,1 Yillik,Yok,Kredi Karti,Evet,1
+374,41,29,45.09,1180.65,Aylik,DSL,Kredi Karti,Evet,0
+375,72,51,56.5,2921.39,Aylik,Fiber,Elektronik Cek,Hayir,0
+376,23,72,34.99,2496.09,Aylik,Fiber,Havale,Hayir,1
+377,63,62,107.21,6626.5,Aylik,DSL,Elektronik Cek,Evet,1
+378,64,10,80.21,886.72,Aylik,Yok,Havale,Evet,0
+379,41,72,33.38,2367.65,Aylik,Fiber,Otomatik Odeme,Hayir,1
+380,34,48,89.39,4256.72,Aylik,DSL,Havale,Evet,0
+381,18,13,104.77,1355.49,Aylik,DSL,Havale,Evet,0
+382,76,33,43.75,1464.44,Aylik,Yok,Kredi Karti,Hayir,0
+383,76,67,35.06,2326.93,2 Yillik,Fiber,Kredi Karti,Hayir,0
+384,32,29,20.86,526.25,1 Yillik,Fiber,Kredi Karti,Hayir,1
+385,19,14,24.73,302.94,Aylik,Fiber,Otomatik Odeme,Hayir,0
+386,25,64,96.23,6222.79,Aylik,Fiber,Havale,Hayir,1
+387,22,69,118.72,8195.42,Aylik,Fiber,Kredi Karti,Evet,1
+388,69,71,24.49,1761.34,2 Yillik,Yok,Havale,Hayir,0
+389,73,69,94.81,6528.82,1 Yillik,DSL,Elektronik Cek,Hayir,0
+390,27,63,27.19,1680.0,Aylik,Fiber,Otomatik Odeme,Hayir,1
+391,64,33,79.21,2697.81,2 Yillik,DSL,Otomatik Odeme,Evet,0
+392,29,14,95.61,1329.13,2 Yillik,DSL,Kredi Karti,Evet,0
+393,40,45,55.92,2494.23,2 Yillik,Fiber,Otomatik Odeme,Evet,0
+394,55,16,21.09,392.25,Aylik,Yok,Havale,Evet,0
+395,62,35,79.52,2747.08,Aylik,DSL,Otomatik Odeme,Evet,0
+396,72,48,119.12,5688.02,1 Yillik,Fiber,Kredi Karti,Hayir,0
+397,20,69,45.76,3157.95,Aylik,Fiber,Elektronik Cek,Evet,1
+398,30,21,38.95,817.96,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+399,35,19,32.39,628.39,1 Yillik,Fiber,Kredi Karti,Hayir,0
+400,37,53,75.53,4107.67,Aylik,Yok,Otomatik Odeme,Hayir,0
+401,79,1,79.64,96.45,Aylik,DSL,Kredi Karti,Hayir,1
+402,66,41,99.23,3949.53,Aylik,DSL,Otomatik Odeme,Hayir,1
+403,37,54,95.31,5163.05,Aylik,Yok,Elektronik Cek,Evet,1
+404,78,40,109.25,4371.89,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+405,48,28,100.58,2818.41,1 Yillik,DSL,Otomatik Odeme,Evet,0
+406,49,60,44.73,2696.1,Aylik,Yok,Havale,Evet,0
+407,44,27,75.59,2039.5,1 Yillik,Yok,Havale,Evet,0
+408,26,52,49.74,2583.85,Aylik,Fiber,Elektronik Cek,Hayir,1
+409,75,34,52.98,1831.97,1 Yillik,Fiber,Kredi Karti,Evet,0
+410,18,2,113.19,199.28,Aylik,Yok,Havale,Hayir,1
+411,28,39,88.19,3392.03,1 Yillik,Fiber,Kredi Karti,Hayir,1
+412,32,4,117.46,621.03,1 Yillik,Fiber,Otomatik Odeme,Hayir,1
+413,35,68,61.69,4159.13,Aylik,Yok,Kredi Karti,Evet,1
+414,26,44,73.74,3249.57,1 Yillik,Fiber,Havale,Hayir,0
+415,19,27,68.71,1780.39,2 Yillik,Fiber,Havale,Hayir,0
+416,60,36,30.73,1112.1,Aylik,Fiber,Havale,Hayir,1
+417,78,45,43.67,1918.49,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+418,25,19,72.76,1360.32,2 Yillik,Fiber,Otomatik Odeme,Hayir,0
+419,36,21,26.74,613.79,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+420,49,31,113.15,3531.25,Aylik,Fiber,Otomatik Odeme,Hayir,0
+421,75,19,32.38,643.64,1 Yillik,Yok,Kredi Karti,Hayir,0
+422,61,55,39.8,2100.44,2 Yillik,Fiber,Otomatik Odeme,Evet,0
+423,65,8,96.53,864.08,1 Yillik,DSL,Kredi Karti,Evet,0
+424,54,60,29.69,1721.81,Aylik,DSL,Kredi Karti,Evet,0
+425,43,26,110.03,2937.21,Aylik,DSL,Kredi Karti,Evet,1
+426,30,41,92.57,3846.45,1 Yillik,Fiber,Kredi Karti,Evet,0
+427,71,12,26.86,351.19,Aylik,Fiber,Otomatik Odeme,Hayir,0
+428,67,28,89.18,2454.29,Aylik,DSL,Havale,Hayir,1
+429,19,55,83.16,4581.38,Aylik,Yok,Otomatik Odeme,Hayir,0
+430,62,20,95.73,1891.05,1 Yillik,DSL,Havale,Hayir,1
+431,23,10,102.82,1029.65,Aylik,DSL,Kredi Karti,Hayir,1
+432,63,38,91.84,3477.43,2 Yillik,Yok,Havale,Evet,0
+433,69,12,78.62,841.51,1 Yillik,Fiber,Kredi Karti,Hayir,0
+434,26,23,52.25,1257.84,2 Yillik,Fiber,Havale,Evet,0
+435,44,33,89.73,2957.03,2 Yillik,Yok,Elektronik Cek,Hayir,0
+436,25,41,115.7,4719.46,Aylik,Yok,Otomatik Odeme,Hayir,0
+437,53,47,78.75,3673.23,1 Yillik,DSL,Elektronik Cek,Hayir,0
+438,75,49,86.43,4252.99,Aylik,Fiber,Kredi Karti,Evet,1
+439,23,61,63.71,3841.62,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+440,42,5,95.61,365.29,Aylik,DSL,Elektronik Cek,Evet,1
+441,78,27,119.77,3254.15,1 Yillik,Yok,Kredi Karti,Evet,0
+442,36,1,36.04,62.0,2 Yillik,Fiber,Otomatik Odeme,Evet,0
+443,26,1,40.24,30.26,Aylik,Yok,Otomatik Odeme,Evet,0
+444,48,16,73.94,1125.64,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+445,49,44,68.14,3002.61,Aylik,Fiber,Havale,Hayir,0
+446,59,65,77.16,4942.17,Aylik,DSL,Havale,Evet,0
+447,37,56,24.91,1343.6,Aylik,Yok,Havale,Hayir,0
+448,77,47,60.43,2802.68,Aylik,Fiber,Kredi Karti,Hayir,0
+449,50,57,78.3,4505.3,1 Yillik,DSL,Havale,Hayir,0
+450,35,13,78.52,1002.63,2 Yillik,DSL,Kredi Karti,Hayir,0
+451,77,61,85.73,5207.14,Aylik,Fiber,Kredi Karti,Hayir,1
+452,75,65,92.02,6079.03,1 Yillik,DSL,Elektronik Cek,Hayir,0
+453,48,7,84.15,606.67,2 Yillik,Fiber,Kredi Karti,Hayir,1
+454,19,34,99.02,3383.63,1 Yillik,Fiber,Havale,Hayir,0
+455,55,60,82.48,4930.31,Aylik,DSL,Havale,Hayir,0
+456,52,35,73.75,2551.43,2 Yillik,Fiber,Kredi Karti,Hayir,0
+457,27,61,80.62,4808.5,Aylik,DSL,Otomatik Odeme,Evet,0
+458,57,68,30.12,2096.6,1 Yillik,Yok,Otomatik Odeme,Hayir,0
+459,70,35,47.32,1678.62,1 Yillik,Yok,Elektronik Cek,Hayir,0
+460,24,5,72.74,354.74,1 Yillik,DSL,Elektronik Cek,Evet,0
+461,62,25,107.3,2675.64,Aylik,Fiber,Kredi Karti,Hayir,1
+462,26,16,87.91,1443.37,Aylik,Fiber,Otomatik Odeme,Hayir,1
+463,64,35,29.04,938.66,1 Yillik,Yok,Otomatik Odeme,Evet,0
+464,43,43,79.23,3377.4,Aylik,Fiber,Havale,Evet,0
+465,18,34,42.17,1376.96,Aylik,Fiber,Elektronik Cek,Hayir,1
+466,77,15,93.4,1489.58,1 Yillik,Yok,Otomatik Odeme,Hayir,0
+467,28,22,102.74,2304.06,1 Yillik,DSL,Elektronik Cek,Hayir,0
+468,54,49,79.35,3778.02,Aylik,Fiber,Kredi Karti,Evet,1
+469,29,2,79.14,82.59,Aylik,DSL,Havale,Hayir,0
+470,75,16,53.86,855.14,2 Yillik,Fiber,Kredi Karti,Hayir,1
+471,63,65,64.63,4177.33,Aylik,Fiber,Havale,Evet,0
+472,67,8,106.41,785.06,Aylik,Yok,Otomatik Odeme,Hayir,1
+473,44,30,92.33,2867.14,Aylik,Fiber,Kredi Karti,Evet,1
+474,46,15,71.98,1095.33,Aylik,DSL,Otomatik Odeme,Hayir,1
+475,57,8,56.82,478.3,2 Yillik,Yok,Havale,Hayir,0
+476,66,31,25.04,741.64,Aylik,Yok,Havale,Evet,1
+477,70,38,34.3,1339.51,Aylik,Fiber,Elektronik Cek,Hayir,0
+478,19,13,39.3,491.88,Aylik,Fiber,Kredi Karti,Hayir,0
+479,59,6,57.34,329.87,Aylik,DSL,Kredi Karti,Hayir,1
+480,24,10,114.41,1174.65,Aylik,Fiber,Havale,Hayir,1
+481,35,47,70.52,3232.99,2 Yillik,DSL,Kredi Karti,Evet,0
+482,69,62,43.48,2775.61,1 Yillik,DSL,Otomatik Odeme,Evet,0
+483,33,13,30.58,406.66,Aylik,Yok,Elektronik Cek,Hayir,0
+484,67,24,53.83,1355.97,Aylik,Fiber,Otomatik Odeme,Evet,1
+485,46,25,101.57,2485.48,Aylik,DSL,Otomatik Odeme,Evet,0
+486,32,26,58.33,1470.42,Aylik,DSL,Havale,Hayir,0
+487,38,18,97.25,1692.4,1 Yillik,Yok,Otomatik Odeme,Evet,0
+488,50,4,100.27,413.59,Aylik,DSL,Kredi Karti,Hayir,1
+489,65,38,31.08,1184.34,1 Yillik,DSL,Havale,Hayir,1
+490,55,26,80.87,2079.4,2 Yillik,DSL,Elektronik Cek,Hayir,0
+491,75,25,115.91,2847.05,Aylik,DSL,Havale,Evet,0
+492,71,20,60.21,1140.87,2 Yillik,DSL,Elektronik Cek,Hayir,0
+493,64,67,25.09,1678.61,Aylik,Yok,Otomatik Odeme,Hayir,0
+494,55,44,112.33,4919.24,Aylik,DSL,Havale,Hayir,1
+495,35,31,108.37,3325.19,2 Yillik,Fiber,Havale,Hayir,0
+496,43,15,72.21,1160.5,Aylik,Fiber,Elektronik Cek,Hayir,1
+497,25,58,75.23,4359.22,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+498,41,64,41.17,2698.38,1 Yillik,Fiber,Otomatik Odeme,Evet,0
+499,75,3,101.95,279.19,Aylik,Fiber,Otomatik Odeme,Hayir,1
+500,44,67,69.86,4692.86,2 Yillik,Fiber,Kredi Karti,Evet,0
+501,25,51,23.39,1190.12,Aylik,Fiber,Kredi Karti,Hayir,1
+502,58,8,88.3,621.52,2 Yillik,Fiber,Elektronik Cek,Hayir,1
+503,77,55,115.05,6399.17,Aylik,Fiber,Havale,Evet,1
+504,71,8,102.92,816.6,Aylik,Fiber,Elektronik Cek,Hayir,1
+505,34,4,47.72,228.2,Aylik,DSL,Otomatik Odeme,Hayir,1
+506,46,9,25.33,190.37,2 Yillik,Fiber,Elektronik Cek,Evet,1
+507,50,34,114.04,3869.12,Aylik,Fiber,Havale,Hayir,0
+508,33,45,113.71,5073.61,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+509,34,30,73.24,2259.0,Aylik,Yok,Havale,Hayir,0
+510,32,9,84.23,773.64,Aylik,DSL,Elektronik Cek,Hayir,1
+511,79,15,66.26,1012.25,Aylik,DSL,Kredi Karti,Hayir,1
+512,64,62,61.98,3910.67,Aylik,Yok,Elektronik Cek,Hayir,1
+513,70,70,31.94,2293.62,2 Yillik,DSL,Havale,Evet,0
+514,68,55,29.68,1670.67,Aylik,Fiber,Kredi Karti,Evet,1
+515,77,8,43.27,275.07,1 Yillik,Fiber,Kredi Karti,Hayir,1
+516,24,60,103.66,6184.82,1 Yillik,Yok,Elektronik Cek,Hayir,0
+517,72,50,34.58,1678.81,Aylik,Fiber,Kredi Karti,Hayir,1
+518,22,38,42.67,1657.84,1 Yillik,Fiber,Kredi Karti,Hayir,0
+519,47,11,74.86,831.99,2 Yillik,Fiber,Kredi Karti,Hayir,1
+520,54,72,41.51,2919.19,1 Yillik,Fiber,Kredi Karti,Hayir,0
+521,40,32,36.32,1152.8,Aylik,Yok,Havale,Hayir,0
+522,27,4,76.33,230.61,1 Yillik,Yok,Havale,Hayir,0
+523,29,16,56.81,906.3,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+524,69,29,82.62,2313.21,Aylik,Yok,Elektronik Cek,Hayir,1
+525,37,5,111.22,582.54,1 Yillik,Fiber,Elektronik Cek,Evet,1
+526,37,24,35.1,861.3,Aylik,DSL,Otomatik Odeme,Hayir,0
+527,75,34,111.34,3880.96,1 Yillik,DSL,Kredi Karti,Evet,0
+528,26,69,110.25,7649.64,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+529,74,7,102.91,699.22,2 Yillik,DSL,Kredi Karti,Hayir,1
+530,75,42,83.13,3532.36,2 Yillik,Fiber,Otomatik Odeme,Hayir,1
+531,55,66,82.01,5342.78,1 Yillik,Fiber,Havale,Hayir,0
+532,28,59,83.92,4903.16,1 Yillik,Fiber,Havale,Hayir,0
+533,27,67,89.05,5983.01,Aylik,DSL,Kredi Karti,Hayir,1
+534,35,13,21.65,173.54,Aylik,Yok,Elektronik Cek,Hayir,0
+535,53,58,115.81,6715.12,Aylik,Fiber,Havale,Hayir,1
+536,27,71,78.56,5526.75,Aylik,DSL,Otomatik Odeme,Hayir,1
+537,46,24,98.15,2360.67,2 Yillik,Fiber,Kredi Karti,Evet,0
+538,25,36,57.73,2024.39,2 Yillik,Fiber,Havale,Evet,0
+539,51,39,21.24,849.57,Aylik,Fiber,Otomatik Odeme,Evet,0
+540,19,36,70.97,2555.89,Aylik,Fiber,Otomatik Odeme,Hayir,0
+541,61,21,70.72,1555.14,1 Yillik,DSL,Otomatik Odeme,Evet,0
+542,21,70,63.7,4459.34,Aylik,Yok,Elektronik Cek,Hayir,1
+543,30,69,53.97,3685.5,2 Yillik,Fiber,Otomatik Odeme,Hayir,0
+544,28,28,44.98,1247.1,2 Yillik,DSL,Kredi Karti,Hayir,0
+545,69,58,72.75,4152.29,Aylik,Fiber,Otomatik Odeme,Evet,0
+546,21,29,57.53,1688.68,Aylik,Fiber,Elektronik Cek,Hayir,0
+547,44,58,116.99,6814.91,Aylik,Fiber,Havale,Hayir,1
+548,54,43,37.29,1726.93,Aylik,Fiber,Kredi Karti,Hayir,0
+549,49,34,51.97,1735.89,Aylik,Fiber,Elektronik Cek,Evet,1
+550,60,10,49.4,480.61,Aylik,Fiber,Kredi Karti,Hayir,1
+551,67,48,74.33,3539.05,Aylik,DSL,Elektronik Cek,Evet,0
+552,42,24,69.93,1688.93,Aylik,DSL,Kredi Karti,Evet,0
+553,69,16,84.37,1369.0,Aylik,Yok,Havale,Hayir,0
+554,37,14,115.0,1607.33,1 Yillik,Fiber,Kredi Karti,Evet,0
+555,79,71,48.52,3499.24,Aylik,Fiber,Havale,Evet,0
+556,49,8,89.28,683.39,2 Yillik,DSL,Havale,Hayir,1
+557,63,58,22.5,1354.31,Aylik,Fiber,Kredi Karti,Hayir,1
+558,72,63,46.24,2940.04,Aylik,DSL,Otomatik Odeme,Evet,0
+559,67,3,66.37,198.51,Aylik,DSL,Otomatik Odeme,Evet,0
+560,70,43,23.1,977.55,1 Yillik,DSL,Havale,Evet,0
+561,51,42,81.77,3555.67,Aylik,Fiber,Kredi Karti,Hayir,1
+562,20,26,87.83,2242.73,Aylik,Fiber,Otomatik Odeme,Evet,1
+563,48,49,94.67,4653.73,Aylik,DSL,Elektronik Cek,Hayir,0
+564,29,30,71.66,2112.29,2 Yillik,DSL,Elektronik Cek,Hayir,1
+565,73,32,80.39,2661.76,Aylik,Fiber,Elektronik Cek,Evet,0
+566,32,32,59.61,1951.86,Aylik,Fiber,Kredi Karti,Hayir,0
+567,32,58,24.13,1365.62,2 Yillik,Fiber,Havale,Evet,0
+568,33,46,30.0,1405.63,Aylik,DSL,Kredi Karti,Evet,0
+569,57,28,85.5,2406.88,Aylik,Fiber,Elektronik Cek,Evet,0
+570,53,67,119.56,7984.69,2 Yillik,Yok,Otomatik Odeme,Hayir,1
+571,76,58,21.58,1289.55,Aylik,Fiber,Elektronik Cek,Hayir,0
+572,43,68,75.76,5171.15,Aylik,DSL,Elektronik Cek,Hayir,0
+573,35,53,95.1,5051.08,Aylik,Fiber,Elektronik Cek,Hayir,1
+574,21,29,102.68,2975.62,Aylik,DSL,Otomatik Odeme,Hayir,0
+575,18,56,74.52,4194.67,2 Yillik,DSL,Kredi Karti,Hayir,1
+576,41,24,81.99,1979.23,1 Yillik,DSL,Havale,Evet,0
+577,75,20,89.67,1796.35,1 Yillik,Yok,Havale,Hayir,1
+578,50,33,105.9,3462.65,Aylik,Fiber,Elektronik Cek,Hayir,1
+579,73,70,32.23,2340.79,1 Yillik,Yok,Havale,Hayir,0
+580,24,41,112.62,4564.9,1 Yillik,Fiber,Otomatik Odeme,Hayir,1
+581,23,28,22.6,654.18,Aylik,Fiber,Havale,Hayir,1
+582,69,34,103.62,3507.07,2 Yillik,DSL,Otomatik Odeme,Evet,0
+583,24,21,27.67,669.05,1 Yillik,Fiber,Otomatik Odeme,Evet,0
+584,21,48,39.46,1848.91,1 Yillik,DSL,Kredi Karti,Hayir,0
+585,43,26,20.39,493.38,Aylik,Fiber,Otomatik Odeme,Hayir,0
+586,75,40,64.53,2532.71,Aylik,DSL,Otomatik Odeme,Hayir,0
+587,60,27,53.44,1459.05,1 Yillik,Fiber,Kredi Karti,Hayir,0
+588,24,24,36.6,809.75,1 Yillik,Fiber,Havale,Hayir,0
+589,69,70,65.11,4533.77,Aylik,DSL,Otomatik Odeme,Hayir,0
+590,70,25,60.24,1398.38,Aylik,DSL,Otomatik Odeme,Hayir,1
+591,67,6,96.77,592.64,2 Yillik,Yok,Havale,Evet,0
+592,73,28,109.31,3035.67,Aylik,DSL,Elektronik Cek,Hayir,1
+593,32,39,85.26,3250.74,Aylik,DSL,Kredi Karti,Hayir,0
+594,78,7,32.44,281.36,1 Yillik,DSL,Elektronik Cek,Hayir,0
+595,37,23,49.54,1074.04,Aylik,Fiber,Elektronik Cek,Evet,0
+596,67,12,111.33,1375.81,Aylik,Fiber,Havale,Hayir,0
+597,53,37,28.87,1033.14,Aylik,DSL,Havale,Hayir,0
+598,66,53,60.69,3296.65,2 Yillik,Fiber,Otomatik Odeme,Hayir,1
+599,56,70,114.25,8034.98,Aylik,Fiber,Havale,Hayir,0
+600,57,29,115.07,3286.63,1 Yillik,DSL,Havale,Hayir,0
+601,56,63,61.12,3804.71,2 Yillik,Yok,Havale,Hayir,0
+602,66,16,86.74,1418.12,1 Yillik,Yok,Havale,Hayir,1
+603,63,57,65.67,3730.07,Aylik,DSL,Havale,Hayir,0
+604,26,41,95.35,3900.88,Aylik,DSL,Elektronik Cek,Evet,0
+605,69,55,23.16,1337.41,Aylik,DSL,Otomatik Odeme,Hayir,0
+606,51,55,34.42,1855.67,1 Yillik,DSL,Elektronik Cek,Hayir,0
+607,38,39,81.42,3179.94,2 Yillik,Fiber,Kredi Karti,Hayir,0
+608,49,19,43.26,869.67,1 Yillik,Fiber,Havale,Evet,0
+609,77,38,86.61,3331.64,Aylik,Fiber,Elektronik Cek,Hayir,1
+610,71,60,55.12,3299.22,Aylik,DSL,Elektronik Cek,Hayir,0
+611,69,70,108.66,7591.75,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+612,46,67,101.93,6742.37,Aylik,Yok,Havale,Hayir,0
+613,66,14,69.28,917.11,2 Yillik,Yok,Havale,Hayir,0
+614,41,44,97.29,4296.68,Aylik,DSL,Elektronik Cek,Hayir,1
+615,60,8,47.11,369.99,1 Yillik,Fiber,Kredi Karti,Hayir,0
+616,57,49,69.43,3405.82,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+617,33,72,39.75,2913.96,Aylik,Fiber,Otomatik Odeme,Hayir,0
+618,34,4,106.09,364.99,Aylik,Fiber,Elektronik Cek,Hayir,1
+619,21,48,102.31,4899.07,2 Yillik,Yok,Havale,Hayir,0
+620,26,69,110.21,7613.93,Aylik,DSL,Otomatik Odeme,Hayir,0
+621,44,61,107.75,6537.54,Aylik,DSL,Elektronik Cek,Hayir,0
+622,47,29,115.96,3434.41,Aylik,Yok,Elektronik Cek,Hayir,0
+623,28,8,42.83,388.07,Aylik,DSL,Otomatik Odeme,Hayir,1
+624,43,67,113.18,7597.57,1 Yillik,DSL,Kredi Karti,Evet,0
+625,55,67,77.12,5256.75,Aylik,Fiber,Otomatik Odeme,Evet,0
+626,32,42,62.25,2539.56,Aylik,Fiber,Elektronik Cek,Evet,0
+627,38,71,76.04,5398.45,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+628,40,1,54.26,72.58,Aylik,Fiber,Kredi Karti,Hayir,1
+629,49,45,48.86,2152.97,Aylik,Fiber,Otomatik Odeme,Hayir,1
+630,40,3,44.13,147.43,1 Yillik,DSL,Kredi Karti,Hayir,0
+631,63,68,28.24,1864.99,2 Yillik,Fiber,Otomatik Odeme,Hayir,1
+632,38,49,69.66,3447.87,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+633,44,66,108.78,7232.37,2 Yillik,Yok,Havale,Hayir,0
+634,41,41,83.02,3417.44,Aylik,DSL,Havale,Hayir,0
+635,29,6,72.1,339.96,Aylik,DSL,Kredi Karti,Hayir,1
+636,60,2,62.86,77.38,2 Yillik,Fiber,Havale,Evet,0
+637,32,25,66.44,1689.24,2 Yillik,DSL,Kredi Karti,Evet,0
+638,36,54,40.93,2211.28,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+639,67,11,102.29,990.49,Aylik,Yok,Elektronik Cek,Hayir,1
+640,76,62,39.84,2532.22,Aylik,Fiber,Kredi Karti,Evet,0
+641,59,18,91.66,1656.71,Aylik,DSL,Otomatik Odeme,Hayir,1
+642,74,36,96.0,3415.05,2 Yillik,DSL,Kredi Karti,Evet,0
+643,70,15,77.49,1212.1,2 Yillik,DSL,Elektronik Cek,Evet,1
+644,47,34,106.29,3579.98,Aylik,Fiber,Kredi Karti,Hayir,0
+645,65,33,49.11,1586.21,Aylik,Fiber,Kredi Karti,Hayir,0
+646,38,1,108.16,126.08,Aylik,DSL,Kredi Karti,Hayir,1
+647,46,41,92.94,3899.59,Aylik,Fiber,Havale,Hayir,1
+648,51,57,99.87,5773.77,1 Yillik,DSL,Elektronik Cek,Hayir,0
+649,77,68,86.46,5897.27,1 Yillik,DSL,Otomatik Odeme,Hayir,1
+650,70,24,104.63,2534.24,Aylik,DSL,Otomatik Odeme,Hayir,1
+651,48,64,119.31,7675.41,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+652,58,64,62.02,3906.43,2 Yillik,DSL,Elektronik Cek,Evet,0
+653,30,72,101.39,7332.29,Aylik,DSL,Havale,Hayir,1
+654,67,27,94.46,2513.72,Aylik,Fiber,Havale,Evet,0
+655,52,62,65.29,4063.9,Aylik,Fiber,Otomatik Odeme,Hayir,0
+656,51,41,112.69,4608.92,Aylik,DSL,Elektronik Cek,Hayir,0
+657,65,5,59.44,322.26,Aylik,DSL,Elektronik Cek,Evet,1
+658,57,20,76.55,1536.91,1 Yillik,DSL,Kredi Karti,Hayir,0
+659,22,49,30.59,1345.26,Aylik,Fiber,Havale,Hayir,1
+660,35,12,42.58,519.9,Aylik,Fiber,Elektronik Cek,Hayir,0
+661,28,32,104.07,3362.35,2 Yillik,DSL,Havale,Evet,0
+662,63,56,59.66,3363.26,Aylik,Fiber,Elektronik Cek,Evet,0
+663,20,11,59.41,648.38,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+664,30,36,44.6,1687.71,1 Yillik,DSL,Kredi Karti,Hayir,1
+665,55,16,69.16,1122.13,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+666,61,39,100.58,3944.5,1 Yillik,DSL,Otomatik Odeme,Hayir,1
+667,49,18,109.52,2023.58,2 Yillik,DSL,Havale,Hayir,0
+668,71,70,27.01,1908.83,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+669,74,6,77.48,419.98,Aylik,DSL,Kredi Karti,Hayir,1
+670,26,70,66.73,4549.18,Aylik,Yok,Havale,Evet,0
+671,77,58,81.43,4699.08,Aylik,Fiber,Kredi Karti,Hayir,1
+672,56,62,64.73,4051.31,Aylik,Fiber,Elektronik Cek,Hayir,1
+673,57,62,59.86,3693.67,Aylik,Fiber,Otomatik Odeme,Hayir,1
+674,23,14,67.19,980.72,Aylik,Fiber,Elektronik Cek,Evet,0
+675,56,68,78.2,5325.04,Aylik,Yok,Elektronik Cek,Evet,0
+676,62,43,70.1,3078.7,Aylik,Yok,Kredi Karti,Hayir,1
+677,54,70,67.21,4689.94,Aylik,Fiber,Otomatik Odeme,Hayir,0
+678,23,64,101.78,6537.3,1 Yillik,DSL,Kredi Karti,Hayir,1
+679,50,42,94.56,3996.81,1 Yillik,Fiber,Elektronik Cek,Evet,0
+680,76,27,54.14,1536.86,2 Yillik,DSL,Elektronik Cek,Hayir,0
+681,62,9,100.06,815.21,Aylik,Fiber,Otomatik Odeme,Hayir,1
+682,26,8,105.37,820.04,2 Yillik,Fiber,Otomatik Odeme,Hayir,0
+683,77,29,35.35,1067.58,1 Yillik,Fiber,Elektronik Cek,Evet,0
+684,77,59,78.27,4695.22,Aylik,Fiber,Elektronik Cek,Hayir,0
+685,28,37,48.53,1807.61,2 Yillik,DSL,Havale,Hayir,0
+686,67,35,93.92,3272.56,Aylik,Fiber,Elektronik Cek,Hayir,1
+687,43,18,43.88,827.7,1 Yillik,DSL,Elektronik Cek,Hayir,0
+688,54,41,87.14,3616.18,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+689,45,46,45.51,2075.48,Aylik,Fiber,Elektronik Cek,Hayir,1
+690,66,71,71.11,5065.33,1 Yillik,DSL,Havale,Hayir,0
+691,79,53,114.86,6146.61,Aylik,Fiber,Kredi Karti,Hayir,1
+692,67,44,58.13,2652.24,Aylik,DSL,Kredi Karti,Hayir,0
+693,75,66,107.57,7136.75,Aylik,Fiber,Havale,Evet,0
+694,76,31,118.69,3681.6,Aylik,Fiber,Havale,Hayir,1
+695,23,68,107.49,7306.62,Aylik,Fiber,Elektronik Cek,Hayir,1
+696,33,27,36.59,1015.8,1 Yillik,Fiber,Otomatik Odeme,Evet,0
+697,62,10,101.97,1013.92,Aylik,Yok,Elektronik Cek,Evet,1
+698,54,31,23.21,728.99,Aylik,Fiber,Otomatik Odeme,Hayir,0
+699,21,10,59.33,540.41,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+700,23,9,107.07,1028.48,Aylik,Fiber,Otomatik Odeme,Hayir,1
+701,50,64,88.88,5631.31,Aylik,Fiber,Otomatik Odeme,Evet,1
+702,56,58,73.27,4228.05,1 Yillik,Fiber,Kredi Karti,Hayir,1
+703,28,16,58.79,945.52,2 Yillik,Yok,Elektronik Cek,Hayir,0
+704,28,61,101.23,6274.58,Aylik,DSL,Elektronik Cek,Hayir,0
+705,26,5,90.96,433.67,Aylik,DSL,Otomatik Odeme,Hayir,1
+706,53,21,66.84,1370.34,1 Yillik,DSL,Elektronik Cek,Hayir,0
+707,18,51,109.25,5544.21,2 Yillik,DSL,Kredi Karti,Hayir,1
+708,53,22,42.99,1028.72,Aylik,Fiber,Kredi Karti,Evet,0
+709,47,53,37.04,1822.5,Aylik,DSL,Kredi Karti,Hayir,0
+710,46,63,84.28,5259.5,Aylik,Fiber,Kredi Karti,Hayir,1
+711,60,5,117.2,722.56,1 Yillik,DSL,Kredi Karti,Hayir,1
+712,50,2,44.73,119.0,2 Yillik,DSL,Otomatik Odeme,Evet,0
+713,63,68,44.97,3002.66,1 Yillik,Fiber,Havale,Evet,0
+714,65,38,33.95,1288.0,Aylik,Fiber,Elektronik Cek,Hayir,1
+715,75,37,106.06,3927.59,1 Yillik,Fiber,Otomatik Odeme,Evet,0
+716,67,34,42.64,1492.07,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+717,50,32,70.32,2342.22,Aylik,Yok,Havale,Hayir,1
+718,48,50,119.09,5973.93,2 Yillik,Fiber,Havale,Evet,0
+719,32,42,21.21,863.83,Aylik,DSL,Otomatik Odeme,Evet,0
+720,55,12,75.65,947.15,Aylik,DSL,Elektronik Cek,Hayir,0
+721,26,46,71.23,3241.67,1 Yillik,Yok,Otomatik Odeme,Hayir,0
+722,75,49,100.74,4884.59,Aylik,Fiber,Kredi Karti,Hayir,1
+723,70,9,55.53,411.77,2 Yillik,Fiber,Kredi Karti,Hayir,0
+724,25,28,61.03,1630.58,Aylik,Fiber,Kredi Karti,Evet,0
+725,66,57,36.79,2052.21,Aylik,DSL,Elektronik Cek,Evet,0
+726,25,45,94.08,4174.71,Aylik,Fiber,Elektronik Cek,Evet,0
+727,62,10,98.47,1000.36,Aylik,Fiber,Havale,Hayir,1
+728,23,3,33.67,41.04,Aylik,Yok,Havale,Hayir,0
+729,48,42,59.35,2335.52,1 Yillik,DSL,Elektronik Cek,Hayir,1
+730,58,34,109.29,3663.66,Aylik,Fiber,Otomatik Odeme,Evet,0
+731,63,70,20.27,1395.31,Aylik,DSL,Otomatik Odeme,Hayir,0
+732,43,38,49.88,1865.17,1 Yillik,Yok,Havale,Hayir,0
+733,75,68,75.5,5209.98,Aylik,DSL,Elektronik Cek,Hayir,0
+734,66,16,53.41,823.88,1 Yillik,Fiber,Kredi Karti,Hayir,0
+735,30,33,47.2,1601.65,Aylik,DSL,Otomatik Odeme,Evet,0
+736,59,11,66.0,725.05,Aylik,Fiber,Kredi Karti,Hayir,1
+737,63,42,38.15,1600.18,1 Yillik,Fiber,Havale,Hayir,0
+738,38,14,72.96,979.67,1 Yillik,DSL,Elektronik Cek,Hayir,0
+739,63,36,90.67,3261.18,2 Yillik,Yok,Otomatik Odeme,Evet,0
+740,73,25,77.53,1900.0,Aylik,Yok,Kredi Karti,Hayir,1
+741,68,14,29.31,418.84,Aylik,Yok,Elektronik Cek,Hayir,0
+742,65,7,104.44,719.27,1 Yillik,DSL,Kredi Karti,Hayir,0
+743,57,37,37.5,1340.27,1 Yillik,Fiber,Kredi Karti,Evet,0
+744,34,69,96.48,6706.71,1 Yillik,Fiber,Havale,Hayir,1
+745,67,15,56.06,862.24,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+746,40,30,98.28,2926.0,1 Yillik,Fiber,Havale,Hayir,0
+747,50,17,40.63,697.98,Aylik,Fiber,Otomatik Odeme,Hayir,0
+748,37,59,38.67,2277.34,1 Yillik,DSL,Elektronik Cek,Evet,0
+749,37,30,69.7,2047.62,Aylik,Fiber,Havale,Evet,0
+750,27,71,23.29,1657.11,Aylik,DSL,Havale,Hayir,1
+751,77,18,42.53,734.49,1 Yillik,DSL,Havale,Hayir,0
+752,27,6,92.4,507.15,Aylik,DSL,Kredi Karti,Hayir,0
+753,23,42,103.74,4275.94,Aylik,DSL,Elektronik Cek,Hayir,1
+754,76,47,28.08,1301.83,2 Yillik,Fiber,Otomatik Odeme,Hayir,0
+755,52,72,108.21,7819.47,1 Yillik,Fiber,Havale,Hayir,1
+756,45,63,99.75,6249.52,Aylik,DSL,Havale,Hayir,0
+757,63,64,106.97,6972.12,2 Yillik,Fiber,Otomatik Odeme,Hayir,0
+758,41,46,89.84,4176.92,Aylik,Yok,Elektronik Cek,Evet,1
+759,25,26,87.42,2338.14,1 Yillik,Yok,Havale,Hayir,0
+760,63,31,72.51,2287.57,Aylik,Yok,Kredi Karti,Hayir,1
+761,28,10,85.28,945.44,Aylik,Yok,Otomatik Odeme,Hayir,1
+762,52,32,111.91,3541.77,Aylik,Fiber,Elektronik Cek,Hayir,0
+763,76,27,30.05,683.31,Aylik,Yok,Elektronik Cek,Hayir,1
+764,76,3,51.58,132.43,Aylik,Yok,Havale,Hayir,0
+765,40,15,27.25,436.66,Aylik,DSL,Kredi Karti,Hayir,1
+766,66,39,114.48,4472.3,1 Yillik,Yok,Havale,Hayir,0
+767,55,27,64.53,1756.08,Aylik,Fiber,Otomatik Odeme,Evet,0
+768,47,72,87.53,6368.21,Aylik,Fiber,Havale,Evet,0
+769,26,35,104.11,3662.95,2 Yillik,Yok,Elektronik Cek,Hayir,0
+770,41,70,119.1,8376.95,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+771,58,48,36.18,1689.66,2 Yillik,Fiber,Kredi Karti,Hayir,0
+772,79,3,99.95,245.08,Aylik,Fiber,Kredi Karti,Hayir,1
+773,18,15,108.74,1711.81,Aylik,Fiber,Kredi Karti,Hayir,1
+774,62,51,24.89,1274.44,1 Yillik,Yok,Otomatik Odeme,Hayir,0
+775,70,40,95.41,3785.24,1 Yillik,Yok,Elektronik Cek,Evet,0
+776,76,22,55.47,1189.27,Aylik,Fiber,Otomatik Odeme,Hayir,0
+777,44,38,84.86,3192.22,2 Yillik,Yok,Otomatik Odeme,Evet,0
+778,25,66,71.4,4676.95,1 Yillik,DSL,Havale,Evet,0
+779,34,28,45.97,1223.0,1 Yillik,Yok,Kredi Karti,Evet,0
+780,70,4,33.52,59.06,Aylik,DSL,Havale,Evet,1
+781,72,23,31.69,719.12,1 Yillik,Fiber,Elektronik Cek,Evet,0
+782,57,68,30.33,2032.79,Aylik,DSL,Havale,Hayir,1
+783,25,55,83.78,4663.26,2 Yillik,Fiber,Kredi Karti,Hayir,1
+784,25,61,55.14,3378.19,Aylik,Fiber,Otomatik Odeme,Evet,0
+785,47,66,41.66,2762.83,Aylik,DSL,Havale,Hayir,0
+786,54,9,89.19,765.55,Aylik,Fiber,Elektronik Cek,Hayir,1
+787,20,21,88.68,1856.23,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+788,60,5,73.92,387.65,2 Yillik,DSL,Elektronik Cek,Hayir,0
+789,51,1,113.5,149.31,2 Yillik,Fiber,Elektronik Cek,Evet,1
+790,18,61,58.54,3566.25,1 Yillik,DSL,Kredi Karti,Hayir,0
+791,23,68,103.59,7098.08,2 Yillik,DSL,Elektronik Cek,Hayir,1
+792,46,12,27.51,330.52,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+793,62,52,93.98,4926.6,Aylik,Fiber,Otomatik Odeme,Hayir,1
+794,69,39,118.84,4610.27,1 Yillik,Fiber,Kredi Karti,Hayir,1
+795,44,5,104.66,432.67,Aylik,Fiber,Kredi Karti,Hayir,1
+796,36,66,77.97,5159.44,Aylik,Yok,Kredi Karti,Hayir,0
+797,78,63,82.68,5245.11,Aylik,Fiber,Otomatik Odeme,Hayir,0
+798,46,41,55.33,2297.3,Aylik,Fiber,Havale,Evet,1
+799,37,51,87.95,4506.56,2 Yillik,Yok,Elektronik Cek,Evet,0
+800,45,29,97.04,2796.73,2 Yillik,Fiber,Havale,Evet,1
+801,18,58,119.82,6909.22,Aylik,DSL,Elektronik Cek,Evet,0
+802,36,33,69.25,2312.84,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+803,49,72,26.13,1902.68,Aylik,Fiber,Havale,Hayir,0
+804,74,5,79.59,369.91,Aylik,Fiber,Otomatik Odeme,Evet,1
+805,63,13,31.9,470.17,Aylik,DSL,Havale,Hayir,1
+806,66,70,44.48,3069.46,Aylik,Yok,Kredi Karti,Evet,0
+807,51,21,52.88,1081.3,Aylik,Yok,Kredi Karti,Hayir,0
+808,24,23,93.1,2223.12,Aylik,DSL,Havale,Hayir,1
+809,42,57,38.38,2231.09,Aylik,DSL,Elektronik Cek,Hayir,0
+810,79,14,36.58,494.22,Aylik,DSL,Otomatik Odeme,Hayir,1
+811,20,37,24.5,920.87,2 Yillik,Fiber,Otomatik Odeme,Hayir,1
+812,72,21,107.32,2261.46,Aylik,Yok,Elektronik Cek,Hayir,0
+813,60,15,89.35,1202.97,Aylik,Fiber,Havale,Hayir,1
+814,35,70,23.99,1633.98,Aylik,DSL,Kredi Karti,Hayir,0
+815,66,15,22.83,339.91,Aylik,Fiber,Otomatik Odeme,Hayir,1
+816,69,7,75.87,513.26,Aylik,DSL,Havale,Hayir,1
+817,20,49,48.25,2376.61,Aylik,Fiber,Otomatik Odeme,Hayir,0
+818,24,63,79.67,5075.68,1 Yillik,Fiber,Elektronik Cek,Evet,0
+819,59,10,63.46,618.52,1 Yillik,Fiber,Otomatik Odeme,Evet,0
+820,79,51,112.33,5675.95,1 Yillik,Fiber,Otomatik Odeme,Evet,0
+821,19,39,48.78,1918.66,1 Yillik,Yok,Elektronik Cek,Hayir,0
+822,59,60,87.91,5258.27,Aylik,DSL,Elektronik Cek,Hayir,1
+823,26,10,25.41,246.3,Aylik,Fiber,Kredi Karti,Evet,1
+824,58,71,115.59,8192.3,Aylik,DSL,Kredi Karti,Hayir,1
+825,56,45,118.08,5425.69,Aylik,DSL,Elektronik Cek,Hayir,1
+826,23,61,93.91,5616.47,Aylik,Yok,Elektronik Cek,Hayir,0
+827,60,27,66.52,1776.62,Aylik,Fiber,Elektronik Cek,Evet,0
+828,73,68,42.0,2855.82,1 Yillik,DSL,Havale,Evet,1
+829,71,46,101.25,4618.44,Aylik,Fiber,Elektronik Cek,Hayir,0
+830,19,10,93.64,981.39,Aylik,Fiber,Otomatik Odeme,Hayir,1
+831,33,67,42.2,2868.06,1 Yillik,Yok,Kredi Karti,Hayir,0
+832,32,58,65.12,3774.57,Aylik,Fiber,Havale,Hayir,1
+833,46,22,66.28,1444.63,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+834,26,40,102.64,4100.0,2 Yillik,Fiber,Kredi Karti,Hayir,0
+835,70,28,88.38,2469.4,2 Yillik,DSL,Havale,Hayir,0
+836,66,40,84.32,3368.88,Aylik,DSL,Havale,Hayir,0
+837,68,70,84.98,5939.2,Aylik,Fiber,Elektronik Cek,Evet,1
+838,30,65,47.05,3070.87,1 Yillik,Fiber,Havale,Hayir,0
+839,18,16,57.17,952.38,1 Yillik,DSL,Otomatik Odeme,Evet,1
+840,74,70,24.57,1658.39,1 Yillik,Fiber,Kredi Karti,Hayir,0
+841,35,32,98.69,3105.55,Aylik,Fiber,Havale,Evet,1
+842,58,51,63.3,3140.87,Aylik,Fiber,Elektronik Cek,Hayir,0
+843,74,56,63.82,3617.24,Aylik,DSL,Kredi Karti,Hayir,0
+844,20,35,44.54,1571.42,Aylik,Fiber,Otomatik Odeme,Evet,1
+845,18,33,40.94,1376.28,Aylik,DSL,Elektronik Cek,Evet,0
+846,18,33,78.78,2528.27,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+847,27,63,43.26,2814.63,Aylik,DSL,Havale,Evet,0
+848,21,28,26.42,709.32,1 Yillik,DSL,Havale,Hayir,0
+849,68,21,96.75,2040.16,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+850,55,27,57.65,1599.27,Aylik,DSL,Kredi Karti,Evet,0
+851,78,15,58.02,820.95,Aylik,Yok,Havale,Hayir,1
+852,67,29,63.13,1803.45,1 Yillik,Fiber,Havale,Hayir,1
+853,77,9,101.5,922.46,Aylik,DSL,Havale,Evet,1
+854,32,7,52.08,507.43,Aylik,Yok,Havale,Evet,1
+855,35,53,95.8,5092.46,2 Yillik,DSL,Elektronik Cek,Hayir,0
+856,70,6,113.95,764.02,1 Yillik,Fiber,Kredi Karti,Hayir,0
+857,33,41,86.09,3589.97,2 Yillik,Yok,Otomatik Odeme,Hayir,0
+858,21,57,63.17,3619.09,2 Yillik,Fiber,Otomatik Odeme,Hayir,0
+859,59,53,94.78,4973.88,Aylik,DSL,Kredi Karti,Hayir,1
+860,67,33,65.79,2224.06,1 Yillik,Fiber,Otomatik Odeme,Hayir,1
+861,78,14,61.44,785.25,1 Yillik,Fiber,Havale,Hayir,1
+862,75,68,72.53,5012.08,1 Yillik,Fiber,Kredi Karti,Hayir,0
+863,25,61,51.77,3167.97,1 Yillik,Fiber,Havale,Evet,0
+864,65,45,30.43,1236.84,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+865,70,7,61.49,413.4,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+866,61,3,32.39,129.87,Aylik,Fiber,Elektronik Cek,Hayir,1
+867,68,23,61.04,1392.07,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+868,69,12,75.69,944.03,Aylik,Yok,Havale,Hayir,0
+869,45,62,113.07,6967.84,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+870,20,15,23.62,289.0,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+871,46,21,82.15,1721.58,1 Yillik,Fiber,Kredi Karti,Hayir,1
+872,30,71,65.77,4671.25,Aylik,DSL,Kredi Karti,Hayir,0
+873,25,59,22.03,1282.35,Aylik,DSL,Havale,Hayir,1
+874,25,16,44.95,780.56,Aylik,Fiber,Kredi Karti,Evet,1
+875,61,28,31.85,849.29,Aylik,Fiber,Havale,Hayir,0
+876,49,38,41.68,1599.5,Aylik,Fiber,Otomatik Odeme,Hayir,1
+877,51,48,47.46,2281.48,2 Yillik,Yok,Kredi Karti,Hayir,0
+878,64,68,60.13,4011.0,Aylik,Fiber,Elektronik Cek,Hayir,1
+879,51,63,72.9,4526.75,2 Yillik,Fiber,Otomatik Odeme,Hayir,0
+880,57,71,20.1,1427.7,Aylik,Fiber,Havale,Hayir,1
+881,23,3,36.19,207.63,1 Yillik,DSL,Elektronik Cek,Hayir,1
+882,70,18,29.36,557.44,1 Yillik,DSL,Havale,Evet,0
+883,45,41,74.97,2987.49,1 Yillik,Yok,Havale,Hayir,0
+884,27,4,52.91,56.12,1 Yillik,Yok,Otomatik Odeme,Hayir,0
+885,68,26,74.84,1982.49,1 Yillik,Yok,Elektronik Cek,Hayir,1
+886,63,12,42.18,501.35,2 Yillik,DSL,Havale,Hayir,0
+887,21,68,22.42,1581.62,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+888,29,5,114.14,526.66,Aylik,Fiber,Otomatik Odeme,Hayir,1
+889,18,11,30.83,356.64,Aylik,Yok,Otomatik Odeme,Hayir,0
+890,34,15,32.69,532.66,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+891,24,11,34.65,358.78,Aylik,DSL,Havale,Hayir,1
+892,62,41,118.13,4822.03,Aylik,DSL,Havale,Evet,1
+893,50,27,81.77,2209.05,1 Yillik,Fiber,Kredi Karti,Evet,0
+894,78,66,81.03,5375.11,Aylik,Fiber,Elektronik Cek,Evet,1
+895,64,19,118.67,2254.01,1 Yillik,Fiber,Otomatik Odeme,Hayir,1
+896,55,39,28.84,1173.46,1 Yillik,DSL,Elektronik Cek,Evet,0
+897,49,48,117.45,5614.5,1 Yillik,Fiber,Elektronik Cek,Hayir,1
+898,21,46,40.4,1791.98,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+899,22,58,82.31,4872.83,2 Yillik,DSL,Kredi Karti,Hayir,0
+900,56,15,62.01,899.92,1 Yillik,DSL,Havale,Hayir,0
+901,18,37,58.4,2132.38,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+902,20,58,113.12,6557.67,Aylik,DSL,Kredi Karti,Evet,0
+903,31,63,34.92,2203.32,1 Yillik,Yok,Otomatik Odeme,Hayir,0
+904,72,45,119.71,5367.62,1 Yillik,Fiber,Kredi Karti,Hayir,0
+905,46,47,57.91,2720.9,Aylik,Fiber,Otomatik Odeme,Hayir,0
+906,61,63,84.88,5345.45,Aylik,Fiber,Elektronik Cek,Hayir,1
+907,43,45,116.79,5264.29,1 Yillik,Fiber,Otomatik Odeme,Evet,0
+908,28,69,25.76,1659.57,Aylik,DSL,Otomatik Odeme,Hayir,1
+909,41,10,112.29,1216.94,2 Yillik,Fiber,Elektronik Cek,Evet,1
+910,23,26,76.78,1988.92,Aylik,DSL,Otomatik Odeme,Hayir,0
+911,65,9,90.44,842.99,Aylik,Fiber,Havale,Evet,1
+912,29,7,34.92,175.53,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+913,41,34,73.34,2470.01,Aylik,Fiber,Otomatik Odeme,Evet,0
+914,78,17,87.35,1451.33,Aylik,Fiber,Kredi Karti,Evet,0
+915,54,30,65.62,2042.09,1 Yillik,DSL,Havale,Evet,0
+916,46,32,35.5,1106.71,Aylik,Fiber,Kredi Karti,Hayir,0
+917,51,45,44.41,2036.35,Aylik,DSL,Elektronik Cek,Evet,0
+918,66,69,105.44,7242.84,1 Yillik,Yok,Otomatik Odeme,Hayir,0
+919,33,62,23.45,1431.27,1 Yillik,Fiber,Kredi Karti,Hayir,0
+920,57,28,90.89,2532.64,1 Yillik,Yok,Elektronik Cek,Hayir,0
+921,72,24,119.94,2942.75,Aylik,Fiber,Havale,Evet,0
+922,53,56,20.75,1067.51,Aylik,Yok,Otomatik Odeme,Hayir,0
+923,45,9,36.1,259.12,2 Yillik,DSL,Kredi Karti,Hayir,0
+924,26,39,87.41,3311.62,1 Yillik,DSL,Kredi Karti,Evet,0
+925,33,31,26.0,751.62,Aylik,DSL,Kredi Karti,Evet,1
+926,76,14,78.98,1065.14,2 Yillik,DSL,Havale,Evet,0
+927,51,45,88.4,3897.28,Aylik,Yok,Havale,Hayir,1
+928,36,24,78.81,1854.73,1 Yillik,Fiber,Otomatik Odeme,Evet,0
+929,43,14,56.52,690.54,1 Yillik,Fiber,Havale,Hayir,0
+930,53,48,89.73,4256.14,2 Yillik,Fiber,Kredi Karti,Hayir,1
+931,51,13,79.43,1092.61,2 Yillik,Fiber,Elektronik Cek,Evet,0
+932,61,49,40.76,2017.42,Aylik,Fiber,Kredi Karti,Hayir,1
+933,33,12,76.31,925.09,1 Yillik,Yok,Havale,Evet,0
+934,58,32,108.19,3411.94,Aylik,Fiber,Elektronik Cek,Evet,1
+935,45,59,86.68,5037.32,1 Yillik,Fiber,Havale,Hayir,1
+936,76,17,67.18,1085.1,1 Yillik,DSL,Elektronik Cek,Evet,0
+937,27,56,52.16,2918.8,Aylik,Yok,Havale,Evet,0
+938,27,52,28.59,1530.09,Aylik,DSL,Otomatik Odeme,Hayir,0
+939,46,65,44.46,2935.02,Aylik,Fiber,Havale,Hayir,1
+940,49,13,21.12,306.09,Aylik,Yok,Otomatik Odeme,Hayir,0
+941,60,52,118.66,6133.44,Aylik,DSL,Elektronik Cek,Evet,0
+942,43,68,42.25,2874.23,2 Yillik,DSL,Elektronik Cek,Hayir,0
+943,74,55,101.49,5565.88,Aylik,Fiber,Kredi Karti,Hayir,1
+944,47,14,36.86,505.98,1 Yillik,Fiber,Kredi Karti,Evet,0
+945,26,60,48.36,3003.46,2 Yillik,Yok,Elektronik Cek,Hayir,0
+946,25,8,61.83,406.54,1 Yillik,Yok,Havale,Evet,0
+947,78,43,52.44,2243.19,Aylik,Fiber,Havale,Hayir,1
+948,26,36,99.84,3654.83,2 Yillik,Yok,Otomatik Odeme,Hayir,0
+949,76,39,115.77,4441.74,1 Yillik,Fiber,Havale,Hayir,0
+950,35,38,107.53,4053.95,1 Yillik,Yok,Havale,Hayir,0
+951,23,3,35.36,79.63,2 Yillik,DSL,Elektronik Cek,Hayir,0
+952,36,37,97.67,3602.63,1 Yillik,Fiber,Otomatik Odeme,Evet,0
+953,56,68,34.79,2285.92,Aylik,DSL,Otomatik Odeme,Hayir,0
+954,44,32,111.34,3592.64,2 Yillik,DSL,Elektronik Cek,Evet,0
+955,66,20,71.79,1469.11,Aylik,Fiber,Kredi Karti,Evet,0
+956,55,72,53.64,3887.5,2 Yillik,DSL,Kredi Karti,Evet,0
+957,42,8,35.7,242.08,Aylik,Fiber,Elektronik Cek,Hayir,1
+958,57,36,21.18,766.81,Aylik,Fiber,Elektronik Cek,Hayir,0
+959,78,37,44.79,1612.26,Aylik,DSL,Kredi Karti,Hayir,1
+960,43,35,111.4,3882.37,Aylik,Fiber,Elektronik Cek,Hayir,0
+961,27,67,99.73,6789.58,2 Yillik,Fiber,Otomatik Odeme,Evet,1
+962,43,31,116.98,3631.16,Aylik,Yok,Kredi Karti,Hayir,1
+963,70,71,30.08,2076.3,1 Yillik,DSL,Otomatik Odeme,Evet,1
+964,31,5,79.22,405.12,Aylik,Yok,Havale,Hayir,1
+965,76,53,45.72,2355.57,2 Yillik,Yok,Havale,Evet,0
+966,54,43,74.29,3134.52,Aylik,Fiber,Elektronik Cek,Hayir,1
+967,55,18,52.05,884.84,Aylik,Fiber,Kredi Karti,Hayir,0
+968,37,17,48.35,799.73,Aylik,Fiber,Kredi Karti,Hayir,0
+969,75,52,77.38,4070.61,1 Yillik,Yok,Otomatik Odeme,Evet,1
+970,20,46,38.33,1792.1,2 Yillik,DSL,Havale,Evet,0
+971,36,45,66.91,3037.1,2 Yillik,Yok,Kredi Karti,Hayir,0
+972,43,4,85.08,285.37,Aylik,Yok,Elektronik Cek,Hayir,1
+973,47,44,32.82,1417.01,Aylik,Fiber,Kredi Karti,Evet,1
+974,47,71,113.06,8040.86,Aylik,Fiber,Otomatik Odeme,Hayir,1
+975,27,2,70.57,109.72,Aylik,Fiber,Kredi Karti,Hayir,1
+976,31,34,101.95,3452.38,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+977,23,36,85.39,3096.11,Aylik,Yok,Havale,Hayir,0
+978,53,65,91.0,5897.56,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+979,39,21,91.61,1935.11,2 Yillik,DSL,Elektronik Cek,Hayir,0
+980,53,35,107.51,3842.49,Aylik,DSL,Otomatik Odeme,Evet,1
+981,54,52,81.36,4222.13,Aylik,Yok,Kredi Karti,Hayir,0
+982,61,5,47.82,298.07,Aylik,Fiber,Havale,Hayir,1
+983,51,58,29.95,1765.07,Aylik,Yok,Otomatik Odeme,Evet,0
+984,58,60,80.63,4764.44,Aylik,Fiber,Kredi Karti,Hayir,0
+985,54,52,26.64,1330.17,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+986,58,47,44.13,2032.43,Aylik,Yok,Otomatik Odeme,Hayir,1
+987,56,54,26.07,1365.04,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+988,37,57,74.89,4264.22,2 Yillik,Fiber,Kredi Karti,Hayir,0
+989,33,66,36.03,2408.71,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+990,66,31,81.04,2575.0,1 Yillik,DSL,Otomatik Odeme,Evet,1
+991,39,33,99.09,3285.38,Aylik,DSL,Havale,Hayir,1
+992,52,46,102.19,4678.46,Aylik,Fiber,Elektronik Cek,Hayir,0
+993,30,14,50.95,609.19,Aylik,Fiber,Kredi Karti,Evet,0
+994,44,62,74.9,4647.33,2 Yillik,DSL,Havale,Evet,0
+995,50,56,76.3,4274.09,2 Yillik,DSL,Kredi Karti,Hayir,0
+996,56,46,67.29,3104.49,Aylik,DSL,Elektronik Cek,Hayir,0
+997,50,22,85.51,1986.53,Aylik,Fiber,Elektronik Cek,Hayir,1
+998,40,26,41.01,1128.29,Aylik,Yok,Elektronik Cek,Hayir,1
+999,77,32,117.92,3812.69,Aylik,Fiber,Elektronik Cek,Hayir,1
+1000,49,48,29.81,1382.78,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+1001,68,57,102.92,5840.79,Aylik,Fiber,Kredi Karti,Evet,0
+1002,63,49,79.41,3886.35,Aylik,Yok,Kredi Karti,Evet,0
+1003,52,67,44.49,2942.06,Aylik,Fiber,Kredi Karti,Hayir,0
+1004,72,70,94.57,6644.92,Aylik,Yok,Otomatik Odeme,Hayir,1
+1005,25,51,28.45,1468.8,Aylik,Yok,Kredi Karti,Hayir,0
+1006,75,27,97.44,2576.46,2 Yillik,Fiber,Kredi Karti,Hayir,0
+1007,70,44,79.0,3535.84,Aylik,Yok,Kredi Karti,Hayir,1
+1008,49,31,31.08,968.6,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+1009,63,46,27.95,1199.25,Aylik,Yok,Elektronik Cek,Hayir,1
+1010,50,59,95.08,5607.15,Aylik,Yok,Otomatik Odeme,Evet,0
+1011,34,27,49.29,1344.89,Aylik,Yok,Kredi Karti,Hayir,0
+1012,67,37,108.93,4079.05,Aylik,Fiber,Havale,Hayir,0
+1013,33,4,96.21,367.97,Aylik,Fiber,Elektronik Cek,Hayir,1
+1014,37,54,89.82,4891.68,Aylik,DSL,Kredi Karti,Hayir,0
+1015,50,36,47.86,1732.32,2 Yillik,Fiber,Otomatik Odeme,Hayir,1
+1016,69,34,90.89,3024.51,1 Yillik,Fiber,Otomatik Odeme,Evet,1
+1017,41,39,114.81,4406.83,2 Yillik,Fiber,Kredi Karti,Hayir,0
+1018,48,16,29.16,522.69,Aylik,Fiber,Otomatik Odeme,Evet,0
+1019,20,44,52.62,2375.08,1 Yillik,DSL,Havale,Hayir,0
+1020,25,54,43.47,2363.53,1 Yillik,DSL,Havale,Hayir,0
+1021,21,26,59.33,1617.37,Aylik,DSL,Otomatik Odeme,Evet,0
+1022,22,10,94.23,995.13,Aylik,Fiber,Elektronik Cek,Hayir,1
+1023,71,28,67.42,1921.94,Aylik,Fiber,Kredi Karti,Evet,1
+1024,70,15,77.07,1110.48,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+1025,68,27,51.42,1474.91,Aylik,DSL,Elektronik Cek,Hayir,1
+1026,21,46,34.13,1596.8,Aylik,Yok,Kredi Karti,Hayir,1
+1027,22,9,46.69,400.92,2 Yillik,Fiber,Elektronik Cek,Hayir,1
+1028,35,54,105.97,5688.97,Aylik,DSL,Elektronik Cek,Evet,0
+1029,53,17,80.24,1376.92,2 Yillik,DSL,Havale,Hayir,0
+1030,38,65,57.8,3673.45,2 Yillik,Fiber,Havale,Hayir,0
+1031,48,53,98.99,5281.45,2 Yillik,Fiber,Otomatik Odeme,Hayir,1
+1032,28,20,26.45,481.32,1 Yillik,DSL,Kredi Karti,Hayir,0
+1033,63,41,45.39,1879.52,Aylik,DSL,Elektronik Cek,Hayir,0
+1034,37,8,43.01,318.0,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+1035,22,8,118.54,935.1,1 Yillik,DSL,Otomatik Odeme,Hayir,1
+1036,64,69,90.61,6214.24,1 Yillik,DSL,Havale,Hayir,0
+1037,73,58,81.78,4735.18,Aylik,Yok,Havale,Evet,0
+1038,18,12,20.5,340.47,Aylik,Fiber,Otomatik Odeme,Evet,1
+1039,45,21,38.43,876.28,Aylik,Fiber,Havale,Hayir,1
+1040,69,15,83.55,1270.97,Aylik,Fiber,Elektronik Cek,Hayir,1
+1041,61,29,57.97,1679.87,1 Yillik,Fiber,Elektronik Cek,Evet,0
+1042,71,21,112.43,2403.24,2 Yillik,DSL,Elektronik Cek,Evet,1
+1043,43,24,96.47,2371.78,1 Yillik,DSL,Elektronik Cek,Hayir,1
+1044,41,39,64.74,2483.37,1 Yillik,DSL,Havale,Hayir,1
+1045,61,14,94.95,1325.43,Aylik,Fiber,Havale,Hayir,1
+1046,27,64,117.54,7431.46,Aylik,Fiber,Havale,Hayir,1
+1047,32,53,66.1,3559.46,Aylik,Fiber,Elektronik Cek,Evet,0
+1048,55,55,84.25,4737.0,Aylik,Fiber,Otomatik Odeme,Hayir,0
+1049,59,13,111.87,1458.31,Aylik,Yok,Elektronik Cek,Hayir,1
+1050,25,51,44.87,2182.12,Aylik,DSL,Elektronik Cek,Evet,0
+1051,49,61,108.66,6658.7,Aylik,Fiber,Havale,Hayir,0
+1052,40,13,29.75,341.55,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+1053,49,55,84.84,4633.03,Aylik,Fiber,Havale,Hayir,1
+1054,77,26,98.28,2586.61,Aylik,Fiber,Havale,Hayir,1
+1055,22,57,81.46,4655.95,Aylik,Fiber,Kredi Karti,Hayir,0
+1056,79,35,69.55,2409.84,1 Yillik,DSL,Havale,Hayir,0
+1057,45,58,81.73,4707.86,1 Yillik,Fiber,Elektronik Cek,Evet,1
+1058,65,11,35.17,393.16,Aylik,Yok,Kredi Karti,Hayir,1
+1059,44,29,41.56,1184.77,Aylik,Fiber,Kredi Karti,Evet,0
+1060,37,20,46.99,884.34,2 Yillik,Yok,Otomatik Odeme,Hayir,0
+1061,65,18,79.78,1419.41,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+1062,60,23,64.19,1493.35,1 Yillik,Fiber,Havale,Hayir,0
+1063,26,28,44.45,1235.69,Aylik,Fiber,Havale,Evet,0
+1064,61,10,108.28,1012.12,2 Yillik,Fiber,Elektronik Cek,Hayir,1
+1065,64,51,57.39,2976.34,2 Yillik,Yok,Otomatik Odeme,Hayir,0
+1066,42,40,64.6,2447.06,Aylik,DSL,Havale,Hayir,1
+1067,75,60,60.97,3635.88,1 Yillik,Fiber,Kredi Karti,Hayir,0
+1068,57,51,38.19,1916.68,Aylik,Fiber,Havale,Evet,0
+1069,38,11,93.16,1032.17,1 Yillik,Yok,Havale,Hayir,0
+1070,18,6,64.85,417.18,Aylik,Fiber,Elektronik Cek,Hayir,1
+1071,59,31,21.63,726.87,Aylik,Yok,Kredi Karti,Hayir,1
+1072,30,35,116.4,4038.38,2 Yillik,Yok,Elektronik Cek,Evet,0
+1073,64,18,101.58,1857.77,2 Yillik,DSL,Kredi Karti,Hayir,0
+1074,50,57,92.36,5274.31,Aylik,Yok,Otomatik Odeme,Hayir,0
+1075,46,42,106.91,4404.64,2 Yillik,Yok,Elektronik Cek,Hayir,0
+1076,28,54,110.68,6071.75,Aylik,DSL,Kredi Karti,Evet,1
+1077,62,8,53.75,358.06,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1078,28,59,81.1,4805.87,2 Yillik,DSL,Elektronik Cek,Evet,0
+1079,43,15,80.88,1232.7,Aylik,Fiber,Elektronik Cek,Hayir,1
+1080,69,33,46.73,1555.87,Aylik,DSL,Kredi Karti,Hayir,0
+1081,75,32,42.2,1325.67,1 Yillik,Fiber,Kredi Karti,Evet,0
+1082,79,60,31.39,1924.76,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1083,77,20,85.93,1640.58,Aylik,Fiber,Havale,Hayir,1
+1084,52,18,98.09,1762.33,Aylik,DSL,Elektronik Cek,Hayir,1
+1085,30,25,96.1,2374.31,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+1086,70,26,51.63,1308.52,Aylik,Fiber,Havale,Hayir,0
+1087,67,14,40.53,588.86,Aylik,Fiber,Havale,Hayir,1
+1088,79,13,65.36,903.55,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+1089,58,17,74.68,1252.4,Aylik,DSL,Kredi Karti,Hayir,0
+1090,26,34,111.91,3843.97,Aylik,Fiber,Havale,Hayir,1
+1091,49,25,107.48,2689.49,1 Yillik,Yok,Otomatik Odeme,Hayir,1
+1092,45,29,111.61,3192.05,1 Yillik,DSL,Kredi Karti,Hayir,1
+1093,70,52,105.03,5448.66,Aylik,Fiber,Havale,Evet,1
+1094,42,18,116.46,2081.31,2 Yillik,DSL,Havale,Hayir,0
+1095,38,66,66.55,4357.47,1 Yillik,Fiber,Kredi Karti,Evet,0
+1096,22,55,24.75,1382.67,Aylik,DSL,Kredi Karti,Hayir,0
+1097,69,13,28.36,380.41,1 Yillik,Fiber,Havale,Hayir,0
+1098,64,23,59.03,1278.16,1 Yillik,Fiber,Otomatik Odeme,Evet,0
+1099,20,14,45.77,558.2,1 Yillik,DSL,Kredi Karti,Hayir,0
+1100,44,20,36.99,761.03,1 Yillik,DSL,Elektronik Cek,Evet,0
+1101,47,27,115.32,3072.88,1 Yillik,Fiber,Havale,Hayir,0
+1102,47,10,39.54,410.5,2 Yillik,Fiber,Otomatik Odeme,Hayir,1
+1103,74,2,115.94,270.93,1 Yillik,Yok,Havale,Hayir,0
+1104,27,32,96.08,3011.01,2 Yillik,Fiber,Otomatik Odeme,Hayir,0
+1105,36,51,84.09,4218.01,1 Yillik,Yok,Havale,Evet,0
+1106,29,22,87.6,2010.92,2 Yillik,Fiber,Otomatik Odeme,Hayir,1
+1107,33,62,53.15,3312.88,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+1108,74,27,84.64,2264.32,Aylik,DSL,Havale,Evet,0
+1109,76,65,38.67,2466.85,Aylik,Fiber,Elektronik Cek,Hayir,0
+1110,20,17,113.77,1908.57,1 Yillik,DSL,Kredi Karti,Evet,0
+1111,57,39,50.18,1897.49,Aylik,Yok,Havale,Hayir,0
+1112,32,55,45.52,2547.77,1 Yillik,Fiber,Havale,Evet,0
+1113,29,5,91.12,416.76,1 Yillik,Fiber,Otomatik Odeme,Hayir,1
+1114,36,67,85.64,5792.56,2 Yillik,Fiber,Otomatik Odeme,Evet,0
+1115,30,27,65.13,1738.48,Aylik,Fiber,Otomatik Odeme,Evet,0
+1116,48,36,83.24,2944.47,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+1117,79,46,35.95,1632.38,Aylik,DSL,Otomatik Odeme,Hayir,1
+1118,54,47,87.33,3973.3,Aylik,DSL,Otomatik Odeme,Evet,0
+1119,62,2,47.06,88.08,Aylik,DSL,Elektronik Cek,Hayir,0
+1120,48,63,47.28,2970.13,Aylik,DSL,Kredi Karti,Hayir,0
+1121,18,45,36.22,1671.14,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1122,23,72,53.24,3738.96,1 Yillik,DSL,Kredi Karti,Evet,0
+1123,34,34,53.13,1864.51,1 Yillik,DSL,Kredi Karti,Hayir,0
+1124,33,45,65.42,2984.93,Aylik,Yok,Otomatik Odeme,Hayir,0
+1125,70,32,39.04,1311.88,Aylik,Yok,Kredi Karti,Hayir,1
+1126,70,65,39.3,2551.86,Aylik,Fiber,Kredi Karti,Hayir,1
+1127,70,60,74.17,4500.89,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+1128,57,66,32.89,2097.18,2 Yillik,Fiber,Elektronik Cek,Hayir,1
+1129,52,37,88.89,3324.58,Aylik,DSL,Kredi Karti,Hayir,0
+1130,58,57,114.39,6481.67,Aylik,Fiber,Havale,Hayir,1
+1131,43,26,62.68,1547.11,Aylik,DSL,Kredi Karti,Hayir,1
+1132,59,34,110.11,3687.53,1 Yillik,Fiber,Havale,Hayir,0
+1133,67,55,29.83,1640.93,Aylik,Yok,Kredi Karti,Hayir,0
+1134,65,6,24.3,104.59,Aylik,Fiber,Elektronik Cek,Hayir,0
+1135,56,52,92.14,4810.08,Aylik,Yok,Havale,Hayir,0
+1136,21,2,96.1,101.79,Aylik,Fiber,Otomatik Odeme,Evet,1
+1137,62,42,104.31,4274.67,Aylik,Fiber,Kredi Karti,Evet,1
+1138,40,35,25.68,967.42,Aylik,Fiber,Otomatik Odeme,Evet,0
+1139,64,34,97.69,3366.65,1 Yillik,Fiber,Otomatik Odeme,Evet,0
+1140,51,36,57.65,2022.94,Aylik,Fiber,Havale,Hayir,1
+1141,72,36,50.33,1811.73,Aylik,DSL,Elektronik Cek,Evet,0
+1142,38,30,37.3,1169.98,1 Yillik,Fiber,Havale,Evet,0
+1143,75,33,119.6,3967.76,Aylik,DSL,Elektronik Cek,Hayir,1
+1144,70,41,26.37,1088.58,1 Yillik,Fiber,Otomatik Odeme,Evet,0
+1145,38,55,102.7,5703.26,2 Yillik,DSL,Elektronik Cek,Evet,0
+1146,47,40,83.95,3321.46,Aylik,Fiber,Elektronik Cek,Evet,1
+1147,50,47,93.51,4396.53,2 Yillik,DSL,Otomatik Odeme,Evet,1
+1148,65,61,91.17,5560.48,1 Yillik,DSL,Havale,Hayir,1
+1149,60,72,105.84,7606.84,1 Yillik,Fiber,Kredi Karti,Hayir,0
+1150,70,8,38.38,287.55,Aylik,DSL,Elektronik Cek,Hayir,1
+1151,40,52,20.08,1047.8,Aylik,Yok,Elektronik Cek,Hayir,0
+1152,49,17,79.85,1359.17,Aylik,Fiber,Kredi Karti,Hayir,0
+1153,44,15,55.39,778.43,2 Yillik,Fiber,Elektronik Cek,Hayir,1
+1154,74,58,32.38,1918.13,1 Yillik,DSL,Kredi Karti,Hayir,0
+1155,36,5,38.61,144.23,Aylik,Yok,Havale,Hayir,0
+1156,54,62,53.17,3285.63,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1157,25,56,27.02,1498.36,Aylik,Fiber,Elektronik Cek,Hayir,0
+1158,70,72,25.69,1867.59,Aylik,DSL,Elektronik Cek,Hayir,1
+1159,41,49,111.6,5362.44,1 Yillik,Fiber,Elektronik Cek,Evet,0
+1160,39,63,51.21,3270.78,Aylik,Yok,Kredi Karti,Hayir,1
+1161,54,9,118.22,1030.13,1 Yillik,Fiber,Otomatik Odeme,Evet,0
+1162,48,65,116.44,7629.6,1 Yillik,DSL,Havale,Hayir,0
+1163,70,12,34.26,387.21,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+1164,50,23,91.49,2101.83,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+1165,50,10,80.08,896.49,Aylik,Fiber,Kredi Karti,Evet,1
+1166,24,29,89.06,2568.87,1 Yillik,Yok,Elektronik Cek,Hayir,0
+1167,19,54,29.62,1661.42,1 Yillik,Yok,Kredi Karti,Hayir,0
+1168,42,20,38.86,779.15,Aylik,Fiber,Elektronik Cek,Hayir,1
+1169,79,60,27.66,1680.37,Aylik,DSL,Havale,Hayir,1
+1170,74,44,80.41,3541.54,Aylik,Yok,Kredi Karti,Hayir,0
+1171,56,46,118.66,5500.75,Aylik,DSL,Elektronik Cek,Hayir,0
+1172,57,68,87.2,5895.32,Aylik,DSL,Otomatik Odeme,Hayir,1
+1173,42,32,91.08,2865.36,Aylik,Fiber,Kredi Karti,Hayir,0
+1174,29,25,118.46,2929.57,1 Yillik,DSL,Otomatik Odeme,Evet,0
+1175,18,72,87.8,6326.59,Aylik,Yok,Otomatik Odeme,Evet,0
+1176,39,41,24.02,973.78,Aylik,Yok,Elektronik Cek,Evet,0
+1177,37,45,106.7,4837.01,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1178,29,22,56.47,1307.58,Aylik,Fiber,Havale,Hayir,0
+1179,34,16,20.44,278.25,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+1180,19,13,70.72,882.66,Aylik,DSL,Elektronik Cek,Hayir,0
+1181,55,17,113.7,1861.09,Aylik,Fiber,Elektronik Cek,Hayir,1
+1182,75,15,45.73,787.47,Aylik,Fiber,Otomatik Odeme,Evet,0
+1183,60,54,69.15,3749.33,Aylik,Yok,Otomatik Odeme,Evet,0
+1184,45,5,37.38,210.89,1 Yillik,DSL,Otomatik Odeme,Hayir,1
+1185,44,46,25.77,1118.41,1 Yillik,DSL,Elektronik Cek,Hayir,0
+1186,37,69,28.05,1935.39,Aylik,Fiber,Otomatik Odeme,Hayir,0
+1187,26,56,92.7,5216.66,1 Yillik,Fiber,Elektronik Cek,Evet,0
+1188,55,30,106.41,3179.66,Aylik,Fiber,Elektronik Cek,Hayir,1
+1189,53,5,34.33,225.44,2 Yillik,Yok,Kredi Karti,Hayir,1
+1190,18,61,48.83,3094.22,1 Yillik,DSL,Havale,Hayir,0
+1191,43,1,39.5,0.0,Aylik,Fiber,Otomatik Odeme,Evet,1
+1192,35,50,22.69,1083.4,1 Yillik,DSL,Havale,Hayir,0
+1193,28,49,75.34,3647.77,2 Yillik,DSL,Elektronik Cek,Hayir,1
+1194,61,14,89.99,1340.17,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1195,50,54,84.79,4630.78,2 Yillik,Fiber,Havale,Hayir,0
+1196,57,13,58.81,757.75,2 Yillik,Fiber,Havale,Hayir,0
+1197,62,17,75.5,1285.33,Aylik,Fiber,Kredi Karti,Hayir,0
+1198,78,59,29.41,1694.36,1 Yillik,Fiber,Kredi Karti,Hayir,0
+1199,67,71,35.43,2560.03,1 Yillik,Yok,Elektronik Cek,Hayir,0
+1200,56,20,113.18,2244.6,Aylik,DSL,Elektronik Cek,Evet,0
+1201,72,67,96.15,6429.05,Aylik,DSL,Havale,Evet,0
+1202,47,66,112.27,7440.26,2 Yillik,Fiber,Havale,Hayir,0
+1203,79,56,111.67,6244.12,1 Yillik,Fiber,Kredi Karti,Evet,0
+1204,65,11,84.94,922.59,Aylik,Yok,Otomatik Odeme,Evet,1
+1205,58,22,112.82,2482.57,Aylik,DSL,Elektronik Cek,Hayir,0
+1206,74,49,61.67,3061.6,Aylik,Fiber,Kredi Karti,Hayir,0
+1207,49,72,20.36,1548.24,2 Yillik,Yok,Elektronik Cek,Evet,1
+1208,62,59,26.26,1578.61,1 Yillik,Fiber,Havale,Hayir,0
+1209,35,31,30.95,999.62,Aylik,Fiber,Otomatik Odeme,Hayir,0
+1210,77,17,29.54,492.19,2 Yillik,Yok,Havale,Hayir,0
+1211,56,70,55.17,3826.51,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+1212,66,20,90.13,1835.3,Aylik,Fiber,Elektronik Cek,Hayir,1
+1213,46,25,99.06,2485.06,Aylik,Yok,Kredi Karti,Evet,0
+1214,71,70,79.02,5460.27,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+1215,22,41,34.64,1403.84,Aylik,Fiber,Elektronik Cek,Evet,1
+1216,25,20,94.79,1891.66,Aylik,Fiber,Havale,Hayir,1
+1217,49,1,55.48,29.96,1 Yillik,Yok,Kredi Karti,Evet,1
+1218,63,31,21.3,734.39,2 Yillik,Yok,Havale,Evet,0
+1219,68,71,48.06,3436.25,Aylik,Yok,Elektronik Cek,Evet,0
+1220,45,32,53.06,1766.58,2 Yillik,DSL,Kredi Karti,Hayir,0
+1221,58,51,47.42,2431.59,2 Yillik,Fiber,Havale,Evet,0
+1222,52,19,101.19,1926.68,Aylik,Yok,Elektronik Cek,Evet,1
+1223,77,56,95.99,5328.61,Aylik,Fiber,Elektronik Cek,Evet,1
+1224,58,56,89.56,5015.96,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+1225,43,44,33.9,1492.25,1 Yillik,DSL,Kredi Karti,Hayir,0
+1226,78,56,100.78,5575.32,Aylik,Yok,Otomatik Odeme,Hayir,0
+1227,24,42,87.72,3657.26,1 Yillik,DSL,Havale,Hayir,0
+1228,79,28,39.48,1089.28,1 Yillik,DSL,Kredi Karti,Hayir,0
+1229,27,54,84.81,4600.41,1 Yillik,Yok,Otomatik Odeme,Hayir,1
+1230,35,61,68.35,4192.42,1 Yillik,Yok,Elektronik Cek,Evet,0
+1231,68,61,63.94,3871.27,Aylik,Yok,Elektronik Cek,Hayir,0
+1232,63,16,31.21,522.8,Aylik,Fiber,Havale,Hayir,1
+1233,78,49,71.83,3510.57,Aylik,DSL,Otomatik Odeme,Evet,0
+1234,64,1,29.99,0.0,2 Yillik,Fiber,Kredi Karti,Hayir,0
+1235,57,42,36.43,1505.82,2 Yillik,DSL,Kredi Karti,Evet,0
+1236,39,42,33.25,1450.45,1 Yillik,Yok,Kredi Karti,Hayir,1
+1237,18,27,115.41,3031.98,Aylik,Fiber,Elektronik Cek,Hayir,1
+1238,25,72,48.49,3496.91,1 Yillik,Fiber,Kredi Karti,Hayir,1
+1239,36,64,55.52,3632.54,Aylik,DSL,Otomatik Odeme,Hayir,0
+1240,20,3,52.21,118.6,Aylik,Fiber,Kredi Karti,Hayir,1
+1241,49,16,109.83,1757.39,Aylik,Yok,Elektronik Cek,Hayir,0
+1242,66,15,76.3,1079.3,2 Yillik,Fiber,Otomatik Odeme,Evet,0
+1243,77,65,111.92,7356.16,Aylik,DSL,Otomatik Odeme,Hayir,1
+1244,48,38,49.99,1895.45,1 Yillik,DSL,Havale,Hayir,0
+1245,72,53,31.48,1670.77,2 Yillik,Fiber,Kredi Karti,Hayir,0
+1246,79,59,75.62,4529.3,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+1247,71,56,54.55,3087.87,Aylik,Yok,Havale,Evet,0
+1248,46,7,100.19,657.55,2 Yillik,Fiber,Otomatik Odeme,Evet,1
+1249,38,11,107.94,1154.98,1 Yillik,DSL,Kredi Karti,Evet,0
+1250,78,29,67.26,1975.29,Aylik,Fiber,Elektronik Cek,Evet,1
+1251,32,25,117.14,2897.29,1 Yillik,Fiber,Kredi Karti,Hayir,0
+1252,43,54,75.3,3960.34,2 Yillik,DSL,Havale,Hayir,0
+1253,22,12,47.09,562.42,Aylik,Fiber,Kredi Karti,Hayir,1
+1254,67,27,68.9,1786.29,Aylik,DSL,Otomatik Odeme,Hayir,1
+1255,58,18,23.73,507.95,Aylik,Fiber,Elektronik Cek,Hayir,0
+1256,23,14,100.4,1414.44,Aylik,Yok,Kredi Karti,Hayir,1
+1257,31,13,30.14,346.56,1 Yillik,Yok,Havale,Hayir,0
+1258,52,15,50.87,728.12,Aylik,DSL,Havale,Hayir,1
+1259,51,41,76.53,3043.26,Aylik,Fiber,Elektronik Cek,Hayir,1
+1260,67,30,24.3,674.03,Aylik,DSL,Havale,Hayir,0
+1261,34,32,27.93,944.58,Aylik,Fiber,Havale,Hayir,1
+1262,75,35,89.61,3247.94,Aylik,DSL,Otomatik Odeme,Evet,1
+1263,45,54,27.18,1504.04,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+1264,69,63,67.71,4261.13,Aylik,DSL,Otomatik Odeme,Hayir,0
+1265,32,38,53.87,2025.46,Aylik,Yok,Otomatik Odeme,Hayir,0
+1266,20,47,42.81,1964.25,2 Yillik,Yok,Otomatik Odeme,Hayir,0
+1267,21,54,38.88,2202.51,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+1268,41,50,96.34,4807.56,Aylik,Fiber,Elektronik Cek,Hayir,0
+1269,77,10,115.15,1257.28,Aylik,DSL,Elektronik Cek,Hayir,1
+1270,21,71,34.02,2485.1,Aylik,Fiber,Elektronik Cek,Hayir,1
+1271,40,12,115.97,1304.6,Aylik,DSL,Kredi Karti,Hayir,1
+1272,24,30,79.48,2351.1,Aylik,DSL,Otomatik Odeme,Evet,0
+1273,75,47,84.17,3922.54,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+1274,59,30,90.99,2725.71,1 Yillik,Fiber,Otomatik Odeme,Hayir,1
+1275,65,18,90.41,1624.36,Aylik,Fiber,Elektronik Cek,Evet,0
+1276,62,67,101.98,6982.47,2 Yillik,Fiber,Havale,Hayir,1
+1277,58,6,68.35,356.24,Aylik,DSL,Havale,Evet,1
+1278,65,18,73.34,1331.57,Aylik,DSL,Otomatik Odeme,Evet,0
+1279,18,72,52.38,3802.19,Aylik,Fiber,Elektronik Cek,Hayir,1
+1280,71,53,30.53,1618.01,Aylik,Fiber,Otomatik Odeme,Evet,1
+1281,63,7,86.46,610.73,2 Yillik,DSL,Elektronik Cek,Hayir,0
+1282,63,55,23.36,1232.56,Aylik,Fiber,Elektronik Cek,Hayir,1
+1283,42,70,47.56,3334.52,1 Yillik,Fiber,Kredi Karti,Hayir,0
+1284,67,8,29.42,260.93,Aylik,Fiber,Kredi Karti,Evet,0
+1285,41,30,39.07,1188.48,2 Yillik,Yok,Elektronik Cek,Hayir,0
+1286,21,34,83.87,2880.09,1 Yillik,Fiber,Kredi Karti,Evet,0
+1287,74,10,82.85,899.13,Aylik,Fiber,Kredi Karti,Hayir,1
+1288,32,15,62.11,978.5,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1289,24,13,29.02,380.82,2 Yillik,DSL,Elektronik Cek,Hayir,0
+1290,56,14,63.34,828.17,Aylik,DSL,Kredi Karti,Hayir,0
+1291,32,30,55.27,1628.1,Aylik,DSL,Havale,Hayir,0
+1292,71,34,92.05,3118.72,2 Yillik,Yok,Havale,Evet,0
+1293,45,18,77.9,1414.82,Aylik,DSL,Kredi Karti,Hayir,0
+1294,18,21,69.16,1428.44,Aylik,Fiber,Elektronik Cek,Hayir,1
+1295,77,14,68.7,915.01,Aylik,Fiber,Havale,Hayir,0
+1296,49,58,116.63,6705.13,Aylik,Fiber,Otomatik Odeme,Evet,0
+1297,34,16,95.63,1447.52,Aylik,Yok,Kredi Karti,Evet,0
+1298,59,66,69.7,4588.45,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1299,50,39,67.92,2575.4,Aylik,DSL,Kredi Karti,Evet,0
+1300,19,58,22.65,1263.67,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1301,65,46,114.25,5235.8,Aylik,Fiber,Otomatik Odeme,Hayir,0
+1302,42,20,51.92,971.6,2 Yillik,DSL,Havale,Hayir,0
+1303,61,44,45.59,2024.95,1 Yillik,Fiber,Havale,Hayir,1
+1304,73,20,119.94,2435.81,Aylik,Fiber,Kredi Karti,Evet,0
+1305,55,9,91.87,799.36,Aylik,DSL,Havale,Hayir,1
+1306,59,19,24.74,448.21,1 Yillik,Yok,Elektronik Cek,Hayir,0
+1307,33,20,26.19,550.67,Aylik,Fiber,Elektronik Cek,Evet,0
+1308,32,10,22.55,189.8,Aylik,Fiber,Kredi Karti,Hayir,1
+1309,43,2,79.96,120.78,1 Yillik,DSL,Kredi Karti,Hayir,0
+1310,70,68,27.16,1906.7,Aylik,DSL,Elektronik Cek,Evet,0
+1311,50,37,113.34,4237.79,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+1312,39,29,113.69,3327.09,2 Yillik,Fiber,Otomatik Odeme,Evet,1
+1313,66,67,74.61,5045.15,2 Yillik,Fiber,Otomatik Odeme,Hayir,0
+1314,70,17,81.66,1289.36,Aylik,Fiber,Elektronik Cek,Hayir,1
+1315,73,30,49.19,1543.39,Aylik,DSL,Elektronik Cek,Hayir,0
+1316,36,61,26.4,1630.0,Aylik,Fiber,Elektronik Cek,Hayir,0
+1317,61,46,93.75,4363.04,1 Yillik,Yok,Havale,Evet,0
+1318,54,29,30.18,894.58,2 Yillik,Fiber,Elektronik Cek,Hayir,1
+1319,45,19,28.56,545.09,2 Yillik,Fiber,Kredi Karti,Evet,0
+1320,42,3,51.12,139.59,Aylik,Yok,Otomatik Odeme,Hayir,1
+1321,25,7,21.25,167.11,2 Yillik,DSL,Otomatik Odeme,Evet,1
+1322,35,12,63.4,745.21,Aylik,Fiber,Havale,Evet,1
+1323,52,57,90.77,5217.28,2 Yillik,Yok,Havale,Evet,0
+1324,72,47,100.13,4626.79,Aylik,Fiber,Havale,Evet,1
+1325,71,32,80.43,2546.68,Aylik,DSL,Otomatik Odeme,Evet,0
+1326,29,57,104.69,6069.57,Aylik,Yok,Kredi Karti,Evet,0
+1327,60,12,60.65,696.5,2 Yillik,DSL,Havale,Hayir,1
+1328,23,16,104.88,1666.15,Aylik,DSL,Elektronik Cek,Hayir,0
+1329,59,29,70.65,2004.72,Aylik,DSL,Elektronik Cek,Evet,0
+1330,39,67,42.3,2850.89,Aylik,Fiber,Havale,Hayir,0
+1331,45,45,114.41,5111.64,Aylik,Fiber,Kredi Karti,Hayir,1
+1332,62,62,47.5,2935.72,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+1333,44,18,22.62,449.6,Aylik,Yok,Elektronik Cek,Hayir,0
+1334,68,62,44.27,2709.8,Aylik,Fiber,Otomatik Odeme,Hayir,0
+1335,51,6,56.67,379.45,1 Yillik,Fiber,Kredi Karti,Hayir,1
+1336,79,17,55.13,978.32,Aylik,Yok,Kredi Karti,Evet,0
+1337,57,38,72.47,2806.61,Aylik,Yok,Havale,Hayir,1
+1338,36,4,108.31,440.27,Aylik,DSL,Elektronik Cek,Hayir,1
+1339,66,62,49.23,3214.32,Aylik,DSL,Kredi Karti,Hayir,1
+1340,43,63,72.08,4593.77,Aylik,Fiber,Kredi Karti,Hayir,1
+1341,51,39,54.01,2122.63,Aylik,Yok,Havale,Hayir,1
+1342,26,23,102.18,2306.34,Aylik,Fiber,Havale,Hayir,1
+1343,25,8,35.76,281.23,1 Yillik,DSL,Elektronik Cek,Evet,0
+1344,53,45,30.35,1437.07,2 Yillik,Fiber,Kredi Karti,Evet,0
+1345,29,39,70.3,2827.18,2 Yillik,Fiber,Otomatik Odeme,Hayir,1
+1346,79,55,87.19,4869.37,Aylik,Fiber,Kredi Karti,Evet,1
+1347,71,44,99.55,4419.46,Aylik,Yok,Havale,Hayir,1
+1348,61,10,78.96,726.82,2 Yillik,Fiber,Otomatik Odeme,Evet,0
+1349,63,9,97.38,900.78,1 Yillik,Fiber,Elektronik Cek,Hayir,1
+1350,54,57,59.27,3316.32,Aylik,Fiber,Otomatik Odeme,Hayir,0
+1351,21,12,23.29,205.11,Aylik,Fiber,Kredi Karti,Hayir,0
+1352,42,68,31.61,2161.44,Aylik,Fiber,Elektronik Cek,Hayir,0
+1353,48,8,23.87,217.12,Aylik,Fiber,Kredi Karti,Hayir,1
+1354,74,53,52.89,2848.34,Aylik,Fiber,Elektronik Cek,Hayir,0
+1355,31,71,69.55,4962.91,Aylik,Fiber,Havale,Hayir,1
+1356,48,32,55.63,1806.74,2 Yillik,Fiber,Otomatik Odeme,Hayir,1
+1357,39,5,76.06,331.07,1 Yillik,DSL,Kredi Karti,Evet,0
+1358,26,64,68.06,4350.59,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+1359,24,14,87.79,1153.7,Aylik,Fiber,Havale,Hayir,0
+1360,40,38,86.7,3194.43,1 Yillik,DSL,Elektronik Cek,Hayir,0
+1361,23,71,51.81,3715.54,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+1362,22,54,54.62,2911.82,Aylik,DSL,Kredi Karti,Hayir,1
+1363,39,4,78.51,357.66,1 Yillik,Yok,Havale,Hayir,1
+1364,30,60,79.64,4833.82,1 Yillik,Yok,Elektronik Cek,Hayir,0
+1365,52,12,51.47,586.67,2 Yillik,Fiber,Otomatik Odeme,Hayir,0
+1366,19,54,53.03,2893.14,Aylik,Fiber,Otomatik Odeme,Hayir,0
+1367,36,45,89.4,3989.94,2 Yillik,Fiber,Elektronik Cek,Evet,0
+1368,46,21,84.74,1687.25,Aylik,Fiber,Havale,Hayir,0
+1369,77,31,33.51,1044.98,Aylik,Yok,Havale,Evet,0
+1370,57,9,64.1,553.36,Aylik,DSL,Havale,Evet,1
+1371,72,72,109.27,7845.44,Aylik,DSL,Havale,Evet,0
+1372,39,18,23.63,524.11,Aylik,Fiber,Havale,Hayir,1
+1373,45,23,105.52,2350.67,Aylik,DSL,Otomatik Odeme,Evet,0
+1374,44,37,36.32,1362.98,1 Yillik,Fiber,Havale,Evet,0
+1375,73,49,70.72,3415.54,Aylik,Fiber,Kredi Karti,Evet,0
+1376,77,37,62.43,2355.32,2 Yillik,DSL,Elektronik Cek,Hayir,0
+1377,77,37,21.01,792.29,Aylik,Fiber,Elektronik Cek,Hayir,0
+1378,64,42,111.54,4703.65,1 Yillik,Fiber,Havale,Hayir,0
+1379,49,62,65.49,4013.14,2 Yillik,Yok,Elektronik Cek,Hayir,0
+1380,51,29,115.43,3309.19,2 Yillik,Fiber,Otomatik Odeme,Evet,0
+1381,78,60,48.67,2966.56,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+1382,35,57,106.63,6166.45,1 Yillik,Fiber,Otomatik Odeme,Evet,0
+1383,39,70,112.24,7880.82,Aylik,Fiber,Elektronik Cek,Hayir,1
+1384,73,66,75.68,4950.01,Aylik,Fiber,Kredi Karti,Hayir,1
+1385,41,58,40.27,2352.61,Aylik,Fiber,Elektronik Cek,Hayir,0
+1386,32,18,88.52,1714.73,Aylik,DSL,Otomatik Odeme,Evet,0
+1387,52,56,74.9,4199.52,Aylik,Fiber,Otomatik Odeme,Evet,1
+1388,38,54,114.45,6253.39,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1389,73,21,63.93,1305.51,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+1390,74,49,46.85,2293.55,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+1391,36,19,33.83,673.75,2 Yillik,Yok,Kredi Karti,Hayir,0
+1392,50,38,89.86,3434.55,1 Yillik,Fiber,Havale,Hayir,1
+1393,79,58,117.41,6771.46,Aylik,DSL,Havale,Evet,0
+1394,64,14,22.83,279.14,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1395,31,25,94.04,2400.41,1 Yillik,DSL,Otomatik Odeme,Evet,0
+1396,54,58,112.69,6595.6,1 Yillik,Fiber,Havale,Hayir,0
+1397,56,33,27.48,982.45,Aylik,Fiber,Havale,Hayir,1
+1398,58,70,31.02,2261.6,Aylik,DSL,Kredi Karti,Hayir,0
+1399,19,1,89.2,95.93,Aylik,DSL,Kredi Karti,Hayir,1
+1400,36,52,84.8,4394.04,Aylik,Yok,Havale,Evet,1
+1401,70,59,26.88,1653.47,Aylik,DSL,Kredi Karti,Hayir,0
+1402,32,67,103.44,6966.13,Aylik,Yok,Havale,Hayir,1
+1403,36,12,72.34,818.96,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+1404,37,71,110.72,7809.44,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+1405,28,29,107.8,3150.8,Aylik,DSL,Elektronik Cek,Hayir,1
+1406,27,26,101.25,2623.64,1 Yillik,DSL,Kredi Karti,Evet,0
+1407,39,26,71.59,1860.02,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+1408,72,46,45.17,2131.45,Aylik,Fiber,Elektronik Cek,Hayir,0
+1409,18,48,70.6,3426.75,1 Yillik,Yok,Elektronik Cek,Evet,0
+1410,35,35,30.08,1119.29,Aylik,Yok,Havale,Hayir,0
+1411,21,6,85.88,418.7,1 Yillik,DSL,Elektronik Cek,Hayir,1
+1412,52,72,33.4,2417.47,Aylik,DSL,Otomatik Odeme,Evet,0
+1413,33,16,71.12,1172.65,2 Yillik,DSL,Elektronik Cek,Evet,0
+1414,67,7,25.44,101.75,2 Yillik,Yok,Havale,Hayir,1
+1415,54,44,49.95,2165.06,Aylik,DSL,Elektronik Cek,Hayir,0
+1416,66,30,43.21,1254.28,Aylik,DSL,Otomatik Odeme,Evet,1
+1417,57,45,82.0,3691.08,Aylik,Fiber,Havale,Evet,1
+1418,45,64,98.68,6396.91,1 Yillik,Fiber,Otomatik Odeme,Evet,0
+1419,71,8,25.73,306.97,1 Yillik,DSL,Elektronik Cek,Evet,1
+1420,47,21,105.03,2164.92,Aylik,Fiber,Kredi Karti,Hayir,1
+1421,76,38,106.08,4057.37,2 Yillik,DSL,Otomatik Odeme,Evet,1
+1422,79,57,54.23,3119.05,Aylik,DSL,Elektronik Cek,Evet,1
+1423,54,44,85.9,3798.98,Aylik,DSL,Havale,Evet,0
+1424,59,28,60.26,1707.23,Aylik,Fiber,Kredi Karti,Hayir,1
+1425,33,44,35.42,1573.67,Aylik,Yok,Otomatik Odeme,Hayir,0
+1426,68,71,72.87,5258.15,Aylik,Fiber,Otomatik Odeme,Hayir,0
+1427,59,35,28.64,1057.52,Aylik,Fiber,Kredi Karti,Hayir,1
+1428,73,64,107.85,6849.39,Aylik,DSL,Elektronik Cek,Hayir,1
+1429,34,57,112.43,6448.3,2 Yillik,Fiber,Kredi Karti,Hayir,1
+1430,66,22,102.16,2292.14,Aylik,Yok,Havale,Hayir,0
+1431,47,18,76.25,1388.25,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+1432,29,56,75.76,4299.13,1 Yillik,Yok,Kredi Karti,Evet,0
+1433,28,15,118.46,1786.3,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+1434,52,25,44.79,1129.77,Aylik,Fiber,Havale,Hayir,1
+1435,37,17,27.59,475.09,1 Yillik,DSL,Elektronik Cek,Hayir,0
+1436,24,44,76.19,3251.45,Aylik,Fiber,Otomatik Odeme,Evet,0
+1437,44,22,52.88,1159.34,Aylik,Fiber,Kredi Karti,Hayir,0
+1438,58,48,52.23,2473.63,Aylik,Yok,Otomatik Odeme,Hayir,0
+1439,37,68,20.71,1348.96,Aylik,Yok,Kredi Karti,Evet,0
+1440,77,60,79.62,4848.9,2 Yillik,Fiber,Kredi Karti,Evet,0
+1441,66,69,46.4,3226.81,2 Yillik,Yok,Havale,Evet,0
+1442,49,2,38.79,76.09,1 Yillik,Yok,Havale,Hayir,1
+1443,75,33,24.04,765.08,Aylik,Fiber,Kredi Karti,Hayir,1
+1444,44,16,56.44,917.85,2 Yillik,DSL,Havale,Hayir,0
+1445,26,67,107.9,7278.87,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+1446,20,52,53.67,2749.49,Aylik,DSL,Elektronik Cek,Hayir,0
+1447,76,24,87.91,2109.6,Aylik,DSL,Elektronik Cek,Hayir,0
+1448,77,41,95.65,3965.05,1 Yillik,Yok,Kredi Karti,Evet,1
+1449,63,44,52.81,2226.84,Aylik,DSL,Kredi Karti,Evet,1
+1450,24,36,102.16,3674.88,Aylik,Fiber,Havale,Hayir,1
+1451,36,35,89.19,3100.19,1 Yillik,Fiber,Otomatik Odeme,Evet,1
+1452,20,4,75.92,296.99,Aylik,Fiber,Otomatik Odeme,Evet,1
+1453,21,33,20.1,638.22,Aylik,DSL,Kredi Karti,Hayir,0
+1454,33,26,23.51,618.14,Aylik,Fiber,Havale,Hayir,1
+1455,53,59,119.09,7122.49,1 Yillik,Fiber,Havale,Evet,1
+1456,22,63,98.23,6172.29,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+1457,79,55,113.76,6271.39,2 Yillik,DSL,Kredi Karti,Hayir,0
+1458,46,3,110.23,430.43,1 Yillik,Fiber,Havale,Hayir,1
+1459,34,61,22.04,1316.94,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+1460,49,29,99.18,2966.95,1 Yillik,Fiber,Havale,Evet,0
+1461,66,30,65.11,1953.57,Aylik,Fiber,Otomatik Odeme,Evet,0
+1462,37,69,98.96,6917.33,Aylik,DSL,Elektronik Cek,Evet,1
+1463,20,63,20.67,1339.72,1 Yillik,Yok,Elektronik Cek,Hayir,0
+1464,21,4,48.82,210.64,1 Yillik,DSL,Havale,Hayir,0
+1465,70,26,95.13,2470.1,Aylik,Yok,Otomatik Odeme,Hayir,0
+1466,24,54,99.3,5331.0,2 Yillik,Yok,Kredi Karti,Hayir,1
+1467,57,39,81.97,3200.62,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+1468,41,19,50.13,997.34,Aylik,DSL,Otomatik Odeme,Evet,0
+1469,66,38,51.04,1938.86,Aylik,DSL,Elektronik Cek,Evet,1
+1470,21,63,116.68,7335.01,Aylik,Yok,Otomatik Odeme,Hayir,1
+1471,73,17,63.92,1074.1,Aylik,Fiber,Elektronik Cek,Hayir,1
+1472,61,54,64.71,3543.96,Aylik,DSL,Elektronik Cek,Hayir,1
+1473,45,53,75.23,4048.45,Aylik,Fiber,Kredi Karti,Evet,0
+1474,30,64,60.95,3867.44,Aylik,DSL,Kredi Karti,Hayir,0
+1475,78,22,75.27,1622.51,Aylik,Fiber,Kredi Karti,Evet,1
+1476,36,16,63.23,1030.65,1 Yillik,Fiber,Kredi Karti,Hayir,0
+1477,48,40,102.67,4183.18,1 Yillik,DSL,Otomatik Odeme,Evet,0
+1478,42,39,110.91,4382.79,Aylik,Yok,Kredi Karti,Hayir,1
+1479,32,30,113.21,3333.71,Aylik,DSL,Kredi Karti,Evet,0
+1480,43,57,76.43,4343.31,Aylik,Fiber,Otomatik Odeme,Evet,0
+1481,27,58,64.21,3677.65,Aylik,Fiber,Havale,Hayir,0
+1482,18,18,90.52,1615.98,Aylik,Yok,Otomatik Odeme,Hayir,0
+1483,35,58,103.83,6102.36,Aylik,Fiber,Otomatik Odeme,Hayir,0
+1484,24,17,76.3,1225.97,Aylik,Yok,Elektronik Cek,Hayir,0
+1485,43,30,90.0,2619.06,2 Yillik,Fiber,Otomatik Odeme,Hayir,1
+1486,71,2,94.97,148.51,Aylik,Yok,Otomatik Odeme,Evet,1
+1487,28,25,87.64,2205.37,2 Yillik,DSL,Kredi Karti,Hayir,0
+1488,18,70,94.61,6653.74,Aylik,Fiber,Kredi Karti,Hayir,1
+1489,24,32,40.86,1329.39,Aylik,DSL,Havale,Hayir,0
+1490,49,52,69.84,3690.46,2 Yillik,Yok,Elektronik Cek,Hayir,0
+1491,35,8,78.83,542.49,Aylik,Yok,Otomatik Odeme,Hayir,0
+1492,48,46,20.25,990.92,1 Yillik,Fiber,Kredi Karti,Evet,0
+1493,19,27,105.6,2835.6,2 Yillik,Fiber,Kredi Karti,Hayir,1
+1494,38,54,81.0,4410.57,1 Yillik,Fiber,Havale,Hayir,1
+1495,43,67,32.91,2138.8,Aylik,DSL,Havale,Hayir,1
+1496,44,39,101.64,3964.21,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1497,52,8,91.71,745.49,Aylik,Fiber,Havale,Evet,1
+1498,66,35,95.83,3411.84,Aylik,Fiber,Otomatik Odeme,Evet,1
+1499,46,9,59.2,453.54,Aylik,DSL,Kredi Karti,Hayir,0
+1500,70,33,105.42,3480.4,2 Yillik,Yok,Kredi Karti,Hayir,1
+1501,50,5,61.4,252.74,1 Yillik,DSL,Otomatik Odeme,Hayir,1
+1502,34,47,77.05,3646.62,Aylik,Fiber,Kredi Karti,Hayir,0
+1503,32,23,20.06,500.24,Aylik,DSL,Kredi Karti,Hayir,0
+1504,37,15,84.49,1331.71,1 Yillik,DSL,Elektronik Cek,Hayir,0
+1505,55,2,91.82,156.89,2 Yillik,DSL,Kredi Karti,Hayir,1
+1506,33,64,76.71,4955.8,Aylik,Fiber,Kredi Karti,Evet,0
+1507,74,61,69.66,4317.31,Aylik,Fiber,Havale,Hayir,1
+1508,47,59,100.99,5876.25,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+1509,71,5,88.14,471.32,2 Yillik,Fiber,Elektronik Cek,Evet,0
+1510,60,26,47.81,1290.99,2 Yillik,Fiber,Elektronik Cek,Evet,0
+1511,38,70,115.91,8100.76,Aylik,DSL,Kredi Karti,Hayir,0
+1512,32,42,90.73,3750.12,Aylik,DSL,Havale,Hayir,0
+1513,64,10,118.79,1235.05,Aylik,Fiber,Havale,Hayir,1
+1514,38,11,117.13,1228.45,Aylik,Fiber,Havale,Hayir,1
+1515,33,19,111.89,2116.99,2 Yillik,Fiber,Elektronik Cek,Evet,0
+1516,75,71,95.54,6781.33,Aylik,DSL,Kredi Karti,Hayir,0
+1517,47,13,80.94,1088.0,1 Yillik,Yok,Elektronik Cek,Hayir,1
+1518,21,66,37.22,2425.19,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+1519,48,49,74.34,3608.43,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+1520,46,67,96.54,6473.13,1 Yillik,DSL,Havale,Hayir,0
+1521,71,60,72.09,4375.72,2 Yillik,Fiber,Havale,Hayir,1
+1522,62,24,106.82,2678.05,Aylik,Fiber,Elektronik Cek,Hayir,1
+1523,29,60,30.97,1782.83,Aylik,Fiber,Elektronik Cek,Evet,1
+1524,27,13,58.09,770.94,Aylik,DSL,Havale,Hayir,1
+1525,55,21,70.6,1428.27,2 Yillik,Fiber,Kredi Karti,Hayir,1
+1526,20,16,63.23,1062.62,2 Yillik,DSL,Elektronik Cek,Hayir,1
+1527,37,10,30.86,261.67,Aylik,Fiber,Elektronik Cek,Hayir,1
+1528,26,7,35.35,213.72,Aylik,DSL,Kredi Karti,Evet,0
+1529,19,14,103.76,1423.18,Aylik,DSL,Elektronik Cek,Hayir,0
+1530,74,9,68.44,612.15,Aylik,Fiber,Kredi Karti,Evet,1
+1531,23,28,24.87,712.52,2 Yillik,DSL,Elektronik Cek,Evet,0
+1532,18,6,21.65,154.09,Aylik,DSL,Elektronik Cek,Hayir,1
+1533,75,5,67.35,336.46,1 Yillik,Yok,Kredi Karti,Hayir,1
+1534,29,72,36.44,2557.19,1 Yillik,Yok,Elektronik Cek,Hayir,0
+1535,68,7,90.51,669.96,Aylik,Yok,Kredi Karti,Hayir,1
+1536,19,6,99.53,594.53,Aylik,DSL,Havale,Evet,1
+1537,27,3,42.83,186.58,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+1538,24,10,79.22,756.81,1 Yillik,Fiber,Havale,Hayir,1
+1539,61,39,35.44,1302.05,Aylik,DSL,Otomatik Odeme,Hayir,0
+1540,56,60,50.36,3019.9,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1541,47,53,108.88,5835.44,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+1542,32,42,74.41,3133.27,2 Yillik,Yok,Kredi Karti,Hayir,0
+1543,23,7,108.59,750.15,2 Yillik,Fiber,Kredi Karti,Hayir,1
+1544,53,56,42.52,2337.6,1 Yillik,Fiber,Kredi Karti,Hayir,0
+1545,32,3,53.0,246.89,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+1546,54,46,67.1,3035.12,Aylik,DSL,Havale,Hayir,0
+1547,60,30,68.01,2004.03,1 Yillik,DSL,Elektronik Cek,Hayir,1
+1548,70,64,119.76,7693.14,Aylik,Fiber,Havale,Hayir,0
+1549,48,23,31.44,630.32,1 Yillik,Fiber,Kredi Karti,Hayir,0
+1550,18,46,105.2,4902.93,2 Yillik,Fiber,Elektronik Cek,Hayir,1
+1551,35,32,106.37,3435.05,2 Yillik,DSL,Elektronik Cek,Hayir,0
+1552,70,38,75.32,2907.12,Aylik,Fiber,Elektronik Cek,Hayir,1
+1553,51,68,54.4,3727.11,1 Yillik,Fiber,Havale,Evet,0
+1554,56,52,71.92,3731.78,2 Yillik,DSL,Elektronik Cek,Evet,0
+1555,46,30,49.25,1424.34,2 Yillik,Yok,Otomatik Odeme,Hayir,0
+1556,28,33,99.91,3290.03,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+1557,73,51,69.83,3512.57,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1558,65,25,112.58,2838.81,Aylik,Yok,Havale,Hayir,1
+1559,79,13,82.27,1109.85,2 Yillik,Fiber,Kredi Karti,Hayir,0
+1560,71,34,71.43,2502.46,1 Yillik,Yok,Otomatik Odeme,Hayir,0
+1561,36,5,91.11,474.14,1 Yillik,Fiber,Havale,Evet,0
+1562,33,13,70.39,961.3,1 Yillik,Fiber,Kredi Karti,Evet,0
+1563,33,31,110.45,3409.09,Aylik,DSL,Kredi Karti,Hayir,0
+1564,74,58,38.44,2205.61,Aylik,DSL,Havale,Evet,0
+1565,52,57,117.33,6711.49,2 Yillik,Fiber,Kredi Karti,Hayir,1
+1566,46,19,101.22,1903.86,Aylik,DSL,Elektronik Cek,Hayir,1
+1567,78,31,106.07,3301.63,1 Yillik,DSL,Elektronik Cek,Hayir,0
+1568,55,12,68.29,766.42,1 Yillik,Fiber,Havale,Evet,0
+1569,74,55,103.72,5660.52,2 Yillik,Fiber,Kredi Karti,Hayir,0
+1570,79,18,50.68,944.01,Aylik,DSL,Kredi Karti,Hayir,0
+1571,22,58,96.19,5623.35,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+1572,40,61,34.05,2027.77,Aylik,Yok,Havale,Hayir,0
+1573,63,50,50.71,2569.03,Aylik,Fiber,Kredi Karti,Hayir,1
+1574,68,24,64.57,1523.04,Aylik,Fiber,Elektronik Cek,Hayir,0
+1575,27,69,52.23,3604.7,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1576,37,50,58.7,3005.85,2 Yillik,DSL,Kredi Karti,Hayir,0
+1577,51,47,102.01,4834.84,2 Yillik,Fiber,Otomatik Odeme,Evet,0
+1578,67,62,45.67,2871.33,Aylik,Yok,Elektronik Cek,Evet,0
+1579,25,64,94.53,6145.36,2 Yillik,Fiber,Havale,Hayir,0
+1580,55,6,27.37,129.03,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1581,36,64,96.57,6131.19,1 Yillik,Yok,Havale,Hayir,0
+1582,31,56,99.2,5519.09,2 Yillik,DSL,Elektronik Cek,Hayir,0
+1583,49,15,60.17,889.82,1 Yillik,DSL,Kredi Karti,Hayir,0
+1584,43,23,92.25,2004.02,Aylik,Fiber,Kredi Karti,Evet,0
+1585,57,55,111.51,6122.68,Aylik,DSL,Otomatik Odeme,Hayir,1
+1586,37,16,100.07,1573.89,Aylik,Fiber,Otomatik Odeme,Evet,1
+1587,69,33,59.04,1987.51,2 Yillik,Yok,Kredi Karti,Hayir,0
+1588,22,50,68.42,3438.62,1 Yillik,Fiber,Kredi Karti,Hayir,0
+1589,71,47,97.94,4573.15,Aylik,DSL,Elektronik Cek,Hayir,1
+1590,19,66,49.26,3280.66,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1591,63,9,100.39,939.67,2 Yillik,DSL,Elektronik Cek,Hayir,0
+1592,39,22,52.81,1123.39,Aylik,Yok,Elektronik Cek,Hayir,0
+1593,41,71,100.6,7117.95,1 Yillik,DSL,Havale,Evet,0
+1594,19,41,28.68,1064.61,1 Yillik,Yok,Kredi Karti,Hayir,1
+1595,61,18,24.44,385.39,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1596,28,21,119.77,2478.05,Aylik,Fiber,Otomatik Odeme,Evet,0
+1597,58,25,106.95,2677.46,Aylik,Fiber,Havale,Hayir,1
+1598,62,40,108.28,4283.93,Aylik,DSL,Elektronik Cek,Evet,0
+1599,70,21,115.13,2392.06,1 Yillik,Fiber,Kredi Karti,Hayir,1
+1600,61,45,63.83,2811.08,2 Yillik,Yok,Havale,Evet,0
+1601,36,33,48.68,1615.0,Aylik,Yok,Kredi Karti,Hayir,0
+1602,63,44,33.0,1473.29,Aylik,DSL,Havale,Evet,0
+1603,69,12,70.12,861.56,Aylik,Fiber,Kredi Karti,Hayir,1
+1604,37,45,42.0,1890.62,Aylik,Yok,Elektronik Cek,Evet,0
+1605,25,67,113.56,7531.47,1 Yillik,Yok,Kredi Karti,Hayir,0
+1606,73,10,20.4,173.0,1 Yillik,Fiber,Elektronik Cek,Evet,0
+1607,27,24,34.32,803.31,1 Yillik,DSL,Elektronik Cek,Hayir,1
+1608,54,50,44.65,2212.34,Aylik,Yok,Otomatik Odeme,Hayir,1
+1609,32,45,39.9,1799.25,1 Yillik,Fiber,Kredi Karti,Evet,0
+1610,25,49,42.58,2157.7,Aylik,Fiber,Havale,Hayir,1
+1611,66,41,85.6,3550.2,2 Yillik,Fiber,Kredi Karti,Hayir,0
+1612,26,50,52.75,2588.12,1 Yillik,DSL,Elektronik Cek,Hayir,0
+1613,59,44,81.5,3619.92,2 Yillik,Yok,Kredi Karti,Hayir,1
+1614,60,6,109.03,686.2,Aylik,DSL,Elektronik Cek,Evet,1
+1615,21,55,80.26,4374.0,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1616,28,33,89.45,2994.29,1 Yillik,Yok,Elektronik Cek,Evet,1
+1617,67,4,56.55,218.18,Aylik,Yok,Kredi Karti,Hayir,0
+1618,49,30,35.97,1008.6,1 Yillik,Yok,Havale,Hayir,0
+1619,25,32,52.06,1688.68,Aylik,Yok,Elektronik Cek,Hayir,0
+1620,79,7,116.43,825.86,2 Yillik,DSL,Havale,Evet,1
+1621,34,72,82.18,5905.58,Aylik,Yok,Havale,Hayir,0
+1622,18,17,47.75,809.88,2 Yillik,Yok,Otomatik Odeme,Evet,0
+1623,75,24,65.09,1526.21,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1624,19,32,103.55,3344.11,Aylik,Fiber,Havale,Hayir,1
+1625,52,60,86.84,5208.23,Aylik,DSL,Havale,Evet,0
+1626,79,54,76.07,4116.1,Aylik,Fiber,Kredi Karti,Evet,0
+1627,53,56,108.52,6094.98,2 Yillik,Fiber,Havale,Hayir,1
+1628,54,18,87.24,1512.59,2 Yillik,Fiber,Elektronik Cek,Evet,0
+1629,42,61,84.27,5095.76,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+1630,25,60,38.98,2228.3,2 Yillik,Fiber,Havale,Hayir,0
+1631,53,34,30.64,1070.0,1 Yillik,DSL,Kredi Karti,Hayir,0
+1632,73,40,116.51,4599.79,Aylik,Yok,Kredi Karti,Evet,0
+1633,23,3,79.89,246.3,2 Yillik,DSL,Kredi Karti,Evet,0
+1634,72,55,61.57,3404.9,Aylik,DSL,Kredi Karti,Evet,0
+1635,43,70,78.9,5553.12,2 Yillik,DSL,Kredi Karti,Hayir,0
+1636,51,35,26.18,856.1,Aylik,Yok,Elektronik Cek,Hayir,0
+1637,28,39,102.21,3982.93,1 Yillik,Yok,Otomatik Odeme,Evet,1
+1638,56,36,41.66,1583.27,Aylik,DSL,Otomatik Odeme,Evet,0
+1639,29,6,100.45,688.42,Aylik,DSL,Elektronik Cek,Hayir,1
+1640,34,45,73.44,3354.17,Aylik,Fiber,Havale,Hayir,0
+1641,62,52,47.66,2495.19,Aylik,DSL,Otomatik Odeme,Hayir,0
+1642,21,67,23.02,1492.08,Aylik,Fiber,Kredi Karti,Hayir,1
+1643,45,67,101.58,6841.79,Aylik,DSL,Elektronik Cek,Evet,1
+1644,54,36,37.65,1347.5,Aylik,Fiber,Otomatik Odeme,Hayir,0
+1645,26,70,25.18,1790.63,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+1646,36,39,95.59,3696.37,Aylik,Fiber,Havale,Hayir,0
+1647,39,47,55.0,2576.35,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+1648,59,44,58.93,2601.13,Aylik,DSL,Otomatik Odeme,Hayir,0
+1649,78,72,44.71,3231.43,1 Yillik,DSL,Kredi Karti,Hayir,0
+1650,69,54,105.92,5744.37,Aylik,DSL,Elektronik Cek,Hayir,1
+1651,29,9,49.73,418.61,Aylik,DSL,Kredi Karti,Hayir,1
+1652,19,6,41.02,178.96,1 Yillik,Yok,Kredi Karti,Hayir,0
+1653,21,30,50.92,1608.84,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+1654,54,38,40.31,1656.24,Aylik,DSL,Havale,Hayir,0
+1655,27,49,51.77,2559.1,Aylik,DSL,Kredi Karti,Hayir,1
+1656,32,35,28.29,923.95,Aylik,Fiber,Havale,Evet,1
+1657,70,38,35.85,1323.64,Aylik,Yok,Kredi Karti,Evet,0
+1658,72,67,61.71,4160.03,Aylik,Fiber,Otomatik Odeme,Hayir,0
+1659,70,25,107.95,2765.81,1 Yillik,Fiber,Otomatik Odeme,Evet,1
+1660,33,36,25.73,865.64,Aylik,Yok,Kredi Karti,Hayir,0
+1661,56,41,41.27,1685.85,1 Yillik,Fiber,Kredi Karti,Evet,0
+1662,55,34,110.83,3778.02,Aylik,Yok,Otomatik Odeme,Hayir,1
+1663,29,70,109.0,7673.23,Aylik,Fiber,Otomatik Odeme,Hayir,0
+1664,52,70,87.95,6139.32,Aylik,DSL,Otomatik Odeme,Evet,0
+1665,50,37,44.05,1551.66,Aylik,Fiber,Elektronik Cek,Evet,0
+1666,42,33,61.98,2076.4,Aylik,DSL,Otomatik Odeme,Hayir,1
+1667,64,43,41.12,1824.4,2 Yillik,DSL,Havale,Hayir,0
+1668,60,14,32.86,455.91,1 Yillik,Yok,Otomatik Odeme,Hayir,0
+1669,51,31,58.0,1818.26,Aylik,DSL,Otomatik Odeme,Evet,0
+1670,62,16,77.58,1217.56,Aylik,Fiber,Kredi Karti,Evet,0
+1671,65,11,55.99,573.6,2 Yillik,Yok,Kredi Karti,Evet,0
+1672,53,7,81.08,618.88,Aylik,Fiber,Elektronik Cek,Evet,1
+1673,34,43,49.63,2153.46,Aylik,Fiber,Otomatik Odeme,Hayir,0
+1674,65,1,54.59,79.11,2 Yillik,Fiber,Otomatik Odeme,Evet,0
+1675,62,47,99.07,4731.4,Aylik,Yok,Kredi Karti,Evet,1
+1676,78,32,107.83,3397.82,Aylik,DSL,Havale,Hayir,1
+1677,27,27,52.2,1381.8,Aylik,DSL,Otomatik Odeme,Hayir,0
+1678,43,56,77.15,4328.3,1 Yillik,Fiber,Kredi Karti,Hayir,0
+1679,75,39,47.82,1836.76,Aylik,Yok,Elektronik Cek,Hayir,1
+1680,49,53,25.33,1381.65,1 Yillik,DSL,Havale,Hayir,1
+1681,76,52,93.79,4867.71,Aylik,Fiber,Kredi Karti,Evet,0
+1682,18,3,37.1,61.67,Aylik,Yok,Kredi Karti,Evet,1
+1683,20,16,62.57,1004.41,Aylik,DSL,Elektronik Cek,Hayir,0
+1684,67,42,68.7,2893.92,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+1685,40,71,38.45,2776.68,Aylik,Fiber,Kredi Karti,Hayir,1
+1686,50,12,29.46,373.18,1 Yillik,DSL,Havale,Hayir,0
+1687,44,8,54.8,461.46,Aylik,DSL,Kredi Karti,Hayir,0
+1688,43,68,115.23,7851.65,Aylik,Fiber,Elektronik Cek,Hayir,1
+1689,76,70,81.51,5696.29,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1690,23,13,58.14,720.01,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1691,65,29,23.89,707.25,Aylik,Fiber,Havale,Evet,0
+1692,73,46,80.03,3664.72,2 Yillik,Fiber,Havale,Evet,0
+1693,58,15,29.23,522.94,2 Yillik,Fiber,Havale,Hayir,0
+1694,42,24,74.25,1849.11,1 Yillik,Yok,Otomatik Odeme,Hayir,0
+1695,27,29,95.2,2792.44,1 Yillik,Fiber,Havale,Evet,0
+1696,60,47,62.36,2949.84,Aylik,Fiber,Kredi Karti,Hayir,0
+1697,47,23,49.94,1144.22,1 Yillik,Yok,Otomatik Odeme,Hayir,1
+1698,27,30,24.74,679.14,Aylik,Yok,Kredi Karti,Hayir,0
+1699,40,21,22.48,461.27,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+1700,77,55,63.0,3470.07,2 Yillik,Yok,Kredi Karti,Hayir,1
+1701,34,12,108.33,1311.43,Aylik,Yok,Elektronik Cek,Evet,0
+1702,29,17,44.41,778.45,2 Yillik,DSL,Havale,Hayir,0
+1703,60,18,77.41,1439.45,2 Yillik,DSL,Elektronik Cek,Evet,0
+1704,30,66,88.43,5801.77,Aylik,Fiber,Havale,Hayir,0
+1705,75,69,26.08,1765.37,2 Yillik,Fiber,Havale,Hayir,0
+1706,71,37,35.31,1379.01,Aylik,Fiber,Havale,Evet,0
+1707,78,12,53.13,676.11,Aylik,Fiber,Otomatik Odeme,Evet,0
+1708,74,55,87.01,4766.01,Aylik,DSL,Kredi Karti,Hayir,0
+1709,33,36,63.9,2295.04,1 Yillik,DSL,Kredi Karti,Hayir,0
+1710,31,62,93.42,5786.9,Aylik,Yok,Kredi Karti,Hayir,1
+1711,39,26,106.76,2777.34,2 Yillik,DSL,Elektronik Cek,Hayir,0
+1712,47,72,95.84,6924.11,Aylik,Fiber,Elektronik Cek,Hayir,0
+1713,72,59,119.22,7160.73,Aylik,DSL,Elektronik Cek,Hayir,1
+1714,63,17,95.44,1631.97,1 Yillik,Fiber,Kredi Karti,Hayir,0
+1715,57,53,105.22,5609.79,Aylik,Fiber,Otomatik Odeme,Evet,0
+1716,72,21,103.24,2083.72,1 Yillik,DSL,Otomatik Odeme,Evet,0
+1717,58,26,93.03,2394.54,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1718,41,19,100.18,1964.86,2 Yillik,Fiber,Otomatik Odeme,Hayir,0
+1719,43,50,113.47,5693.62,1 Yillik,DSL,Havale,Evet,0
+1720,50,19,67.52,1063.42,Aylik,Fiber,Elektronik Cek,Hayir,1
+1721,23,46,83.83,3889.88,Aylik,Fiber,Havale,Evet,0
+1722,63,42,71.49,3098.49,Aylik,Fiber,Elektronik Cek,Hayir,0
+1723,58,55,105.1,5680.7,2 Yillik,Fiber,Havale,Evet,1
+1724,63,72,63.14,4622.05,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+1725,51,1,101.97,0.0,Aylik,DSL,Otomatik Odeme,Evet,1
+1726,66,72,99.94,7242.58,Aylik,DSL,Elektronik Cek,Hayir,0
+1727,76,8,116.19,929.09,2 Yillik,Fiber,Otomatik Odeme,Evet,0
+1728,53,38,44.89,1588.32,Aylik,Fiber,Otomatik Odeme,Hayir,0
+1729,45,25,90.96,2296.31,1 Yillik,Yok,Kredi Karti,Hayir,0
+1730,24,47,95.69,4554.97,1 Yillik,DSL,Otomatik Odeme,Evet,0
+1731,66,52,113.63,5926.95,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1732,74,62,110.69,6892.02,Aylik,Fiber,Havale,Hayir,0
+1733,61,29,77.35,2222.57,Aylik,DSL,Elektronik Cek,Hayir,1
+1734,71,68,77.92,5205.49,Aylik,Fiber,Elektronik Cek,Hayir,1
+1735,71,24,36.73,916.11,2 Yillik,Fiber,Otomatik Odeme,Hayir,1
+1736,67,15,117.5,1849.99,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+1737,49,28,45.5,1330.48,2 Yillik,Fiber,Kredi Karti,Hayir,0
+1738,24,39,92.47,3506.94,Aylik,DSL,Kredi Karti,Hayir,1
+1739,18,49,99.58,4803.68,Aylik,Yok,Kredi Karti,Evet,1
+1740,30,60,64.12,3804.9,1 Yillik,DSL,Elektronik Cek,Hayir,1
+1741,44,17,41.12,619.39,Aylik,DSL,Otomatik Odeme,Evet,0
+1742,64,22,38.9,858.01,Aylik,DSL,Elektronik Cek,Hayir,1
+1743,46,68,105.65,7203.87,Aylik,DSL,Kredi Karti,Evet,0
+1744,19,32,71.08,2203.05,1 Yillik,DSL,Elektronik Cek,Evet,0
+1745,31,18,29.01,561.04,1 Yillik,Fiber,Havale,Hayir,1
+1746,78,71,91.7,6540.76,Aylik,DSL,Havale,Hayir,0
+1747,79,33,45.02,1458.25,2 Yillik,DSL,Otomatik Odeme,Evet,0
+1748,41,71,107.64,7633.81,Aylik,DSL,Havale,Hayir,1
+1749,67,67,50.96,3316.83,Aylik,Fiber,Elektronik Cek,Hayir,1
+1750,62,66,40.03,2625.37,Aylik,DSL,Kredi Karti,Hayir,0
+1751,75,42,28.49,1196.95,2 Yillik,Fiber,Havale,Hayir,1
+1752,73,58,71.15,4135.14,Aylik,Fiber,Elektronik Cek,Evet,0
+1753,56,70,65.07,4573.84,Aylik,Fiber,Elektronik Cek,Evet,0
+1754,42,20,95.13,1914.81,Aylik,DSL,Otomatik Odeme,Hayir,0
+1755,56,3,66.46,186.16,1 Yillik,Yok,Havale,Evet,1
+1756,37,24,54.38,1319.43,1 Yillik,Fiber,Otomatik Odeme,Hayir,1
+1757,39,46,46.17,2173.92,Aylik,DSL,Otomatik Odeme,Hayir,0
+1758,55,40,47.81,1907.63,2 Yillik,Fiber,Havale,Hayir,0
+1759,53,6,112.78,692.56,Aylik,Fiber,Kredi Karti,Evet,1
+1760,54,41,36.51,1487.6,Aylik,DSL,Havale,Hayir,0
+1761,41,13,118.82,1512.32,1 Yillik,Fiber,Elektronik Cek,Hayir,1
+1762,43,37,52.69,1975.67,1 Yillik,Fiber,Otomatik Odeme,Evet,0
+1763,18,42,28.84,1183.52,Aylik,DSL,Elektronik Cek,Evet,0
+1764,55,46,44.87,2083.33,1 Yillik,Yok,Elektronik Cek,Evet,0
+1765,53,30,25.84,776.61,Aylik,DSL,Kredi Karti,Hayir,0
+1766,75,30,99.0,2954.8,1 Yillik,DSL,Elektronik Cek,Hayir,0
+1767,49,49,71.26,3475.33,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+1768,46,54,53.7,2874.39,2 Yillik,Fiber,Havale,Evet,1
+1769,22,59,86.2,5003.51,Aylik,Yok,Otomatik Odeme,Hayir,0
+1770,30,25,83.06,2095.64,1 Yillik,Yok,Kredi Karti,Evet,1
+1771,38,31,113.99,3545.27,1 Yillik,Yok,Otomatik Odeme,Evet,0
+1772,41,24,116.13,2829.6,Aylik,Fiber,Otomatik Odeme,Evet,0
+1773,40,38,88.07,3320.09,Aylik,Fiber,Elektronik Cek,Hayir,1
+1774,42,10,101.78,1112.57,2 Yillik,Fiber,Elektronik Cek,Hayir,1
+1775,65,31,99.24,3057.45,Aylik,DSL,Otomatik Odeme,Hayir,0
+1776,26,14,69.13,924.06,1 Yillik,Yok,Havale,Hayir,0
+1777,38,39,90.45,3477.87,Aylik,Fiber,Kredi Karti,Evet,0
+1778,28,62,27.83,1638.76,2 Yillik,Fiber,Otomatik Odeme,Hayir,0
+1779,37,71,95.8,6878.43,Aylik,Fiber,Kredi Karti,Evet,0
+1780,60,33,116.18,3902.49,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+1781,20,5,28.5,172.54,1 Yillik,DSL,Havale,Hayir,1
+1782,39,17,103.61,1716.57,Aylik,Fiber,Otomatik Odeme,Evet,0
+1783,19,8,113.3,996.96,1 Yillik,Fiber,Otomatik Odeme,Evet,1
+1784,77,55,42.62,2326.51,1 Yillik,Yok,Havale,Evet,0
+1785,63,71,72.48,5132.63,Aylik,DSL,Elektronik Cek,Evet,0
+1786,33,40,112.79,4583.46,Aylik,DSL,Havale,Hayir,1
+1787,30,13,116.02,1541.21,1 Yillik,Fiber,Havale,Evet,1
+1788,24,2,32.79,175.64,1 Yillik,Yok,Otomatik Odeme,Hayir,0
+1789,47,71,54.9,3910.34,Aylik,Yok,Havale,Hayir,0
+1790,64,23,89.81,2045.78,2 Yillik,Fiber,Otomatik Odeme,Hayir,0
+1791,54,9,42.16,348.85,Aylik,DSL,Elektronik Cek,Hayir,0
+1792,72,13,52.48,589.89,Aylik,DSL,Otomatik Odeme,Hayir,1
+1793,39,19,22.33,410.34,1 Yillik,Fiber,Elektronik Cek,Evet,0
+1794,35,48,35.35,1754.03,Aylik,DSL,Otomatik Odeme,Evet,1
+1795,47,65,76.23,4984.89,Aylik,Fiber,Havale,Hayir,0
+1796,30,20,85.31,1707.22,Aylik,Yok,Havale,Hayir,0
+1797,78,50,84.89,4194.75,Aylik,Fiber,Havale,Hayir,1
+1798,29,5,97.84,500.54,Aylik,Fiber,Kredi Karti,Evet,1
+1799,47,1,61.53,112.17,1 Yillik,DSL,Kredi Karti,Hayir,0
+1800,50,4,47.35,210.94,Aylik,DSL,Havale,Hayir,0
+1801,21,67,21.56,1452.86,2 Yillik,Fiber,Otomatik Odeme,Hayir,0
+1802,47,42,40.66,1667.87,1 Yillik,Fiber,Otomatik Odeme,Evet,0
+1803,46,58,51.24,3015.28,Aylik,DSL,Elektronik Cek,Evet,0
+1804,34,2,37.82,0.0,Aylik,DSL,Havale,Hayir,1
+1805,25,2,22.01,63.16,1 Yillik,DSL,Elektronik Cek,Hayir,1
+1806,20,62,35.74,2344.4,Aylik,Fiber,Otomatik Odeme,Evet,0
+1807,18,8,86.61,617.46,Aylik,Fiber,Kredi Karti,Evet,1
+1808,47,12,82.96,983.45,2 Yillik,Fiber,Otomatik Odeme,Hayir,0
+1809,23,38,113.57,4315.26,1 Yillik,Fiber,Otomatik Odeme,Hayir,1
+1810,77,44,99.82,4368.95,1 Yillik,DSL,Otomatik Odeme,Hayir,1
+1811,33,17,76.78,1357.08,Aylik,Fiber,Kredi Karti,Hayir,1
+1812,58,33,33.76,1137.7,Aylik,DSL,Otomatik Odeme,Evet,1
+1813,59,49,76.41,3751.71,Aylik,Yok,Elektronik Cek,Evet,1
+1814,48,32,26.16,876.98,1 Yillik,DSL,Elektronik Cek,Hayir,0
+1815,72,28,63.09,1767.36,Aylik,Fiber,Kredi Karti,Hayir,0
+1816,24,6,59.03,513.17,Aylik,DSL,Havale,Evet,0
+1817,32,33,62.78,2079.31,Aylik,Fiber,Havale,Hayir,0
+1818,33,58,47.98,2792.6,1 Yillik,DSL,Otomatik Odeme,Evet,0
+1819,26,46,88.58,3989.16,1 Yillik,Yok,Havale,Evet,0
+1820,36,65,104.09,6738.68,Aylik,DSL,Kredi Karti,Hayir,1
+1821,37,10,96.85,1025.87,Aylik,Yok,Otomatik Odeme,Evet,1
+1822,65,1,82.78,16.01,Aylik,Fiber,Kredi Karti,Evet,1
+1823,36,40,73.83,2845.32,Aylik,DSL,Otomatik Odeme,Hayir,0
+1824,72,13,23.11,302.05,Aylik,DSL,Otomatik Odeme,Hayir,1
+1825,65,43,92.29,4037.01,Aylik,Fiber,Havale,Hayir,1
+1826,73,66,74.5,4919.12,1 Yillik,Yok,Elektronik Cek,Hayir,0
+1827,24,25,47.07,1159.94,1 Yillik,Yok,Otomatik Odeme,Evet,0
+1828,79,40,52.78,2018.28,2 Yillik,DSL,Elektronik Cek,Hayir,0
+1829,56,50,113.56,5700.61,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+1830,78,11,82.44,939.9,Aylik,DSL,Kredi Karti,Evet,1
+1831,40,65,67.59,4304.26,Aylik,DSL,Elektronik Cek,Hayir,0
+1832,77,15,82.09,1288.08,Aylik,Fiber,Elektronik Cek,Hayir,1
+1833,54,59,61.37,3659.11,1 Yillik,DSL,Elektronik Cek,Hayir,0
+1834,22,48,67.02,3273.58,Aylik,DSL,Otomatik Odeme,Hayir,0
+1835,43,11,49.03,568.51,Aylik,Yok,Otomatik Odeme,Hayir,1
+1836,26,53,63.99,3424.15,Aylik,Fiber,Elektronik Cek,Hayir,0
+1837,76,15,88.56,1354.44,Aylik,Fiber,Havale,Evet,0
+1838,36,44,23.99,1098.98,1 Yillik,DSL,Havale,Hayir,0
+1839,31,70,99.5,6874.06,1 Yillik,Yok,Kredi Karti,Hayir,0
+1840,52,69,48.3,3257.65,Aylik,Fiber,Elektronik Cek,Hayir,1
+1841,44,63,88.26,5523.58,2 Yillik,Fiber,Havale,Hayir,1
+1842,24,36,84.27,3027.23,Aylik,DSL,Otomatik Odeme,Evet,1
+1843,68,41,85.26,3515.07,Aylik,Yok,Otomatik Odeme,Evet,0
+1844,70,22,80.81,1794.05,Aylik,Fiber,Otomatik Odeme,Hayir,0
+1845,64,67,115.91,7821.83,1 Yillik,Yok,Otomatik Odeme,Hayir,0
+1846,56,35,70.83,2536.47,1 Yillik,Fiber,Havale,Evet,0
+1847,42,56,93.23,5177.26,Aylik,Fiber,Havale,Hayir,1
+1848,51,26,90.54,2365.97,2 Yillik,Fiber,Elektronik Cek,Hayir,1
+1849,50,54,43.63,2313.63,Aylik,Yok,Havale,Hayir,1
+1850,28,17,48.33,812.2,Aylik,DSL,Havale,Evet,0
+1851,23,53,62.4,3323.29,1 Yillik,DSL,Elektronik Cek,Hayir,0
+1852,33,4,47.77,20.64,2 Yillik,Fiber,Havale,Hayir,1
+1853,46,8,56.67,573.92,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+1854,27,26,59.1,1564.92,2 Yillik,Fiber,Kredi Karti,Evet,0
+1855,24,35,80.39,2783.86,Aylik,Fiber,Havale,Hayir,1
+1856,70,52,41.99,2279.85,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+1857,41,26,100.43,2593.81,2 Yillik,Fiber,Otomatik Odeme,Hayir,0
+1858,54,2,63.75,134.13,Aylik,DSL,Elektronik Cek,Hayir,1
+1859,50,24,90.62,2150.52,Aylik,Yok,Kredi Karti,Evet,0
+1860,63,32,28.14,983.08,2 Yillik,DSL,Havale,Hayir,0
+1861,63,40,67.0,2674.75,Aylik,Fiber,Otomatik Odeme,Evet,1
+1862,36,47,22.82,1080.01,Aylik,Yok,Havale,Evet,0
+1863,70,18,87.59,1636.81,2 Yillik,DSL,Havale,Hayir,0
+1864,41,44,54.37,2421.54,2 Yillik,DSL,Kredi Karti,Evet,0
+1865,69,46,114.93,5284.06,2 Yillik,DSL,Elektronik Cek,Hayir,0
+1866,43,56,52.41,2990.48,2 Yillik,Fiber,Kredi Karti,Hayir,1
+1867,24,38,76.38,3029.36,Aylik,Fiber,Havale,Hayir,0
+1868,65,59,45.74,2714.53,2 Yillik,DSL,Elektronik Cek,Evet,0
+1869,19,16,82.01,1318.0,Aylik,Yok,Otomatik Odeme,Hayir,1
+1870,65,52,66.7,3476.93,1 Yillik,DSL,Kredi Karti,Hayir,0
+1871,20,4,57.06,293.76,Aylik,Fiber,Havale,Hayir,0
+1872,30,8,40.37,293.0,2 Yillik,Fiber,Kredi Karti,Evet,0
+1873,55,63,31.15,1948.53,1 Yillik,DSL,Havale,Evet,0
+1874,76,35,31.99,1042.78,2 Yillik,DSL,Otomatik Odeme,Hayir,0
+1875,43,45,119.9,5336.31,Aylik,Yok,Havale,Evet,1
+1876,25,44,61.23,2668.23,Aylik,Fiber,Havale,Hayir,1
+1877,32,51,20.19,1026.89,Aylik,DSL,Havale,Evet,0
+1878,73,18,115.29,2163.67,Aylik,Fiber,Otomatik Odeme,Evet,0
+1879,63,13,22.0,312.8,1 Yillik,Fiber,Elektronik Cek,Hayir,1
+1880,24,4,61.86,201.84,Aylik,DSL,Elektronik Cek,Hayir,1
+1881,41,63,91.75,5743.85,1 Yillik,Fiber,Otomatik Odeme,Hayir,0
+1882,34,17,111.46,1963.56,Aylik,Fiber,Elektronik Cek,Hayir,0
+1883,29,42,91.29,3890.51,Aylik,DSL,Elektronik Cek,Hayir,1
+1884,70,33,66.36,2191.29,1 Yillik,Yok,Elektronik Cek,Hayir,0
+1885,56,12,117.44,1387.15,Aylik,DSL,Elektronik Cek,Evet,0
+1886,29,30,23.93,774.15,Aylik,DSL,Kredi Karti,Hayir,0
+1887,58,6,118.69,662.47,Aylik,DSL,Havale,Hayir,1
+1888,43,13,104.94,1383.82,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1889,21,11,112.89,1355.42,1 Yillik,Fiber,Kredi Karti,Hayir,0
+1890,45,60,45.48,2739.07,Aylik,Yok,Otomatik Odeme,Hayir,0
+1891,29,41,34.25,1365.47,Aylik,DSL,Elektronik Cek,Hayir,1
+1892,33,67,86.33,5804.63,1 Yillik,Fiber,Havale,Hayir,0
+1893,72,32,71.59,2267.38,Aylik,Fiber,Kredi Karti,Hayir,1
+1894,62,15,72.32,1015.09,1 Yillik,DSL,Otomatik Odeme,Hayir,1
+1895,26,44,112.46,4983.29,Aylik,DSL,Kredi Karti,Hayir,1
+1896,70,67,82.01,5550.56,2 Yillik,Yok,Elektronik Cek,Evet,0
+1897,53,39,51.11,1977.74,Aylik,DSL,Kredi Karti,Hayir,0
+1898,72,2,60.01,101.16,Aylik,Fiber,Otomatik Odeme,Evet,1
+1899,64,22,33.35,685.62,2 Yillik,Fiber,Kredi Karti,Hayir,0
+1900,39,67,39.23,2620.91,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+1901,51,38,34.34,1276.8,1 Yillik,Yok,Elektronik Cek,Evet,0
+1902,50,69,101.03,6920.52,2 Yillik,Yok,Kredi Karti,Evet,0
+1903,62,37,90.49,3442.74,Aylik,Fiber,Elektronik Cek,Hayir,1
+1904,33,1,73.03,96.35,2 Yillik,Fiber,Otomatik Odeme,Hayir,1
+1905,38,63,57.44,3647.34,1 Yillik,Fiber,Kredi Karti,Hayir,0
+1906,33,55,86.85,4820.92,Aylik,Fiber,Otomatik Odeme,Evet,0
+1907,36,52,101.29,5305.63,Aylik,DSL,Otomatik Odeme,Hayir,0
+1908,27,70,108.12,7547.74,Aylik,Fiber,Elektronik Cek,Hayir,1
+1909,20,15,74.7,1134.13,2 Yillik,DSL,Havale,Hayir,0
+1910,76,66,101.99,6717.89,Aylik,Fiber,Kredi Karti,Evet,1
+1911,22,17,71.13,1231.13,Aylik,Fiber,Havale,Hayir,0
+1912,73,70,67.45,4738.58,1 Yillik,DSL,Otomatik Odeme,Hayir,0
+1913,18,14,106.54,1472.43,1 Yillik,Yok,Elektronik Cek,Hayir,0
+1914,66,40,58.64,2279.14,Aylik,DSL,Elektronik Cek,Hayir,1
+1915,38,57,59.59,3403.94,2 Yillik,DSL,Otomatik Odeme,Hayir,1
+1916,50,6,50.49,292.73,Aylik,Fiber,Havale,Hayir,1
+1917,35,5,71.87,264.83,2 Yillik,Fiber,Kredi Karti,Evet,1
+1918,48,62,74.49,4643.76,Aylik,DSL,Otomatik Odeme,Evet,1
+1919,45,5,86.05,478.52,Aylik,Fiber,Elektronik Cek,Hayir,0
+1920,50,45,63.05,2963.67,1 Yillik,Fiber,Elektronik Cek,Evet,0
+1921,42,68,41.78,2821.48,Aylik,DSL,Elektronik Cek,Hayir,0
+1922,51,45,106.68,4773.66,Aylik,Yok,Otomatik Odeme,Hayir,0
+1923,69,35,54.6,1855.53,Aylik,DSL,Otomatik Odeme,Hayir,0
+1924,44,31,112.29,3491.42,1 Yillik,Fiber,Elektronik Cek,Evet,1
+1925,40,46,40.74,1884.16,2 Yillik,DSL,Otomatik Odeme,Evet,0
+1926,26,42,76.01,3151.86,2 Yillik,Fiber,Havale,Hayir,0
+1927,40,37,73.66,2716.67,2 Yillik,Yok,Elektronik Cek,Hayir,0
+1928,25,12,102.86,1135.39,2 Yillik,DSL,Otomatik Odeme,Evet,0
+1929,29,48,33.89,1673.04,Aylik,DSL,Kredi Karti,Hayir,0
+1930,77,54,110.99,5954.93,Aylik,DSL,Elektronik Cek,Evet,1
+1931,23,52,73.14,3801.55,2 Yillik,DSL,Elektronik Cek,Evet,0
+1932,47,6,78.61,400.33,2 Yillik,Yok,Elektronik Cek,Hayir,0
+1933,69,51,71.02,3592.9,2 Yillik,Fiber,Otomatik Odeme,Hayir,0
+1934,77,53,23.6,1236.82,1 Yillik,Fiber,Havale,Hayir,0
+1935,27,14,69.71,975.38,Aylik,Yok,Kredi Karti,Hayir,1
+1936,28,62,46.35,2897.69,2 Yillik,Yok,Kredi Karti,Hayir,1
+1937,41,38,54.27,2134.21,2 Yillik,Yok,Otomatik Odeme,Evet,0
+1938,52,35,84.91,3008.49,1 Yillik,DSL,Elektronik Cek,Hayir,0
+1939,77,53,69.77,3745.92,2 Yillik,DSL,Elektronik Cek,Evet,0
+1940,30,37,29.32,1157.15,1 Yillik,DSL,Havale,Hayir,0
+1941,28,40,27.3,1120.49,2 Yillik,DSL,Havale,Hayir,0
+1942,33,23,38.57,885.27,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1943,72,67,39.09,2669.49,2 Yillik,DSL,Elektronik Cek,Evet,0
+1944,19,70,80.83,5711.75,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1945,41,10,37.78,410.23,Aylik,Fiber,Otomatik Odeme,Hayir,1
+1946,25,53,108.17,5660.28,Aylik,DSL,Otomatik Odeme,Hayir,1
+1947,27,2,40.98,39.89,Aylik,DSL,Elektronik Cek,Hayir,1
+1948,74,27,29.11,772.23,Aylik,Fiber,Kredi Karti,Hayir,1
+1949,18,70,107.57,7568.88,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+1950,37,13,49.53,642.82,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+1951,74,28,62.54,1807.96,2 Yillik,Fiber,Elektronik Cek,Hayir,0
+1952,55,16,115.9,1920.16,Aylik,DSL,Kredi Karti,Hayir,1
+1953,22,53,114.44,6125.28,Aylik,DSL,Otomatik Odeme,Hayir,0
+1954,46,34,91.49,3170.94,1 Yillik,DSL,Otomatik Odeme,Hayir,1
+1955,78,43,26.89,1104.42,1 Yillik,DSL,Havale,Hayir,0
+1956,42,68,79.33,5418.57,Aylik,Fiber,Havale,Hayir,0
+1957,50,38,118.91,4488.2,2 Yillik,Yok,Kredi Karti,Hayir,0
+1958,50,53,114.69,5996.12,2 Yillik,DSL,Otomatik Odeme,Hayir,1
+1959,58,8,30.6,230.43,1 Yillik,DSL,Kredi Karti,Hayir,1
+1960,29,16,59.6,1019.84,2 Yillik,Fiber,Havale,Hayir,0
+1961,70,69,51.55,3579.99,1 Yillik,Fiber,Havale,Hayir,1
+1962,79,62,32.97,2145.03,1 Yillik,DSL,Havale,Hayir,1
+1963,26,48,89.48,4303.9,Aylik,DSL,Elektronik Cek,Evet,0
+1964,68,28,47.38,1449.03,Aylik,Yok,Otomatik Odeme,Evet,0
+1965,68,15,54.49,826.23,Aylik,DSL,Otomatik Odeme,Evet,1
+1966,63,62,29.04,1801.6,1 Yillik,Fiber,Elektronik Cek,Hayir,0
+1967,40,57,69.8,3914.63,1 Yillik,Fiber,Kredi Karti,Hayir,0
+1968,47,18,35.82,700.29,Aylik,DSL,Otomatik Odeme,Hayir,0
+1969,70,43,63.21,2692.92,1 Yillik,Fiber,Havale,Evet,1
+1970,27,45,34.33,1512.5,Aylik,DSL,Otomatik Odeme,Hayir,0
+1971,69,35,115.38,4102.36,Aylik,DSL,Havale,Hayir,0
+1972,75,67,34.5,2369.41,2 Yillik,DSL,Elektronik Cek,Hayir,0
+1973,60,9,72.19,706.31,Aylik,Yok,Havale,Evet,0
+1974,39,19,39.7,736.19,Aylik,DSL,Havale,Evet,0
+1975,52,7,27.64,190.93,Aylik,DSL,Kredi Karti,Evet,1
+1976,21,50,40.23,2008.51,Aylik,Yok,Elektronik Cek,Hayir,0
+1977,75,47,25.48,1236.69,1 Yillik,DSL,Havale,Hayir,0
+1978,39,72,33.94,2521.36,2 Yillik,Yok,Otomatik Odeme,Evet,0
+1979,21,40,69.35,2792.41,1 Yillik,Fiber,Havale,Hayir,0
+1980,67,11,85.18,1035.72,1 Yillik,Fiber,Otomatik Odeme,Evet,1
+1981,58,33,28.73,992.95,Aylik,Fiber,Havale,Hayir,0
+1982,56,7,64.1,436.96,1 Yillik,Fiber,Havale,Evet,0
+1983,21,49,78.12,3869.32,Aylik,DSL,Kredi Karti,Evet,1
+1984,64,49,43.42,2212.88,Aylik,Yok,Elektronik Cek,Evet,0
+1985,57,62,57.21,3646.93,2 Yillik,Yok,Kredi Karti,Hayir,0
+1986,67,25,27.18,738.84,Aylik,Yok,Havale,Hayir,1
+1987,69,23,42.01,967.51,Aylik,Fiber,Otomatik Odeme,Hayir,0
+1988,31,6,66.68,389.25,Aylik,Fiber,Elektronik Cek,Evet,1
+1989,31,30,119.04,3600.0,2 Yillik,Fiber,Elektronik Cek,Hayir,1
+1990,75,35,119.63,4270.75,Aylik,DSL,Otomatik Odeme,Hayir,1
+1991,50,55,117.96,6509.49,Aylik,Fiber,Otomatik Odeme,Hayir,0
+1992,45,55,62.31,3449.78,2 Yillik,Fiber,Otomatik Odeme,Evet,0
+1993,35,11,28.07,311.34,Aylik,Fiber,Elektronik Cek,Hayir,1
+1994,57,21,52.36,1083.17,2 Yillik,DSL,Havale,Hayir,0
+1995,64,37,43.77,1611.38,Aylik,Fiber,Kredi Karti,Hayir,0
+1996,18,25,21.41,542.02,1 Yillik,Fiber,Havale,Hayir,0
+1997,52,2,29.52,144.94,2 Yillik,Fiber,Elektronik Cek,Hayir,1
+1998,79,61,65.32,3972.53,Aylik,Yok,Havale,Hayir,0
+1999,35,53,53.97,2863.04,1 Yillik,Fiber,Elektronik Cek,Evet,0
+2000,35,38,38.04,1402.25,Aylik,DSL,Kredi Karti,Evet,1
