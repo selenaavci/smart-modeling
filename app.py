@@ -1,7 +1,3 @@
-"""
-Smart Modeling — Streamlit UI
-Self-service ML aracı (dark mode, sade arayüz).
-"""
 from __future__ import annotations
 
 import sys
@@ -14,9 +10,9 @@ ROOT = Path(__file__).parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from src.data_loader import SUPPORTED_EXTENSIONS, load_dataframe  # noqa: E402
-from src.exporter import build_excel_report  # noqa: E402
-from src.model_engine import (  # noqa: E402
+from src.data_loader import SUPPORTED_EXTENSIONS, load_dataframe  
+from src.exporter import build_excel_report  
+from src.model_engine import (  
     CLASSIFIERS,
     REGRESSORS,
     run_clustering,
@@ -25,14 +21,14 @@ from src.model_engine import (  # noqa: E402
     train_classification,
     train_regression,
 )
-from src.model_info import (  # noqa: E402
+from src.model_info import (  
     METRIC_DESCRIPTIONS,
     MODEL_DESCRIPTIONS,
     PROBLEM_DESCRIPTIONS,
 )
-from src.preprocessing import build_feature_matrix, prepare_supervised  # noqa: E402
-from src.problem_detector import suggest_problem_type  # noqa: E402
-from src.visualizations import (  # noqa: E402
+from src.preprocessing import build_feature_matrix, prepare_supervised 
+from src.problem_detector import suggest_problem_type
+from src.visualizations import (  
     plot_actual_vs_predicted,
     plot_clusters_2d,
     plot_confusion_matrix,
@@ -65,7 +61,7 @@ st.set_page_config(
 st.title("Smart Modeling Agent")
 st.caption(
     "Veri setinizi yükleyin, problem tipini belirleyin ve otomatik olarak "
-    "eğitilen modelleri karşılaştırın."
+    "eğitilen yapay zeka modellerini karşılaştırın."
 )
 
 
