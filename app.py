@@ -112,7 +112,7 @@ with st.sidebar:
     )
 
     st.divider()
-    if st.button("Oturumu Sıfırla", use_container_width=True):
+    if st.button("Oturumu Sıfırla", width="stretch"):
         for _k in list(st.session_state.keys()):
             del st.session_state[_k]
         safe_rerun()
@@ -161,7 +161,7 @@ with tab_preview:
     c3.metric("Eksik Değer", f"{int(df.isna().sum().sum()):,}")
     c4.metric("Numerik Sütun", df.select_dtypes(include="number").shape[1])
 
-    st.dataframe(df.head(100), use_container_width=True, height=400)
+    st.dataframe(df.head(100), width="stretch", height=400)
 
     with st.expander("Sütun Bilgileri"):
         rows = []
@@ -176,7 +176,7 @@ with tab_preview:
                     "Örnek Değer": str(samples.iloc[0]) if len(samples) > 0 else "-",
                 }
             )
-        st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
+        st.dataframe(pd.DataFrame(rows), width="stretch", hide_index=True)
 
 
 with tab_profile:
@@ -187,7 +187,7 @@ with tab_profile:
 
     if not num_df.empty:
         st.markdown("#### Numerik Sütun İstatistikleri")
-        st.dataframe(num_df.describe().T, use_container_width=True)
+        st.dataframe(num_df.describe().T, width="stretch")
     else:
         st.info("Numerik sütun bulunamadı.")
 
@@ -203,7 +203,7 @@ with tab_profile:
             index=missing.index,
         )
         miss_df.index.name = "Sütun"
-        st.dataframe(miss_df, use_container_width=True)
+        st.dataframe(miss_df, width="stretch")
 
     if cat_cols:
         st.markdown("#### Kategorik Sütun Kardinalitesi")
@@ -219,7 +219,7 @@ with tab_profile:
             card_rows.append(
                 {"Sütun": col, "Benzersiz Değer": nunique, "Kardinalite": tip}
             )
-        st.dataframe(pd.DataFrame(card_rows), use_container_width=True, hide_index=True)
+        st.dataframe(pd.DataFrame(card_rows), width="stretch", hide_index=True)
 
 
 with tab_problem:
@@ -375,7 +375,7 @@ with tab_train:
             f"Standardizasyon: {'Açık' if st.session_state.get('use_scaling') else 'Kapalı'}"
         )
 
-        if st.button("Eğitimi Başlat", type="primary", use_container_width=True):
+        if st.button("Eğitimi Başlat", type="primary", width="stretch"):
             if not selected_models:
                 st.warning("En az bir model seçilmelidir.")
             else:
@@ -495,7 +495,7 @@ with tab_results:
         comp_df = pd.DataFrame(rows)
 
         st.markdown("#### Model Karşılaştırma")
-        st.dataframe(comp_df, use_container_width=True, hide_index=True)
+        st.dataframe(comp_df, width="stretch", hide_index=True)
         st.success(f"En iyi model: **{res['best']}**")
 
         best_info = res["results"][res["best"]]
@@ -633,7 +633,7 @@ with tab_results:
             data=_build_artifact_zip(),
             file_name=f"modeling_artifact_{datetime.now().strftime('%Y%m%d_%H%M%S')}.zip",
             mime="application/zip",
-            use_container_width=True,
+            width="stretch",
             help=(
                 "İçerik: metadata.json, features.json, model.pkl, "
                 "X_train/X_test/y_train/y_test CSV'leri ve README."
@@ -707,7 +707,7 @@ with tab_results:
         preview_cols = [c for c in preview_cols if c in full_preds_df.columns]
         st.dataframe(
             full_preds_df[preview_cols].head(20),
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
         )
 
@@ -732,5 +732,5 @@ with tab_results:
             data=excel_bytes,
             file_name="smart_modeling_sonuclari.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-            use_container_width=True,
+            width="stretch",
         )
