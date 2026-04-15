@@ -1,17 +1,12 @@
-"""Matplotlib / Seaborn grafikleri (dark mode)."""
 from __future__ import annotations
 
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
-from sklearn.decomposition import PCA
 from sklearn.metrics import auc, roc_curve
 
 
-# ---------------------------------------------------------------------------
-# Dark theme — tüm figürler Streamlit dark mode ile uyumlu
-# ---------------------------------------------------------------------------
 plt.style.use("dark_background")
 
 _BG = "#0E1117"
@@ -41,14 +36,8 @@ plt.rcParams.update(
 def plot_confusion_matrix(cm, classes):
     fig, ax = plt.subplots(figsize=(5, 4))
     sns.heatmap(
-        cm,
-        annot=True,
-        fmt="d",
-        cmap="Blues",
-        xticklabels=classes,
-        yticklabels=classes,
-        ax=ax,
-        cbar_kws={"label": ""},
+        cm, annot=True, fmt="d", cmap="Blues",
+        xticklabels=classes, yticklabels=classes, ax=ax, cbar_kws={"label": ""},
     )
     ax.set_xlabel("Tahmin")
     ax.set_ylabel("Gerçek")
@@ -64,7 +53,7 @@ def plot_roc_curve(model, X_test, y_test_enc):
         y_score = model.predict_proba(X_test)[:, 1]
         fpr, tpr, _ = roc_curve(y_test_enc, y_score)
         roc_auc = auc(fpr, tpr)
-    except Exception:  # noqa: BLE001
+    except Exception:
         return None
 
     fig, ax = plt.subplots(figsize=(5, 4))
@@ -127,35 +116,5 @@ def plot_residuals(y_test, y_pred):
     ax.set_xlabel("Tahmin")
     ax.set_ylabel("Residual (gerçek - tahmin)")
     ax.set_title("Residual Plot")
-    fig.tight_layout()
-    return fig
-
-
-def plot_clusters_2d(X, labels, title: str = "Kümeleme (PCA 2D)"):
-    values = X.values if hasattr(X, "values") else np.asarray(X)
-    if values.shape[1] >= 2:
-        pca = PCA(n_components=2)
-        coords = pca.fit_transform(values)
-        xlabel, ylabel = "PCA 1", "PCA 2"
-    else:
-        coords = np.column_stack([values[:, 0], np.zeros(values.shape[0])])
-        xlabel = X.columns[0] if hasattr(X, "columns") else "X"
-        ylabel = ""
-
-    fig, ax = plt.subplots(figsize=(6, 5))
-    scatter = ax.scatter(
-        coords[:, 0],
-        coords[:, 1],
-        c=labels,
-        cmap="tab10",
-        alpha=0.8,
-        s=25,
-        edgecolor="none",
-    )
-    ax.set_xlabel(xlabel)
-    ax.set_ylabel(ylabel)
-    ax.set_title(title)
-    cbar = fig.colorbar(scatter, ax=ax, label="Küme")
-    cbar.ax.yaxis.set_tick_params(color=_TEXT)
     fig.tight_layout()
     return fig

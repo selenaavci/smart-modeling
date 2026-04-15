@@ -1,9 +1,7 @@
-"""Otomatik veri ön işleme: eksik değer, encoding, scaling."""
 from __future__ import annotations
 
 from typing import Sequence
 
-import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
@@ -14,24 +12,15 @@ def build_feature_matrix(
     feature_cols: Sequence[str],
     scale: bool = False,
 ) -> pd.DataFrame:
-    """Seçili kolonlardan sayısal, eksiksiz bir feature matrisi üretir.
-
-    - Sayısal eksik değerler median ile doldurulur.
-    - Kategorik eksik değerler mode ile doldurulur.
-    - Kategorik değişkenler One-Hot Encode edilir.
-    - `scale=True` ise StandardScaler uygulanır.
-    """
     if not feature_cols:
         raise ValueError("En az bir feature seçmelisiniz.")
 
     X = df[list(feature_cols)].copy()
 
-    # Datetime -> string (ordinal değeri kaybolur ama dummies ile çalışır)
     for col in X.columns:
         if pd.api.types.is_datetime64_any_dtype(X[col]):
             X[col] = X[col].astype(str)
 
-    # Missing value imputation
     for col in X.columns:
         if pd.api.types.is_numeric_dtype(X[col]):
             median = X[col].median()
@@ -41,7 +30,6 @@ def build_feature_matrix(
             fill = mode.iloc[0] if not mode.empty else "missing"
             X[col] = X[col].fillna(fill).astype(str)
 
-    # One-hot encode all non-numeric columns
     X = pd.get_dummies(X, drop_first=False)
     X = X.astype(float)
 
@@ -61,7 +49,6 @@ def prepare_supervised(
     random_state: int = 42,
     scale: bool = False,
 ):
-    """Supervised problemler için X_train / X_test / y_train / y_test döner."""
     if target_col in feature_cols:
         feature_cols = [c for c in feature_cols if c != target_col]
 
@@ -80,12 +67,13 @@ def prepare_supervised(
             counts = y.value_counts()
             if (counts >= 2).all():
                 stratify = y
-    except Exception:  # noqa: BLE001
+    except Exception:
         stratify = None
 
-    return train_test_split(
+    X_train, X_test, y_train, y_test = train_test_split(
         X, y,
         test_size=test_size,
         random_state=random_state,
         stratify=stratify,
     )
+    return X_train, X_test, y_train, y_test

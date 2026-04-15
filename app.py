@@ -1,8 +1,15 @@
 from __future__ import annotations
 
+import io
+import json
+import pickle
 import sys
+import time
+import zipfile
+from datetime import datetime
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 import streamlit as st
 
@@ -10,27 +17,25 @@ ROOT = Path(__file__).parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from src.data_loader import SUPPORTED_EXTENSIONS, load_dataframe  
-from src.exporter import build_excel_report  
-from src.model_engine import (  
+from src.data_loader import SUPPORTED_EXTENSIONS, load_dataframe
+from src.exporter import build_excel_report
+from src.model_engine import (
     CLASSIFIERS,
     REGRESSORS,
-    run_clustering,
     select_best_classification,
     select_best_regression,
     train_classification,
     train_regression,
 )
-from src.model_info import (  
+from src.model_info import (
     METRIC_DESCRIPTIONS,
     MODEL_DESCRIPTIONS,
     PROBLEM_DESCRIPTIONS,
 )
-from src.preprocessing import build_feature_matrix, prepare_supervised 
+from src.preprocessing import prepare_supervised
 from src.problem_detector import suggest_problem_type
-from src.visualizations import (  
+from src.visualizations import (
     plot_actual_vs_predicted,
-    plot_clusters_2d,
     plot_confusion_matrix,
     plot_feature_importance,
     plot_residuals,
@@ -38,20 +43,18 @@ from src.visualizations import (
 )
 
 
-# ---------------------------------------------------------------------------
-# Streamlit sürüm uyumluluğu
-# ---------------------------------------------------------------------------
+OVERFIT_ACC_THRESHOLD = 0.97
+OVERFIT_R2_THRESHOLD = 0.97
+OVERFIT_GAP_THRESHOLD = 0.15
+
+
 def safe_rerun() -> None:
-    """Streamlit sürümünden bağımsız rerun çağrısı."""
     if hasattr(st, "rerun"):
         st.rerun()
     elif hasattr(st, "experimental_rerun"):
         st.experimental_rerun()
 
 
-# ---------------------------------------------------------------------------
-# Sayfa ayarları
-# ---------------------------------------------------------------------------
 st.set_page_config(
     page_title="Smart Modeling Agent",
     layout="wide",
@@ -61,28 +64,33 @@ st.set_page_config(
 st.title("Smart Modeling Agent")
 st.caption(
     "Veri setinizi yükleyin, problem tipini belirleyin ve otomatik olarak "
-    "eğitilen yapay zeka modellerini karşılaştırın."
+    "eğitilen regresyon/sınıflandırma modellerini karşılaştırın."
+)
+
+st.warning(
+    " **Bu uygulama bir hızlı prototipleme / keşif aracıdır.** "
+    "Eğitilen modeller **doğrudan canlıya (production) alınmak için uygun değildir.** "
+    "Deployment öncesinde model; veri kalitesi, data drift, bias/fairness, "
+    "güvenlik ve performans testleri gibi ek validasyon ve kontrol süreçlerinden "
+    "geçirilmeli, **Big Data & MLOps ekibiyle birlikte değerlendirilmelidir.**"
 )
 
 
-# ---------------------------------------------------------------------------
-# Session state
-# ---------------------------------------------------------------------------
 _DEFAULTS = {
     "df": None,
     "file_name": None,
     "target_col": None,
+    "id_col": None,
     "problem_type": None,
     "feature_cols": [],
+    "use_cv": False,
+    "use_scaling": False,
     "results": None,
 }
 for _key, _value in _DEFAULTS.items():
     st.session_state.setdefault(_key, _value)
 
 
-# ---------------------------------------------------------------------------
-# Kenar çubuğu — Dosya yükleme
-# ---------------------------------------------------------------------------
 with st.sidebar:
     st.header("Dosya Yükleme")
     uploaded_file = st.file_uploader(
@@ -95,11 +103,12 @@ with st.sidebar:
     st.markdown(
         "**Desteklenen formatlar:** CSV, XLSX, XLS, XML\n\n"
         "**Özellikler:**\n"
-        "- Otomatik problem tipi önerisi\n"
-        "- Sınıflandırma, regresyon, kümeleme\n"
+        "- Otomatik problem tipi önerisi (sınıflandırma / regresyon)\n"
+        "- Tanımlayıcı (ID) kolonu seçme\n"
+        "- Cross-validation ve standardizasyon seçenekleri\n"
         "- Otomatik veri ön işleme\n"
         "- Model karşılaştırma ve görselleştirme\n"
-        "- Excel formatında dışa aktarma"
+        "- Excel: train/test ayrımı + tüm veri seti üzerinde tahminler"
     )
 
     st.divider()
@@ -109,9 +118,6 @@ with st.sidebar:
         safe_rerun()
 
 
-# ---------------------------------------------------------------------------
-# Veri yükleme
-# ---------------------------------------------------------------------------
 if uploaded_file is not None:
     try:
         if st.session_state.get("file_name") != uploaded_file.name:
@@ -121,9 +127,10 @@ if uploaded_file is not None:
             st.session_state["file_name"] = uploaded_file.name
             st.session_state["results"] = None
             st.session_state["target_col"] = None
+            st.session_state["id_col"] = None
             st.session_state["problem_type"] = None
             st.session_state["feature_cols"] = []
-    except Exception as exc:  # noqa: BLE001
+    except Exception as exc:
         st.error(f"Dosya okunamadı: {exc}")
         st.stop()
 
@@ -134,9 +141,6 @@ if df is None:
     st.stop()
 
 
-# ---------------------------------------------------------------------------
-# Sekmeler
-# ---------------------------------------------------------------------------
 tab_preview, tab_profile, tab_problem, tab_train, tab_results = st.tabs(
     [
         "Veri Önizleme",
@@ -148,7 +152,6 @@ tab_preview, tab_profile, tab_problem, tab_train, tab_results = st.tabs(
 )
 
 
-# ===================== Sekme 1: Veri Önizleme =============================
 with tab_preview:
     st.subheader("Veri Seti Önizleme")
 
@@ -176,7 +179,6 @@ with tab_preview:
         st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
 
 
-# ===================== Sekme 2: Veri Profili =============================
 with tab_profile:
     st.subheader("Veri Profili")
 
@@ -220,28 +222,37 @@ with tab_profile:
         st.dataframe(pd.DataFrame(card_rows), use_container_width=True, hide_index=True)
 
 
-# ===================== Sekme 3: Problem Tanımı =============================
 with tab_problem:
     st.subheader("Problem Tanımı")
-    st.markdown(
-        "Tahmin edilecek hedef sütunu seçin. Hedef yoksa kümeleme (clustering) "
-        "moduna geçilir."
+
+    st.markdown("#### Tanımlayıcı (ID) Kolonu")
+    st.caption(
+        "Her satırı tanımlayan kolon varsa seçin (örn. müşteri_no, sipariş_id). "
+        "Tanımlayıcı kolon özellik olarak kullanılmaz; Excel çıktısında her "
+        "satırı tanımlamaya yarar."
     )
-
-    options = ["(Yok - Kümeleme)"] + list(df.columns)
-    current_target = st.session_state.get("target_col") or "(Yok - Kümeleme)"
+    id_options = ["(Tanımlayıcı yok)"] + list(df.columns)
+    current_id = st.session_state.get("id_col") or "(Tanımlayıcı yok)"
     try:
-        default_idx = options.index(current_target)
+        id_default_idx = id_options.index(current_id)
     except ValueError:
-        default_idx = 0
-    target = st.selectbox("Hedef Sütun", options, index=default_idx)
+        id_default_idx = 0
+    id_choice = st.selectbox("Tanımlayıcı kolon", id_options, index=id_default_idx)
+    st.session_state["id_col"] = None if id_choice == "(Tanımlayıcı yok)" else id_choice
 
-    if target == "(Yok - Kümeleme)":
-        st.session_state["target_col"] = None
-        suggested = "clustering"
-    else:
-        st.session_state["target_col"] = target
-        suggested = suggest_problem_type(df, target)
+    st.markdown("#### Hedef Kolon")
+    st.caption("Tahmin edilecek sütunu seçin.")
+    target_options = [c for c in df.columns if c != st.session_state.get("id_col")]
+    current_target = st.session_state.get("target_col")
+    if current_target not in target_options:
+        current_target = target_options[0] if target_options else None
+    target = st.selectbox(
+        "Hedef Sütun",
+        target_options,
+        index=target_options.index(current_target) if current_target in target_options else 0,
+    )
+    st.session_state["target_col"] = target
+    suggested = suggest_problem_type(df, target)
 
     st.markdown("#### Önerilen Problem Tipi")
     st.info(PROBLEM_DESCRIPTIONS[suggested])
@@ -249,7 +260,6 @@ with tab_problem:
     type_labels = {
         "classification": "Sınıflandırma (Classification)",
         "regression": "Regresyon (Regression)",
-        "clustering": "Kümeleme (Clustering)",
     }
     keys = list(type_labels.keys())
     chosen_label = st.radio(
@@ -262,21 +272,43 @@ with tab_problem:
         list(type_labels.values()).index(chosen_label)
     ]
 
+    st.markdown("#### Eğitim Seçenekleri")
+    oc1, oc2 = st.columns(2)
+    with oc1:
+        st.session_state["use_cv"] = st.checkbox(
+            "Cross-validation uygula (5-fold)",
+            value=st.session_state.get("use_cv", False),
+            help=(
+                "Modelin genelleme başarısını daha güvenilir ölçmek için eğitim "
+                "seti üzerinde 5-fold cross-validation çalıştırır."
+            ),
+        )
+    with oc2:
+        st.session_state["use_scaling"] = st.checkbox(
+            "Standardizasyon uygula (StandardScaler)",
+            value=st.session_state.get("use_scaling", False),
+            help=(
+                "Sayısal özellikleri ortalaması 0, standart sapması 1 olacak "
+                "şekilde ölçekler. Özellikle Logistic/Linear Regression için "
+                "önerilir."
+            ),
+        )
+
     st.markdown("#### Özellik (Feature) Seçimi")
     st.caption(
-        "Varsayılan olarak hedef dışındaki tüm sütunlar kullanılır. Alakasız "
-        "sütunlar listeden çıkarılabilir."
+        "Varsayılan olarak hedef ve tanımlayıcı dışındaki tüm sütunlar kullanılır. "
+        "Alakasız sütunlar listeden çıkarılabilir."
     )
 
-    if st.session_state["problem_type"] == "clustering":
-        available = list(df.columns)
-    else:
-        available = [c for c in df.columns if c != st.session_state["target_col"]]
+    exclude = {st.session_state.get("target_col"), st.session_state.get("id_col")}
+    available = [c for c in df.columns if c not in exclude and c is not None]
 
+    previous = st.session_state.get("feature_cols") or available
+    default_feats = [c for c in previous if c in available] or available
     selected_features = st.multiselect(
         "Kullanılacak sütunlar",
         options=available,
-        default=available,
+        default=default_feats,
     )
     st.session_state["feature_cols"] = selected_features
 
@@ -284,7 +316,6 @@ with tab_problem:
         st.warning("En az bir özellik seçilmelidir.")
 
 
-# ===================== Sekme 4: Model Eğitimi =============================
 with tab_train:
     st.subheader("Model Eğitimi")
 
@@ -303,16 +334,13 @@ with tab_train:
                 "Random Forest": "Random Forest (Classifier)",
                 "Gradient Boosting": "Gradient Boosting (Classifier)",
             }
-        elif ptype == "regression":
+        else:
             model_choices = list(REGRESSORS.keys())
             label_map = {
                 "Linear Regression": "Linear Regression",
                 "Random Forest": "Random Forest (Regressor)",
                 "Gradient Boosting": "Gradient Boosting (Regressor)",
             }
-        else:
-            model_choices = ["K-Means", "DBSCAN"]
-            label_map = {"K-Means": "K-Means", "DBSCAN": "DBSCAN"}
 
         st.markdown("#### Model Seçimi")
         selected_models = st.multiselect(
@@ -326,98 +354,129 @@ with tab_train:
                 desc = MODEL_DESCRIPTIONS.get(label_map[m], "")
                 st.markdown(f"**{m}** — {desc}")
 
-        test_size = 0.2
-        n_clusters = 3
-        eps = 0.5
-        min_samples = 5
-
-        if ptype in ("classification", "regression"):
-            st.markdown("#### Eğitim Parametreleri")
-            test_size = (
-                st.slider(
-                    "Test seti oranı (%)",
-                    min_value=10,
-                    max_value=50,
-                    value=20,
-                    step=5,
-                    help="Verinin ne kadarı test için ayrılacak.",
-                )
-                / 100
+        st.markdown("#### Eğitim Parametreleri")
+        test_size = (
+            st.slider(
+                "Test seti oranı (%)",
+                min_value=10,
+                max_value=50,
+                value=20,
+                step=5,
+                help="Verinin ne kadarı test için ayrılacak.",
             )
-        elif ptype == "clustering":
-            st.markdown("#### Kümeleme Parametreleri")
-            cc1, cc2, cc3 = st.columns(3)
-            n_clusters = cc1.slider("K-Means küme sayısı", 2, 15, 3)
-            eps = cc2.slider("DBSCAN eps", 0.1, 3.0, 0.5, step=0.1)
-            min_samples = cc3.slider("DBSCAN min örnek", 2, 20, 5)
+            / 100
+        )
+
+        info_cols = st.columns(2)
+        info_cols[0].info(
+            f"Cross-validation: {'Açık (5-fold)' if st.session_state.get('use_cv') else 'Kapalı'}"
+        )
+        info_cols[1].info(
+            f"Standardizasyon: {'Açık' if st.session_state.get('use_scaling') else 'Kapalı'}"
+        )
 
         if st.button("Eğitimi Başlat", type="primary", use_container_width=True):
             if not selected_models:
                 st.warning("En az bir model seçilmelidir.")
             else:
                 try:
-                    with st.spinner("Modeller eğitiliyor..."):
-                        if ptype == "classification":
-                            X_train, X_test, y_train, y_test = prepare_supervised(
-                                df,
-                                st.session_state["target_col"],
-                                feature_cols,
-                                test_size=test_size,
-                            )
-                            results = train_classification(
-                                X_train, X_test, y_train, y_test, selected_models
-                            )
-                            best = select_best_classification(results)
-                            st.session_state["results"] = {
-                                "type": "classification",
-                                "results": results,
-                                "best": best,
-                                "X_test": X_test,
-                                "feature_names": list(X_train.columns),
-                            }
+                    progress = st.progress(0, text="Veri seti inceleniyor...")
+                    time.sleep(2.0)
 
-                        elif ptype == "regression":
-                            X_train, X_test, y_train, y_test = prepare_supervised(
-                                df,
-                                st.session_state["target_col"],
-                                feature_cols,
-                                test_size=test_size,
-                            )
-                            results = train_regression(
-                                X_train, X_test, y_train, y_test, selected_models
-                            )
-                            best = select_best_regression(results)
-                            st.session_state["results"] = {
-                                "type": "regression",
-                                "results": results,
-                                "best": best,
-                                "X_test": X_test,
-                                "feature_names": list(X_train.columns),
-                            }
+                    progress.progress(20, text="Özellikler hazırlanıyor...")
+                    time.sleep(1.8)
 
-                        else:
-                            X = build_feature_matrix(df, feature_cols, scale=True)
-                            results = run_clustering(
-                                X,
-                                selected_models,
-                                n_clusters=n_clusters,
-                                eps=eps,
-                                min_samples=min_samples,
-                            )
-                            st.session_state["results"] = {
-                                "type": "clustering",
-                                "results": results,
-                                "X": X,
-                            }
-                    st.success(
-                        "Eğitim tamamlandı. **Sonuçlar** sekmesinden detaylar "
-                        "incelenebilir."
+                    progress.progress(40, text="Train-test ayırımı yapılıyor...")
+                    X_train, X_test, y_train, y_test = prepare_supervised(
+                        df,
+                        st.session_state["target_col"],
+                        feature_cols,
+                        test_size=test_size,
+                        scale=st.session_state.get("use_scaling", False),
                     )
-                except Exception as exc:  # noqa: BLE001
+                    time.sleep(2.0)
+
+                    progress.progress(
+                        60,
+                        text=(
+                            "Modeller eğitiliyor"
+                            + (" (cross-validation ile)..." if st.session_state.get("use_cv") else "...")
+                        ),
+                    )
+                    if ptype == "classification":
+                        results = train_classification(
+                            X_train, X_test, y_train, y_test, selected_models,
+                            use_cv=st.session_state.get("use_cv", False),
+                        )
+                        best = select_best_classification(results)
+                    else:
+                        results = train_regression(
+                            X_train, X_test, y_train, y_test, selected_models,
+                            use_cv=st.session_state.get("use_cv", False),
+                        )
+                        best = select_best_regression(results)
+                    time.sleep(2.5)
+
+                    progress.progress(90, text="Metrikler derleniyor...")
+                    time.sleep(1.7)
+                    progress.progress(100, text="Tamamlandı.")
+
+                    st.session_state["results"] = {
+                        "type": ptype,
+                        "results": results,
+                        "best": best,
+                        "X_test": X_test,
+                        "X_train": X_train,
+                        "feature_names": list(X_train.columns),
+                        "train_index": list(X_train.index),
+                        "test_index": list(X_test.index),
+                        "id_col": st.session_state.get("id_col"),
+                        "target_col": st.session_state.get("target_col"),
+                    }
+                    st.success(
+                        "Eğitim tamamlandı. **Sonuçlar** sekmesinden detaylar incelenebilir."
+                    )
+                except Exception as exc:
                     st.error(f"Eğitim sırasında hata: {exc}")
 
 
-# ===================== Sekme 5: Sonuçlar =============================
+def _check_overfitting(res_type: str, metrics: dict) -> bool:
+    if res_type == "classification":
+        train_m = metrics.get("Train Accuracy", 0.0)
+        test_m = metrics.get("Accuracy", 0.0)
+        if test_m >= OVERFIT_ACC_THRESHOLD:
+            return True
+    else:
+        train_m = metrics.get("Train R2", 0.0)
+        test_m = metrics.get("R2", 0.0)
+        if test_m >= OVERFIT_R2_THRESHOLD:
+            return True
+    if (train_m - test_m) > OVERFIT_GAP_THRESHOLD:
+        return True
+    return False
+
+
+def _build_full_predictions(df_src: pd.DataFrame, res: dict) -> pd.DataFrame:
+    """Tüm veri seti + son kolonda model tahmini (train + test birleşik)."""
+    info = res["results"][res["best"]]
+    pred_series = pd.Series(index=df_src.index, dtype=object)
+
+    for idx, val in zip(res["train_index"], info["y_pred_train"]):
+        pred_series.loc[idx] = val
+    for idx, val in zip(res["test_index"], info["y_pred"]):
+        pred_series.loc[idx] = val
+
+    split_series = pd.Series("kullanılmadı", index=df_src.index, dtype=object)
+    split_series.loc[res["train_index"]] = "train"
+    split_series.loc[res["test_index"]] = "test"
+
+    full = df_src.copy()
+    full.insert(0, "Satır No", full.index)
+    full["Veri Seti Ayırımı"] = split_series.values
+    full[f"Tahmin ({res['best']})"] = pred_series.values
+    return full
+
+
 with tab_results:
     st.subheader("Sonuçlar ve Dışa Aktarma")
 
@@ -425,10 +484,9 @@ with tab_results:
 
     if not res:
         st.info(
-            "Henüz bir model eğitilmedi. **Model Eğitimi** sekmesinden eğitim "
-            "başlatılabilir."
+            "Henüz bir model eğitilmedi. **Model Eğitimi** sekmesinden eğitim başlatılabilir."
         )
-    elif res["type"] in ("classification", "regression"):
+    else:
         rows = []
         for name, info in res["results"].items():
             row = {"Model": name}
@@ -440,6 +498,16 @@ with tab_results:
         st.dataframe(comp_df, use_container_width=True, hide_index=True)
         st.success(f"En iyi model: **{res['best']}**")
 
+        best_info = res["results"][res["best"]]
+
+        if _check_overfitting(res["type"], best_info["metrics"]):
+            st.warning(
+                "️ **Bu model overfitting olmuş gibi duruyor.** "
+                "Test metrikleri olağanüstü yüksek ya da eğitim–test farkı büyük. "
+                "Bu öğrenme sonucundaki regresyon/sınıflandırma ile bir aksiyon "
+                "almadan önce **Big Data & MLOps ekibine danışabilirsin.**"
+            )
+
         with st.expander("Metrik Açıklamaları"):
             for col in comp_df.columns:
                 if col == "Model":
@@ -448,23 +516,135 @@ with tab_results:
                 if desc:
                     st.markdown(f"- **{col}** — {desc}")
 
-        best_info = res["results"][res["best"]]
-        if res["type"] == "classification":
-            train_m = best_info["metrics"].get("Train Accuracy", 0.0)
-            test_m = best_info["metrics"].get("Accuracy", 0.0)
-            label_train, label_test = "eğitim doğruluğu", "test doğruluğu"
-        else:
-            train_m = best_info["metrics"].get("Train R2", 0.0)
-            test_m = best_info["metrics"].get("R2", 0.0)
-            label_train, label_test = "eğitim R²", "test R²"
+        st.markdown("#### Modeling Artifact — Çalıştırma Özeti")
+        st.caption(
+            "Bu çalıştırmada yapılan tüm adımların özeti. Aşağıdan ilgili "
+            "artifact paketini (model + train/test + feature listesi + metadata) "
+            "indirebilirsiniz."
+        )
 
-        if train_m - test_m > 0.15:
-            st.warning(
-                f"Overfitting riski: {label_train} ({train_m:.2f}) "
-                f"{label_test}'nden ({test_m:.2f}) belirgin şekilde yüksek. "
-                "Daha fazla veri, daha az özellik veya daha basit bir model "
-                "denenebilir."
+        artifact_meta = {
+            "zaman_damgasi": datetime.now().isoformat(timespec="seconds"),
+            "problem_tipi": res["type"],
+            "hedef_kolon": res.get("target_col"),
+            "tanimlayici_kolon": res.get("id_col"),
+            "secilen_feature_sayisi": len(st.session_state.get("feature_cols") or []),
+            "secilen_featurelar": list(st.session_state.get("feature_cols") or []),
+            "engineered_feature_sayisi": len(res["feature_names"]),
+            "train_satir_sayisi": len(res["train_index"]),
+            "test_satir_sayisi": len(res["test_index"]),
+            "preprocessing": {
+                "missing_value_imputation": "numerik: median, kategorik: mode",
+                "kategorik_encoding": "One-Hot (get_dummies)",
+                "standardizasyon": bool(st.session_state.get("use_scaling", False)),
+            },
+            "cross_validation": {
+                "etkin": bool(st.session_state.get("use_cv", False)),
+                "folds": 5 if st.session_state.get("use_cv", False) else None,
+            },
+            "denenen_modeller": list(res["results"].keys()),
+            "en_iyi_model": res["best"],
+            "en_iyi_model_metrikleri": {
+                k: float(v) for k, v in res["results"][res["best"]]["metrics"].items()
+            },
+        }
+
+        sc1, sc2 = st.columns(2)
+        with sc1:
+            st.markdown(
+                f"- **Problem tipi:** {artifact_meta['problem_tipi']}\n"
+                f"- **Hedef kolon:** `{artifact_meta['hedef_kolon']}`\n"
+                f"- **Tanımlayıcı:** `{artifact_meta['tanimlayici_kolon'] or '—'}`\n"
+                f"- **Seçilen feature sayısı:** {artifact_meta['secilen_feature_sayisi']}\n"
+                f"- **Engineered feature sayısı:** {artifact_meta['engineered_feature_sayisi']}"
             )
+        with sc2:
+            st.markdown(
+                f"- **Train satır:** {artifact_meta['train_satir_sayisi']:,}\n"
+                f"- **Test satır:** {artifact_meta['test_satir_sayisi']:,}\n"
+                f"- **Standardizasyon:** {'Açık' if artifact_meta['preprocessing']['standardizasyon'] else 'Kapalı'}\n"
+                f"- **Cross-validation:** {'Açık (5-fold)' if artifact_meta['cross_validation']['etkin'] else 'Kapalı'}\n"
+                f"- **En iyi model:** `{artifact_meta['en_iyi_model']}`"
+            )
+
+        with st.expander("Denenen modeller ve metrikleri (JSON)"):
+            st.json(artifact_meta)
+
+        def _build_artifact_zip() -> bytes:
+            buf = io.BytesIO()
+            with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as zf:
+                zf.writestr(
+                    "metadata.json",
+                    json.dumps(artifact_meta, ensure_ascii=False, indent=2),
+                )
+                zf.writestr(
+                    "features.json",
+                    json.dumps(
+                        {
+                            "selected_features": artifact_meta["secilen_featurelar"],
+                            "engineered_features": res["feature_names"],
+                        },
+                        ensure_ascii=False,
+                        indent=2,
+                    ),
+                )
+                zf.writestr(
+                    "model.pkl",
+                    pickle.dumps(res["results"][res["best"]]["model"]),
+                )
+                x_train_out = res["X_train"].copy()
+                x_test_out = res["X_test"].copy()
+                zf.writestr("X_train.csv", x_train_out.to_csv(index=True))
+                zf.writestr("X_test.csv", x_test_out.to_csv(index=True))
+                target = res.get("target_col") or "target"
+                y_train_df = pd.DataFrame(
+                    {target: res["results"][res["best"]]["y_train"]},
+                    index=res["train_index"],
+                )
+                y_test_df = pd.DataFrame(
+                    {target: res["results"][res["best"]]["y_test"]},
+                    index=res["test_index"],
+                )
+                zf.writestr("y_train.csv", y_train_df.to_csv(index=True))
+                zf.writestr("y_test.csv", y_test_df.to_csv(index=True))
+                zf.writestr(
+                    "README.txt",
+                    (
+                        "Smart Modeling Agent — Artifact Paketi\n"
+                        "======================================\n\n"
+                        "Bu paket yalnızca yeniden üretilebilirlik ve inceleme amaçlıdır.\n"
+                        "Model DOĞRUDAN PRODUCTION'A ALINMAMALIDIR. Deployment öncesi\n"
+                        "veri kalitesi, drift, bias/fairness, güvenlik ve performans\n"
+                        "testlerinin Big Data & MLOps ekibiyle birlikte yapılması gerekir.\n\n"
+                        "İçerik:\n"
+                        "- metadata.json    : Çalıştırma özeti ve parametreler\n"
+                        "- features.json    : Seçilen ve engineered feature listesi\n"
+                        "- model.pkl        : Eğitilmiş en iyi model (pickle)\n"
+                        "- X_train.csv      : Eğitim seti (engineered feature'lar)\n"
+                        "- X_test.csv       : Test seti (engineered feature'lar)\n"
+                        "- y_train.csv      : Eğitim seti hedef değerleri\n"
+                        "- y_test.csv       : Test seti hedef değerleri\n"
+                    ),
+                )
+            return buf.getvalue()
+
+        st.download_button(
+            " Modeling Artifact (ZIP) indir",
+            data=_build_artifact_zip(),
+            file_name=f"modeling_artifact_{datetime.now().strftime('%Y%m%d_%H%M%S')}.zip",
+            mime="application/zip",
+            use_container_width=True,
+            help=(
+                "İçerik: metadata.json, features.json, model.pkl, "
+                "X_train/X_test/y_train/y_test CSV'leri ve README."
+            ),
+        )
+
+        st.info(
+            "ℹ️ Artifact paketi yalnızca **yeniden üretilebilirlik ve inceleme** "
+            "amaçlıdır. Model dosyası (.pkl) doğrudan canlı sisteme yüklenmemelidir; "
+            "önce MLOps pipeline'ında ek validasyondan geçmelidir."
+        )
 
         st.markdown("#### Model Detayları")
         model_names = list(res["results"].keys())
@@ -508,68 +688,49 @@ with tab_results:
             if fig is not None:
                 st.pyplot(fig)
 
-        sheets = {"Model Karsilastirma": comp_df}
-        best_info = res["results"][res["best"]]
-        if res["type"] == "classification":
-            pred_df = pd.DataFrame(
-                {"Gerçek": best_info["y_test"], "Tahmin": best_info["y_pred"]}
-            )
-        else:
-            pred_df = pd.DataFrame(
-                {
-                    "Gerçek": list(best_info["y_test"]),
-                    "Tahmin": list(best_info["y_pred"]),
-                }
-            )
-        sheets["Tahminler"] = pred_df
+        st.markdown("#### Tahmin Önizlemesi (ilk 20 satır)")
+        st.caption(
+            "En iyi modelin tüm veri seti üzerindeki tahminleri. "
+            "`Veri Seti Ayırımı` kolonu satırın train mı test mi olduğunu gösterir."
+        )
+        full_preds_df = _build_full_predictions(df, res)
+        id_col = res.get("id_col")
+        preview_cols = []
+        if id_col and id_col in full_preds_df.columns:
+            preview_cols.append(id_col)
+        preview_cols.extend([
+            "Satır No",
+            "Veri Seti Ayırımı",
+            res["target_col"],
+            f"Tahmin ({res['best']})",
+        ])
+        preview_cols = [c for c in preview_cols if c in full_preds_df.columns]
+        st.dataframe(
+            full_preds_df[preview_cols].head(20),
+            use_container_width=True,
+            hide_index=True,
+        )
+
+        split_df = pd.DataFrame(
+            {
+                "Satır No": list(res["train_index"]) + list(res["test_index"]),
+                "Ayırım": ["train"] * len(res["train_index"]) + ["test"] * len(res["test_index"]),
+            }
+        )
+        if id_col and id_col in df.columns:
+            split_df["Tanımlayıcı"] = df.loc[split_df["Satır No"], id_col].values
+
+        sheets = {
+            "Model Karsilastirma": comp_df,
+            "Train-Test Ayirimi": split_df,
+            "Tum Veri ve Tahminler": full_preds_df,
+        }
 
         excel_bytes = build_excel_report(sheets)
         st.download_button(
             "Sonuçları Excel olarak indir",
             data=excel_bytes,
             file_name="smart_modeling_sonuclari.xlsx",
-            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-            use_container_width=True,
-        )
-
-    else:  # clustering
-        rows = []
-        for name, info in res["results"].items():
-            row = {"Model": name}
-            row.update({k: round(float(v), 4) for k, v in info["metrics"].items()})
-            rows.append(row)
-        comp_df = pd.DataFrame(rows)
-
-        st.markdown("#### Kümeleme Sonuçları")
-        st.dataframe(comp_df, use_container_width=True, hide_index=True)
-
-        with st.expander("Metrik Açıklamaları"):
-            for col in comp_df.columns:
-                if col == "Model":
-                    continue
-                desc = METRIC_DESCRIPTIONS.get(col)
-                if desc:
-                    st.markdown(f"- **{col}** — {desc}")
-
-        st.markdown("#### Küme Görselleştirmesi")
-        chosen = st.selectbox("Model", list(res["results"].keys()))
-        labels = res["results"][chosen]["labels"]
-        st.pyplot(plot_clusters_2d(res["X"], labels, title=f"{chosen} - PCA 2D"))
-
-        st.markdown("#### Etiketlenmiş Veri (ilk 20 satır)")
-        clustered_df = df.copy()
-        clustered_df[f"cluster_{chosen}"] = labels
-        st.dataframe(clustered_df.head(20), use_container_width=True)
-
-        sheets = {
-            "Kumeleme Ozeti": comp_df,
-            "Kumelenmis Veri": clustered_df,
-        }
-        excel_bytes = build_excel_report(sheets)
-        st.download_button(
-            "Sonuçları Excel olarak indir",
-            data=excel_bytes,
-            file_name="smart_modeling_kumeleme.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
             use_container_width=True,
         )

@@ -58,7 +58,7 @@ def _read_csv_robust(uploaded_file) -> pd.DataFrame:
             df = pd.read_csv(uploaded_file, **opts)
             if df.shape[1] >= 1:
                 return df
-        except Exception as exc:  # noqa: BLE001
+        except Exception as exc:
             last_err = exc
     if last_err:
         raise last_err
@@ -74,7 +74,7 @@ def _read_xml(uploaded_file) -> pd.DataFrame:
     try:
         uploaded_file.seek(0)
         return pd.read_xml(uploaded_file)
-    except Exception as exc:  # noqa: BLE001
+    except Exception as exc:
         raise ValueError(
             "XML dosyası tabular yapıya dönüştürülemedi. "
             "Dosyanın tekrar eden aynı seviyedeki kayıtlardan oluştuğundan "
