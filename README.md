@@ -1,285 +1,305 @@
-# 🤖 Smart Modeling Agent
+# Smart Modeling Agent
 
-## ⚡ Hızlı Başlangıç (Local)
+## Hizli Baslangic (Local)
 
-Proje Windows ve Linux/macOS üzerinde doğrudan localden çalışacak şekilde hazırlanmıştır. Tek gereksinim **Python 3.10+**.
+Proje Windows ve Linux/macOS uzerinde dogrudan localden calisacak sekilde hazirlanmistir. Tek gereksinim **Python 3.10+**.
 
-### 🐧 Linux / 🍎 macOS
+### Linux / macOS
 ```bash
 ./run.sh
 ```
 
-### 🪟 Windows
+### Windows
 ```bat
 run.bat
 ```
 
-Her iki script de ilk çalıştırmada:
-1. `.venv` adında bir sanal ortam oluşturur
-2. `requirements.txt` içindeki bağımlılıkları yükler
-3. Streamlit uygulamasını (`app.py`) başlatır
+Her iki script de ilk calistirmada:
+1. `.venv` adinda bir sanal ortam olusturur
+2. `requirements.txt` icindeki bagimliliklari yukler
+3. Streamlit uygulamasini (`app.py`) baslatir
 
-Tarayıcınız otomatik olarak `http://localhost:8501` adresinde açılacaktır.
+Tarayiciniz otomatik olarak `http://localhost:8501` adresinde acilacaktir.
 
-### 📦 Dosya Yükleme Limiti
-`.streamlit/config.toml` dosyasında `maxUploadSize = 5120` (MB) olarak ayarlanmıştır — yani **5 GB**'a kadar CSV / XLSX / XLS / XML dosyası yükleyebilirsiniz.
+> **Not:** `sma-mod/` klasoru eski Streamlit surumlerine (1.26.0) uyumlu, Windows RDP ortamlari icin optimize edilmis versiyondur. Headless mod, ASCII-safe Turkce karakterler ve `use_container_width` API'si kullanir.
 
-### 🗂️ Klasör Yapısı
+### Dosya Yukleme Limiti
+`.streamlit/config.toml` dosyasinda `maxUploadSize = 5120` (MB) olarak ayarlanmistir — yani **5 GB**'a kadar CSV / XLSX / XLS / XML dosyasi yukleyebilirsiniz.
+
+### Klasor Yapisi
 ```
 smart-modeling/
-├── app.py                    # Streamlit ana arayüz (sihirbaz)
-├── requirements.txt          # Python bağımlılıkları
-├── run.sh / run.bat          # Linux-macOS / Windows başlatıcılar
-├── .streamlit/config.toml    # 5 GB upload + tema ayarları
+├── app.py                    # Streamlit ana arayuz (sihirbaz)
+├── requirements.txt          # Python bagimliliklari
+├── run.sh / run.bat          # Linux-macOS / Windows baslaticilar
+├── .streamlit/config.toml    # 5 GB upload + tema ayarlari
+├── ornek_veri/               # Ornek veri setleri (churn, ev fiyatlari, musteri segmentasyonu)
+├── sma-mod/                  # Windows RDP uyumlu versiyon (Streamlit 1.26.0)
 └── src/
     ├── data_loader.py        # CSV / Excel / XML okuma
-    ├── problem_detector.py   # Problem tipi önerisi
-    ├── preprocessing.py      # Otomatik temizlik + encoding
-    ├── model_engine.py       # Model eğitim & karşılaştırma
-    ├── visualizations.py     # Grafikler
-    ├── exporter.py           # Excel çıktı
-    └── model_info.py         # Kullanıcı dostu model açıklamaları
+    ├── problem_detector.py   # Problem tipi onerisi (classification / regression)
+    ├── preprocessing.py      # Otomatik temizlik + encoding + scaling
+    ├── model_engine.py       # Model egitim & karsilastirma
+    ├── visualizations.py     # Grafikler (confusion matrix, ROC, residual, feature importance)
+    ├── exporter.py           # Excel cikti
+    └── model_info.py         # Kullanici dostu model aciklamalari
 ```
 
 ---
 
-## 🚀 Projenin Amacı
+## Projenin Amaci
 
-Smart Modeling Agent, kullanıcıların kendi veri setleri üzerinde makine öğrenmesi modellerini teknik bilgiye ihtiyaç duymadan çalıştırabilmesini sağlayan bir self-service AI aracıdır.
+Smart Modeling Agent, kullanicilarin kendi veri setleri uzerinde makine ogrenmesi modellerini teknik bilgiye ihtiyac duymadan calistirabilmesini saglayan bir self-service AI aracidir.
 
-Agent; veri setini analiz ederek uygun problem tipini (classification, regression, clustering) önerir, farklı algoritmaları otomatik olarak çalıştırır, performanslarını karşılaştırır ve en uygun modeli kullanıcıya sunar. Aynı zamanda görselleştirme ve detaylı çıktı seçenekleri ile karar destek sürecini güçlendirir.
-
----
-
-## 🎯 Temel Kullanım Senaryoları
-
-- Müşteri churn tahmini  
-- Satış tahmini  
-- Fraud detection (classification)  
-- Müşteri segmentasyonu (clustering)  
-- Operasyonel tahminleme ve risk analizi  
-- Hızlı model denemeleri (baseline ML)  
+Agent; veri setini analiz ederek uygun problem tipini (classification veya regression) onerir, farkli algoritmalari otomatik olarak calistirir, performanslarini karsilastirir ve en uygun modeli kullaniciya sunar. Ayni zamanda gorsellistirme ve detayli cikti secenekleri ile karar destek surecini guclendirir.
 
 ---
 
-## 🧠 Agent Yaklaşımı
+## Temel Kullanim Senaryolari
 
-Agent, kullanıcıyı adım adım yönlendiren bir **Guided ML Workflow** mantığıyla çalışır.
-
----
-
-## 🔄 End-to-End Workflow
-
-1. Dataset Upload (CSV / Excel)
-2. Veri analizi ve problem tipi önerisi
-3. Kullanıcının problem tipini seçmesi (override edilebilir)
-4. Target (hedef) kolon seçimi
-5. Feature seçimleri (opsiyonel)
-6. Model seçimi (opsiyonel)
-7. Model training ve evaluation
-8. Model karşılaştırma ve en iyi modelin belirlenmesi
-9. Görselleştirme ve sonuç analizi
-10. Excel export
+- Musteri churn tahmini
+- Satis tahmini
+- Fraud detection (classification)
+- Operasyonel tahminleme ve risk analizi
+- Hizli model denemeleri (baseline ML)
 
 ---
 
-## 🧩 Problem Tipi Tespiti
+## Agent Yaklasimi
 
-Agent veri setini analiz ederek öneride bulunur:
-
-- Target kolon kategorik → **Classification önerilir**
-- Target kolon sayısal → **Regression önerilir**
-- Target kolon yok → **Clustering önerilir**
-
-Kullanıcı isterse bu öneriyi değiştirebilir.
+Agent, kullaniciyi adim adim yonlendiren bir **Guided ML Workflow** mantigiyla calisir.
 
 ---
 
-## ⚙️ Desteklenen Model Türleri
+## End-to-End Workflow
 
-### 🔹 Classification
-
-- Logistic Regression  
-- Random Forest Classifier  
-- Gradient Boosting (XGBoost / LightGBM opsiyonel)  
-
-**Kullanılan metrikler:**
-- Accuracy  
-- F1 Score (öncelikli)  
-- Precision / Recall  
-- ROC-AUC  
-
----
-
-### 🔹 Regression
-
-- Linear Regression  
-- Random Forest Regressor  
-- Gradient Boosting Regressor  
-
-**Kullanılan metrikler:**
-- RMSE  
-- MAE  
-- R² Score  
+1. Dataset Upload (CSV / Excel / XML)
+2. Veri analizi ve onizleme
+3. Veri profili (numerik istatistikler, eksik degerler, kategorik kardinalite)
+4. Problem tipi onerisi (classification veya regression)
+5. Kullanicinin problem tipini secmesi (override edilebilir)
+6. Tanimlayici (ID) kolon secimi
+7. Hedef (target) kolon secimi
+8. Feature secimleri (opsiyonel)
+9. Egitim secenekleri (cross-validation, standardizasyon)
+10. Model secimi (opsiyonel)
+11. Model training ve evaluation
+12. Model karsilastirma ve en iyi modelin belirlenmesi
+13. Gorsellistirme ve sonuc analizi
+14. Modeling artifact (ZIP) indirme
+15. Excel export
 
 ---
 
-### 🔹 Clustering
+## Problem Tipi Tespiti
 
-- K-Means  
-- DBSCAN  
+Agent veri setini analiz ederek oneride bulunur:
 
-**Kullanılan metrikler:**
-- Silhouette Score  
-- Inertia (K-Means için)  
+- Target kolon numerik ve benzersiz deger sayisi > 20 ve benzersiz oran > %2 → **Regression onerilir**
+- Diger durumlarda → **Classification onerilir**
+
+Kullanici isterse bu oneriyi degistirebilir.
 
 ---
 
-## 📊 Model Karşılaştırma
+## Desteklenen Model Turleri
 
-Tüm modeller aşağıdaki gibi karşılaştırılır:
+### Classification
+
+- Logistic Regression
+- Random Forest Classifier
+- Gradient Boosting Classifier (sklearn)
+
+**Kullanilan metrikler:**
+- Accuracy
+- F1 Score (weighted) — **en iyi model secim kriteri**
+- Precision (weighted)
+- Recall (weighted)
+- ROC-AUC (yalnizca ikili siniflandirma)
+- Train Accuracy
+- CV Accuracy mean/std (cross-validation aciksa)
+
+---
+
+### Regression
+
+- Linear Regression
+- Random Forest Regressor
+- Gradient Boosting Regressor (sklearn)
+
+**Kullanilan metrikler:**
+- RMSE
+- MAE
+- R2 Score — **en iyi model secim kriteri**
+- Train R2
+- CV R2 mean/std (cross-validation aciksa)
+
+---
+
+## Model Karsilastirma
+
+Tum modeller tablo halinde karsilastirilir:
 
 | Model | Metric | Score |
 |------|-------|------|
 
-- En iyi model otomatik olarak highlight edilir  
-- Kullanıcı farklı modellerin performansını karşılaştırabilir  
+- En iyi model otomatik olarak highlight edilir
+- Kullanici farkli modellerin performansini karsilastirabilir
 
 ---
 
-## 📈 Görselleştirme (Visualization Layer)
+## Gorsellistirme (Visualization Layer)
 
-Agent, model sonuçlarını görsel olarak sunar:
+Agent, model sonuclarini gorsel olarak sunar:
 
 ### Classification:
-- Confusion Matrix  
-- ROC Curve  
-- Feature Importance  
+- Confusion Matrix
+- ROC Curve (ikili siniflandirma icin)
+- Feature Importance
 
 ### Regression:
-- Actual vs Predicted Plot  
-- Residual Plot  
-- Feature Importance  
+- Actual vs Predicted Plot
+- Residual Plot
+- Feature Importance
 
-### Clustering:
-- Cluster dağılım grafikleri  
-- PCA / 2D projection  
-
-Kullanıcı, farklı modeller arasında geçiş yaparak görselleri karşılaştırabilir.
+Kullanici, farkli modeller arasinda gecis yaparak gorselleri karsilastirabilir.
 
 ---
 
-## 🔍 Feature Importance
+## Feature Importance
 
-- Tree-based modeller için otomatik hesaplanır  
-- En etkili feature’lar görsel olarak sunulur  
-- Model yorumlanabilirliğini artırır  
-
----
-
-## ⚠️ Overfitting Kontrolü
-
-Agent, model performansını analiz eder:
-
-- Train vs Test skorları karşılaştırılır  
-- Büyük fark varsa kullanıcı uyarılır  
+- Tree-based modeller icin `feature_importances_` kullanilir
+- Linear modeller icin `coef_` mutlak degeri kullanilir
+- En etkili ilk 15 feature gorsel olarak sunulur
 
 ---
 
-## 🧹 Otomatik Veri Ön İşleme
+## Overfitting Kontrolu
 
-Agent aşağıdaki işlemleri otomatik gerçekleştirir:
+Agent, model performansini analiz eder:
 
-- Eksik değer handling  
-- Kategorik değişken encoding (One-Hot Encoding)  
-- Feature scaling (gerekli durumlarda)  
-- Veri tipi dönüşümleri  
-
----
-
-## 📥 Excel Export
-
-Kullanıcı tüm sonuçları Excel olarak indirebilir:
-
-- Model karşılaştırma tablosu  
-- Prediction sonuçları  
-- Evaluation metrikleri  
-- Seçilen best model çıktısı  
+- Train vs Test skorlari karsilastirilir
+- Test skoru > 0.97 ise uyari verilir
+- Train-Test fark > 0.15 ise uyari verilir
 
 ---
 
-## 🏗️ Teknik Mimari
+## Otomatik Veri On Isleme
 
-### Veri Girişi
-- CSV / XLSX upload  
-- Dosya validasyonu  
+Agent asagidaki islemleri otomatik gerceklestirir:
 
-### Ön İşleme Katmanı
-- Data cleaning  
-- Encoding  
-- Scaling  
+- Eksik deger handling (numerik: median, kategorik: mode)
+- Kategorik degisken encoding (One-Hot Encoding — `pd.get_dummies`)
+- Feature scaling (StandardScaler, kullanici actiginda)
+- Datetime kolonlari string'e cevirme
+- Stratified train-test split (uygun durumlarda)
+
+---
+
+## Modeling Artifact (ZIP)
+
+Kullanici egitim sonuclarini ZIP paketi olarak indirebilir:
+
+- `metadata.json` — Calistirma ozeti ve parametreler
+- `features.json` — Secilen ve engineered feature listesi
+- `model.pkl` — Egitilmis en iyi model (pickle)
+- `X_train.csv` / `X_test.csv` — Egitim ve test setleri
+- `y_train.csv` / `y_test.csv` — Hedef degerleri
+- `README.txt` — Paket aciklamasi
+
+> Model dosyasi (.pkl) dogrudan canli sisteme yuklenmemelidir; once MLOps pipeline'inda ek validasyondan gecmelidir.
+
+---
+
+## Excel Export
+
+Kullanici tum sonuclari Excel olarak indirebilir:
+
+- Model karsilastirma tablosu
+- Train-test ayirimi (satir bazinda)
+- Tum veri seti uzerinde tahminler (train + test birlesik)
+
+---
+
+## Desteklenen Dosya Formatlari
+
+- CSV (otomatik ayirici ve encoding tespiti: virgul, noktali virgul, tab; UTF-8, Latin-1)
+- XLSX / XLS (Excel)
+- XML (tabular yapi gerektir)
+
+---
+
+## Teknik Mimari
+
+### Veri Girisi
+- CSV / XLSX / XLS / XML upload
+- Dosya validasyonu
+
+### On Isleme Katmani
+- Data cleaning (missing value imputation)
+- One-Hot Encoding
+- Scaling (opsiyonel)
 
 ### Model Engine
-- Model training  
-- Evaluation  
-- Comparison  
+- Model training
+- Evaluation
+- Cross-validation (opsiyonel, 5-fold)
+- Comparison
 
 ### Visualization Layer
-- Grafik üretimi  
-- Model bazlı dashboard  
+- Grafik uretimi (matplotlib + seaborn, dark tema)
+- Model bazli dashboard
 
 ### Output Layer
-- Excel export  
-- Sonuç özetleri  
+- Modeling artifact ZIP
+- Excel export
+- Sonuc ozetleri
 
 ---
 
-## 🧪 Kullanılan Teknolojiler
+## Kullanilan Teknolojiler
 
-- Python  
-- Pandas  
-- NumPy  
-- Scikit-learn  
-- XGBoost / LightGBM (opsiyonel)  
-- Matplotlib / Seaborn  
-- Streamlit  
-
----
-
-## 🔮 Faz 2 Geliştirmeleri
-
-- SHAP ile gelişmiş model açıklamaları  
-- Hyperparameter tuning (GridSearch / Optuna)  
-- Model kayıt ve versiyonlama (MLflow)  
-- LLM ile model yorumlama  
-- Otomatik feature engineering önerileri  
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib / Seaborn
+- Streamlit
+- openpyxl / xlsxwriter (Excel export)
+- lxml (XML okuma)
 
 ---
 
-## ⚠️ Riskler ve Dikkat Edilmesi Gerekenler
+## Faz 2 Gelistirmeleri
 
-- Yanlış target seçimi model performansını düşürür  
-- Küçük veri setlerinde model overfitting yapabilir  
-- Imbalanced datasetlerde accuracy yanıltıcı olabilir  
-- Clustering sonuçları domain bilgisi olmadan zor yorumlanabilir  
-
----
-
-## 💡 Business Impact
-
-- Teknik bilgiye ihtiyaç duymadan ML model geliştirme imkanı sağlar  
-- Veri odaklı karar alma süreçlerini hızlandırır  
-- Farklı model alternatiflerini hızlıca karşılaştırma imkanı sunar  
-- Veri bilimi ekiplerine olan bağımlılığı azaltır  
+- Clustering destegi (K-Means, DBSCAN)
+- XGBoost / LightGBM entegrasyonu
+- SHAP ile gelismis model aciklamalari
+- Hyperparameter tuning (GridSearch / Optuna)
+- Model kayit ve versiyonlama (MLflow)
+- LLM ile model yorumlama
+- Otomatik feature engineering onerileri
 
 ---
 
-## 🧠 CTO Takeaway
+## Riskler ve Dikkat Edilmesi Gerekenler
 
-Smart Modeling Agent, kurum içinde makine öğrenmesi yetkinliğini demokratize ederek business kullanıcıların kendi verileri üzerinde model geliştirmesini mümkün kılar. Model karşılaştırma, görselleştirme ve yorumlanabilirlik özellikleri sayesinde yalnızca analiz değil, aksiyon alınabilir içgörüler üretir.
+- Yanlis target secimi model performansini dusurur
+- Kucuk veri setlerinde model overfitting yapabilir
+- Imbalanced datasetlerde accuracy yaniltici olabilir
+- Bu uygulama bir hizli prototipleme / kesif aracidir — egitilen modeller dogrudan production'a alinmak icin uygun degildir
 
 ---
 
-## 📌 Not
+## Business Impact
 
-Bu agent şu anda Streamlit tabanlı demo olarak geliştirilmiştir ve henüz production ortamına alınmamıştır. Gelecek aşamada merkezi sunucuya deploy edilerek kurum genelinde erişilebilir hale getirilmesi planlanmaktadır.
+- Teknik bilgiye ihtiyac duymadan ML model gelistirme imkani saglar
+- Veri odakli karar alma sureclerini hizlandirir
+- Farkli model alternatiflerini hizlica karsilastirma imkani sunar
+- Veri bilimi ekiplerine olan bagimliligi azaltir
+
+---
+
+## Not
+
+Bu agent su anda Streamlit tabanli demo olarak gelistirilmistir ve henuz production ortamina alinmamistir. Gelecek asamada merkezi sunucuya deploy edilerek kurum genelinde erisilebilir hale getirilmesi planlanmaktadir.
