@@ -72,7 +72,7 @@ st.warning(
     "Eğitilen modeller **doğrudan canlıya (production) alınmak için uygun değildir.** "
     "Deployment öncesinde model; veri kalitesi, data drift, bias/fairness, "
     "güvenlik ve performans testleri gibi ek validasyon ve kontrol süreçlerinden "
-    "geçirilmeli, **Big Data & MLOps ekibiyle birlikte değerlendirilmelidir.**"
+    "geçirilmeli, **AI Applications & Big Data Management ekibiyle birlikte değerlendirilmelidir.**"
 )
 
 
