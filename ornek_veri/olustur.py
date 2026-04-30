@@ -67,6 +67,87 @@ def siniflandirma_musteri_churn(seed: int = 42, n: int = 2000) -> pd.DataFrame:
 
 
 # ---------------------------------------------------------------------------
+# 1b) Classification — Çalışan Churn (İK / Attrition)
+# ---------------------------------------------------------------------------
+def siniflandirma_calisan_churn(seed: int = 45, n: int = 1800) -> pd.DataFrame:
+    """İkili sınıflandırma: çalışanın işten ayrılıp ayrılmayacağı (attrition)."""
+    rng = np.random.default_rng(seed)
+
+    yas = rng.integers(22, 60, n)
+    departman = rng.choice(
+        ["Yazilim", "Pazarlama", "Finans", "Operasyon", "Satis", "IK"],
+        n,
+        p=[0.28, 0.15, 0.13, 0.17, 0.20, 0.07],
+    )
+    pozisyon = rng.choice(
+        ["Junior", "Uzman", "Kidemli", "Yonetici"],
+        n,
+        p=[0.30, 0.40, 0.22, 0.08],
+    )
+    kidem_yili = rng.integers(0, 20, n)
+
+    pozisyon_carpani = np.where(
+        pozisyon == "Junior", 1.0,
+        np.where(pozisyon == "Uzman", 1.4,
+        np.where(pozisyon == "Kidemli", 1.9, 2.6)),
+    )
+    aylik_maas = np.round(
+        (25_000 * pozisyon_carpani + kidem_yili * 1_500 + rng.normal(0, 3_000, n)).clip(min=22_000),
+        -2,
+    ).astype(int)
+
+    performans_puani = np.round(rng.normal(75, 12, n)).clip(40, 100).astype(int)
+    devamsizlik_gun = rng.integers(0, 25, n)
+    fazla_mesai = rng.choice(["Evet", "Hayir"], n, p=[0.30, 0.70])
+    son_terfi_yili = np.minimum(kidem_yili, rng.integers(0, 8, n))
+    egitim_saat = rng.integers(0, 60, n)
+    is_tatmini = rng.integers(1, 6, n)  # 1–5
+    calisma_modeli = rng.choice(["Ofis", "Hibrit", "Uzaktan"], n, p=[0.45, 0.40, 0.15])
+    sehir = rng.choice(
+        ["Istanbul", "Ankara", "Izmir", "Bursa", "Antalya"],
+        n,
+        p=[0.55, 0.20, 0.12, 0.08, 0.05],
+    )
+
+    logit = (
+        -2.2
+        + 1.4 * (fazla_mesai == "Evet").astype(float)
+        + 1.5 * (is_tatmini <= 2).astype(float)
+        - 0.7 * (is_tatmini >= 4).astype(float)
+        + 1.2 * (kidem_yili < 2).astype(float)
+        + 0.9 * (son_terfi_yili >= 4).astype(float)
+        + 0.6 * (yas < 28).astype(float)
+        + 0.5 * (devamsizlik_gun > 12).astype(float)
+        + 0.4 * ((performans_puani >= 90) & (son_terfi_yili >= 3)).astype(float)
+        - 0.4 * (egitim_saat > 30).astype(float)
+        - 0.3 * (calisma_modeli == "Hibrit").astype(float)
+        + rng.normal(0, 0.4, n)
+    )
+    prob = 1.0 / (1.0 + np.exp(-logit))
+    ayrildi = (rng.uniform(0, 1, n) < prob).astype(int)
+
+    return pd.DataFrame(
+        {
+            "calisan_id": np.arange(1, n + 1),
+            "yas": yas,
+            "departman": departman,
+            "pozisyon": pozisyon,
+            "kidem_yili": kidem_yili,
+            "aylik_maas": aylik_maas,
+            "performans_puani": performans_puani,
+            "devamsizlik_gun": devamsizlik_gun,
+            "fazla_mesai": fazla_mesai,
+            "son_terfi_yili": son_terfi_yili,
+            "egitim_saat": egitim_saat,
+            "is_tatmini": is_tatmini,
+            "calisma_modeli": calisma_modeli,
+            "sehir": sehir,
+            "ayrildi": ayrildi,
+        }
+    )
+
+
+# ---------------------------------------------------------------------------
 # 2) Regression — Ev Fiyatları
 # ---------------------------------------------------------------------------
 def regresyon_ev_fiyatlari(seed: int = 43, n: int = 1500) -> pd.DataFrame:
@@ -172,6 +253,7 @@ def kumeleme_musteri_segmentasyonu(seed: int = 44, n_per_cluster: int = 300) -> 
 def main() -> None:
     datasets = {
         "siniflandirma_churn.csv": siniflandirma_musteri_churn(),
+        "siniflandirma_calisan_churn.csv": siniflandirma_calisan_churn(),
         "regresyon_ev_fiyatlari.csv": regresyon_ev_fiyatlari(),
         "kumeleme_musteri_segmentasyonu.csv": kumeleme_musteri_segmentasyonu(),
     }
